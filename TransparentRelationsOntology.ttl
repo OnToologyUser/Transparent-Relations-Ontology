@@ -112,8 +112,6 @@
 
 ###  http://ehu.eus/transparentrelations#shareholder_of
 :shareholder_of rdf:type owl:ObjectProperty ;
-                rdfs:domain <https://schema.org/Person> ;
-                rdfs:range <https://schema.org/Corporation> ;
                 <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en ;
                 <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
                 <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:36:16Z"^^xsd:dateTime .
@@ -127,12 +125,6 @@
 
 ###  http://ehu.eus/transparentrelations/provider_of
 <http://ehu.eus/transparentrelations/provider_of> rdf:type owl:ObjectProperty ;
-                                                  rdfs:domain [ rdf:type owl:Class ;
-                                                                owl:unionOf ( :Entity
-                                                                              <https://schema.org/Person>
-                                                                            )
-                                                              ] ;
-                                                  rdfs:range :Entity ;
                                                   <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
                                                   <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:23:05Z"^^xsd:dateTime ;
                                                   rdfs:comment "A company or and individual provides services or products to an institution"@en .
@@ -151,13 +143,7 @@
 
 
 ###  https://schema.org/mentions
-<https://schema.org/mentions> rdf:type owl:ObjectProperty ;
-                              rdfs:domain :Evidence ;
-                              rdfs:range [ rdf:type owl:Class ;
-                                           owl:unionOf ( :Entity
-                                                         <https://schema.org/Person>
-                                                       )
-                                         ] .
+<https://schema.org/mentions> rdf:type owl:ObjectProperty .
 
 
 ###  https://schema.org/owns
