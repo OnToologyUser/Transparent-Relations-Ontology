@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Transparent Relations Ontology</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/transparent-relations-ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/transparent-relations-ontology","name":"Transparent Relations Ontology", "headline":"A vocabulary to represent relations that should be more transparent, usually between powerfull people or institutions", "datePublished":"April 1st, 2022", "version":"0.1.0", "license":"http://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"}], "contributor":[{"@type":"Person","name":"Jaime Gómez-Obregón (https://ladonacion.es/)"},{"@type":"Person","name":"Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>Transparent Relations Ontology</h1>
+<h2>Release April 1st, 2022</h2>
+
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="http://ehu.eus/transparentrelations/0.1.0">http://ehu.eus/transparentrelations/0.1.0</a></dd>
+<dt>Revision:</dt>
+<dd>0.1.0</dd>
+<dt>Authors:</dt>
+<dd>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dd>
+
+<dt>Contributors:</dt>
+<dd>Jaime Gómez-Obregón (https://ladonacion.es/)</dd><dd>Off-shore leaks DataBase (https://offshoreleaks.icij.org/)</dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-http://creativecommons.org/licenses/by/4.0/-blue.svg" alt="http://creativecommons.org/licenses/by/4.0/" /></a>
+</dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839). Transparent Relations Ontology. Revision: 0.1.0. Retrieved from: http://ehu.eus/transparentrelations/0.1.0</dd>
+</dl>
+
+<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+A vocabulary to represent relations that should be more transparent, usually between powerfull people or institutions</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>tro</b></td><td>&lt;https://w3id.org/transparent-relations-ontology&gt;</td></tr>
+<tr><td></td><td></td></tr>
+<tr><td><b>tro</b></td><td>&lt;http://ehu.eus/transparentrelations&gt;</td></tr>
+<tr><td><b>schema</b></td><td>&lt;https://schema.org&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
+<tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
+<tr><td><b>transparentrelations</b></td><td>&lt;http://ehu.eus/transparentrelations&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
+<tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">Transparent Relations Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#https://schema.org/Corporation" title="https://schema.org/Corporation">Corporation</a>
+   </li>
+   <li>
+      <a href="#http://ehu.eus/transparentrelations#Entity" title="http://ehu.eus/transparentrelations#Entity">Entity</a>
+   </li>
+   <li>
+      <a href="#http://ehu.eus/transparentrelations#Evidence" title="http://ehu.eus/transparentrelations#Evidence">Evidence</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/GovernmentOrganization" title="https://schema.org/GovernmentOrganization">GovernmentOrganization</a>
+   </li>
+   <li>
+      <a href="#http://ehu.eus/transparentrelations#Intermediary" title="http://ehu.eus/transparentrelations#Intermediary">Intermediary</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/NewsArticle" title="https://schema.org/NewsArticle">NewsArticle</a>
+   </li>
+   <li>
+      <a href="#http://ehu.eus/transparentrelations#Officer" title="http://ehu.eus/transparentrelations#Officer">Officer</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/Person" title="https://schema.org/Person">Person</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#http://ehu.eus/transparentrelations#beneficiary_of"
+         title="http://ehu.eus/transparentrelations#beneficiary_of">
+         <span>beneficiary of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://ehu.eus/transparentrelations#controls" title="http://ehu.eus/transparentrelations#controls">
+         <span>controls</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://ehu.eus/transparentrelations#director_of" title="http://ehu.eus/transparentrelations#director_of">
+         <span>director of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://ehu.eus/transparentrelations#has_bank_account_in"
+         title="http://ehu.eus/transparentrelations#has_bank_account_in">
+         <span>has bank account in</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://ehu.eus/transparentrelations#intermediary_of"
+         title="http://ehu.eus/transparentrelations#intermediary_of">
+         <span>intermediary of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://ehu.eus/transparentrelations#manages" title="http://ehu.eus/transparentrelations#manages">
+         <span>manages</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://ehu.eus/transparentrelations#officer_of" title="http://ehu.eus/transparentrelations#officer_of">
+         <span>officer of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://ehu.eus/transparentrelations#pays_to" title="http://ehu.eus/transparentrelations#pays_to">
+         <span>pays to</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://ehu.eus/transparentrelations/provider_of" title="http://ehu.eus/transparentrelations/provider_of">
+         <span>provider of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://ehu.eus/transparentrelations#registered_in"
+         title="http://ehu.eus/transparentrelations#registered_in">
+         <span>registered in</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://ehu.eus/transparentrelations#represents" title="http://ehu.eus/transparentrelations#represents">
+         <span>represents</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://ehu.eus/transparentrelations#shareholder_of"
+         title="http://ehu.eus/transparentrelations#shareholder_of">
+         <span>shareholder of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://ehu.eus/transparentrelations#takes_place_in"
+         title="http://ehu.eus/transparentrelations#takes_place_in">
+         <span>takes place in</span>
+      </a>
+   </li>
+</ul><h4>Annotation Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/contributor" title="http://purl.org/dc/elements/1.1/contributor">
+         <span>contributor</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">
+         <span>created</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator">
+         <span>creator</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/date" title="http://purl.org/dc/elements/1.1/date">
+         <span>date</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">
+         <span>description</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">
+         <span>license</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/vocab/vann/preferredNamespacePrefix"
+         title="http://purl.org/vocab/vann/preferredNamespacePrefix">
+         <span>preferred namespace prefix</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri">
+         <span>preferred namespace uri</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
+         <span>title</span>
+      </a>
+   </li>
+</ul>
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">Transparent Relations Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+
+</div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross reference for Transparent Relations Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Transparent Relations Ontology.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://schema.org/Corporation" title="https://schema.org/Corporation">Corporation</a>
+      </li>
+      <li>
+         <a href="#http://ehu.eus/transparentrelations#Entity" title="http://ehu.eus/transparentrelations#Entity">Entity</a>
+      </li>
+      <li>
+         <a href="#http://ehu.eus/transparentrelations#Evidence" title="http://ehu.eus/transparentrelations#Evidence">Evidence</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/GovernmentOrganization" title="https://schema.org/GovernmentOrganization">GovernmentOrganization</a>
+      </li>
+      <li>
+         <a href="#http://ehu.eus/transparentrelations#Intermediary" title="http://ehu.eus/transparentrelations#Intermediary">Intermediary</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/NewsArticle" title="https://schema.org/NewsArticle">NewsArticle</a>
+      </li>
+      <li>
+         <a href="#http://ehu.eus/transparentrelations#Officer" title="http://ehu.eus/transparentrelations#Officer">Officer</a>
+      </li>
+      <li>
+         <a href="#https://schema.org/Person" title="https://schema.org/Person">Person</a>
+      </li>
+   </ul>
+   <div class="entity" id="https://schema.org/Corporation">
+      <h3>Corporation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/Corporation</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://ehu.eus/transparentrelations#Entity" title="http://ehu.eus/transparentrelations#Entity">Entity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ehu.eus/transparentrelations#Entity">
+      <h3>Entity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ehu.eus/transparentrelations#Entity</p>
+      <dl>
+         <dt>Date:
+        </dt>
+         <dd>15T11:23:05Z/02/2022</dd>
+      </dl>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://schema.org/Corporation" title="https://schema.org/Corporation">Corporation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://schema.org/GovernmentOrganization" title="https://schema.org/GovernmentOrganization">GovernmentOrganization</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ehu.eus/transparentrelations#Evidence">
+      <h3>Evidence<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ehu.eus/transparentrelations#Evidence</p>
+      <div class="comment">
+         <span class="markdown">The evidence of a relation. Normally an evidence will be a source of news. This is not legal evidence</span>
+      </div>
+      <dl>
+         <dt>Date:
+        </dt>
+         <dd>15T11:19:58Z/02/2022</dd>
+      </dl>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://schema.org/NewsArticle" title="https://schema.org/NewsArticle">NewsArticle</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://schema.org/GovernmentOrganization">
+      <h3>GovernmentOrganization<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/GovernmentOrganization</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://ehu.eus/transparentrelations#Entity" title="http://ehu.eus/transparentrelations#Entity">Entity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ehu.eus/transparentrelations#Intermediary">
+      <h3>Intermediary<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ehu.eus/transparentrelations#Intermediary</p>
+      <dl>
+         <dt>Date:
+        </dt>
+         <dd>21T09:01:12Z/02/2022</dd>
+      </dl>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dd>
+         <dt>Contributors:
+                    </dt>
+         <dd>Off-shore leaks DataBase (https://offshoreleaks.icij.org/)</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://schema.org/Person" title="https://schema.org/Person">Person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://schema.org/NewsArticle">
+      <h3>NewsArticle<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/NewsArticle</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://ehu.eus/transparentrelations#Evidence" title="http://ehu.eus/transparentrelations#Evidence">Evidence</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ehu.eus/transparentrelations#Officer">
+      <h3>Officer<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ehu.eus/transparentrelations#Officer</p>
+      <dl>
+         <dt>Date:
+        </dt>
+         <dd>21T09:00:30Z/02/2022</dd>
+      </dl>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dd>
+         <dt>Contributors:
+                    </dt>
+         <dd>Off-shore leaks DataBase (https://offshoreleaks.icij.org/)</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://schema.org/Person" title="https://schema.org/Person">Person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://schema.org/Person">
+      <h3>Person<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://schema.org/Person</p>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://ehu.eus/transparentrelations#Intermediary" title="http://ehu.eus/transparentrelations#Intermediary">Intermediary</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://ehu.eus/transparentrelations#Officer" title="http://ehu.eus/transparentrelations#Officer">Officer</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://ehu.eus/transparentrelations#beneficiary_of"
+            title="http://ehu.eus/transparentrelations#beneficiary_of">
+            <span>beneficiary of</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://ehu.eus/transparentrelations#controls" title="http://ehu.eus/transparentrelations#controls">
+            <span>controls</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://ehu.eus/transparentrelations#director_of" title="http://ehu.eus/transparentrelations#director_of">
+            <span>director of</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://ehu.eus/transparentrelations#has_bank_account_in"
+            title="http://ehu.eus/transparentrelations#has_bank_account_in">
+            <span>has bank account in</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://ehu.eus/transparentrelations#intermediary_of"
+            title="http://ehu.eus/transparentrelations#intermediary_of">
+            <span>intermediary of</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://ehu.eus/transparentrelations#manages" title="http://ehu.eus/transparentrelations#manages">
+            <span>manages</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://ehu.eus/transparentrelations#officer_of" title="http://ehu.eus/transparentrelations#officer_of">
+            <span>officer of</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://ehu.eus/transparentrelations#pays_to" title="http://ehu.eus/transparentrelations#pays_to">
+            <span>pays to</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://ehu.eus/transparentrelations/provider_of" title="http://ehu.eus/transparentrelations/provider_of">
+            <span>provider of</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://ehu.eus/transparentrelations#registered_in"
+            title="http://ehu.eus/transparentrelations#registered_in">
+            <span>registered in</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://ehu.eus/transparentrelations#represents" title="http://ehu.eus/transparentrelations#represents">
+            <span>represents</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://ehu.eus/transparentrelations#shareholder_of"
+            title="http://ehu.eus/transparentrelations#shareholder_of">
+            <span>shareholder of</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://ehu.eus/transparentrelations#takes_place_in"
+            title="http://ehu.eus/transparentrelations#takes_place_in">
+            <span>takes place in</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://ehu.eus/transparentrelations#beneficiary_of">
+      <h3>beneficiary of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ehu.eus/transparentrelations#beneficiary_of</p>
+      <dl>
+         <dt>Date:
+        </dt>
+         <dd>21T14:19:45Z/02/2022</dd>
+      </dl>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dd>
+         <dt>Contributors:
+                    </dt>
+         <dd>Jaime Gómez-Obregón (https://ladonacion.es/)</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ehu.eus/transparentrelations#controls">
+      <h3>controls<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ehu.eus/transparentrelations#controls</p>
+      <dl>
+         <dt>Date:
+        </dt>
+         <dd>21T14:33:14Z/02/2022</dd>
+      </dl>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dd>
+         <dt>Contributors:
+                    </dt>
+         <dd>Jaime Gómez-Obregón (https://ladonacion.es/)</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ehu.eus/transparentrelations#director_of">
+      <h3>director of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ehu.eus/transparentrelations#director_of</p>
+      <dl>
+         <dt>Date:
+        </dt>
+         <dd>21T09:02:19Z/02/2022</dd>
+      </dl>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dd>
+         <dt>Contributors:
+                    </dt>
+         <dd>Off-shore leaks DataBase (https://offshoreleaks.icij.org/)</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ehu.eus/transparentrelations#has_bank_account_in">
+      <h3>has bank account in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ehu.eus/transparentrelations#has_bank_account_in</p>
+      <dl>
+         <dt>Date:
+        </dt>
+         <dd>21T14:25:46Z/02/2022</dd>
+      </dl>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dd>
+         <dt>Contributors:
+                    </dt>
+         <dd>Jaime Gómez-Obregón (https://ladonacion.es/)</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ehu.eus/transparentrelations#intermediary_of">
+      <h3>intermediary of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ehu.eus/transparentrelations#intermediary_of</p>
+      <dl>
+         <dt>Date:
+        </dt>
+         <dd>21T09:02:03Z/02/2022</dd>
+      </dl>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ehu.eus/transparentrelations#manages">
+      <h3>manages<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ehu.eus/transparentrelations#manages</p>
+      <dl>
+         <dt>Date:
+        </dt>
+         <dd>21T14:40:58Z/02/2022</dd>
+      </dl>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dd>
+         <dt>Contributors:
+                    </dt>
+         <dd>Jaime Gómez-Obregón (https://ladonacion.es/)</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ehu.eus/transparentrelations#officer_of">
+      <h3>officer of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ehu.eus/transparentrelations#officer_of</p>
+      <dl>
+         <dt>Date:
+        </dt>
+         <dd>21T09:01:51Z/02/2022</dd>
+      </dl>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dd>
+         <dt>Contributors:
+                    </dt>
+         <dd>Off-shore leaks DataBase (https://offshoreleaks.icij.org/)</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ehu.eus/transparentrelations#pays_to">
+      <h3>pays to<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ehu.eus/transparentrelations#pays_to</p>
+      <dl>
+         <dt>Date:
+        </dt>
+         <dd>21T14:24:12Z/02/2022</dd>
+      </dl>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dd>
+         <dt>Contributors:
+                    </dt>
+         <dd>Jaime Gómez-Obregón (https://ladonacion.es/)</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ehu.eus/transparentrelations/provider_of">
+      <h3>provider of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ehu.eus/transparentrelations/provider_of</p>
+      <div class="comment">
+         <span class="markdown">A company or and individual provides services or products to an institution</span>
+      </div>
+      <dl>
+         <dt>Date:
+        </dt>
+         <dd>15T11:23:05Z/02/2022</dd>
+      </dl>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ehu.eus/transparentrelations#registered_in">
+      <h3>registered in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ehu.eus/transparentrelations#registered_in</p>
+      <dl>
+         <dt>Date:
+        </dt>
+         <dd>21T14:30:10Z/02/2022</dd>
+      </dl>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dd>
+         <dt>Contributors:
+                    </dt>
+         <dd>Jaime Gómez-Obregón (https://ladonacion.es/)</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ehu.eus/transparentrelations#represents">
+      <h3>represents<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ehu.eus/transparentrelations#represents</p>
+      <dl>
+         <dt>Date:
+        </dt>
+         <dd>21T14:21:32Z/02/2022</dd>
+      </dl>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dd>
+         <dt>Contributors:
+                    </dt>
+         <dd>Jaime Gómez-Obregón (https://ladonacion.es/)</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ehu.eus/transparentrelations#shareholder_of">
+      <h3>shareholder of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ehu.eus/transparentrelations#shareholder_of</p>
+      <dl>
+         <dt>Date:
+        </dt>
+         <dd>15T11:36:16Z/02/2022</dd>
+      </dl>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dd>
+         <dt>Contributors:
+                    </dt>
+         <dd>Off-shore leaks DataBase (https://offshoreleaks.icij.org/)</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ehu.eus/transparentrelations#takes_place_in">
+      <h3>takes place in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ehu.eus/transparentrelations#takes_place_in</p>
+      <dl>
+         <dt>Date:
+        </dt>
+         <dd>21T14:35:58Z/02/2022</dd>
+      </dl>
+      <dl>
+         <dt>Authors:
+                    </dt>
+         <dd>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="annotationproperties">
+   <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/contributor" title="http://purl.org/dc/elements/1.1/contributor">
+            <span>contributor</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">
+            <span>created</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator">
+            <span>creator</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/date" title="http://purl.org/dc/elements/1.1/date">
+            <span>date</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">
+            <span>description</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">
+            <span>license</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/vocab/vann/preferredNamespacePrefix"
+            title="http://purl.org/vocab/vann/preferredNamespacePrefix">
+            <span>preferred namespace prefix</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri">
+            <span>preferred namespace uri</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
+            <span>title</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/contributor">
+      <h3>contributor<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/contributor</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/created">
+      <h3>created<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/created</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/creator">
+      <h3>creator<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/creator</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/date">
+      <h3>date<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/date</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/description">
+      <h3>description<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/license">
+      <h3>license<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+   </div>
+   <div class="entity" id="http://purl.org/vocab/vann/preferredNamespacePrefix">
+      <h3>preferred namespace prefix<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespacePrefix</p>
+   </div>
+   <div class="entity" id="http://purl.org/vocab/vann/preferredNamespaceUri">
+      <h3>preferred namespace uri<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespaceUri</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/title">
+      <h3>title<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/title</p>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>
