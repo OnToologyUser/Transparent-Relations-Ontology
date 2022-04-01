@@ -12,7 +12,11 @@
                                        <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ,
                                                                                      "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en ;
                                        <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"@eu ;
+                                       <http://purl.org/dc/terms/created> "April 1st, 2022"@en ;
+                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "tro"@en ;
+                                       <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/transparent-relations-ontology" ;
                                        <http://purl.org/dc/terms/description> "A vocabulary to represent relations that should be more transparent, usually between powerfull people or institutions"@en ;
+                                       <http://purl.org/dc/terms/title> "Transparent Relations Ontology"@en ;
                                        <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/"@en .
 
 #################################################################
