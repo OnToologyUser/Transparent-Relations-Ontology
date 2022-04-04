@@ -7,8 +7,8 @@ TRO offers a vocabulary to publish information about relations that should be mo
 
 Access:
 
-* https://mikel-egana-aranguren.github.io/Transparent-Relations-Ontology/release/index-en.html
-* https://mikel-egana-aranguren.github.io/Transparent-Relations-Ontology/release/ontology.ttl
+* `curl -sH "Accept: text/turtle" -L https://w3id.org/TRO`
+* https://w3id.org/TRO
 
 ## Related work
 
