@@ -1,15 +1,15 @@
-<http://ehu.eus/transparentrelations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://ehu.eus/transparentrelations> <http://www.w3.org/2002/07/owl#versionIRI> <http://ehu.eus/transparentrelations/0.1.0> .
-<http://ehu.eus/transparentrelations> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
-<http://ehu.eus/transparentrelations> <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en .
-<http://ehu.eus/transparentrelations> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"@eu .
-<http://ehu.eus/transparentrelations> <http://purl.org/dc/terms/created> "April 1st, 2022"@en .
-<http://ehu.eus/transparentrelations> <http://purl.org/dc/terms/description> "A vocabulary to represent relations that should be more transparent, usually between powerfull people or institutions"@en .
-<http://ehu.eus/transparentrelations> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/"@en .
-<http://ehu.eus/transparentrelations> <http://purl.org/dc/terms/title> "Transparent Relations Ontology"@en .
-<http://ehu.eus/transparentrelations> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tro"@en .
-<http://ehu.eus/transparentrelations> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/transparent-relations-ontology" .
-<http://ehu.eus/transparentrelations> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0"@en .
+<http://ehu.eus/tro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://ehu.eus/tro> <http://www.w3.org/2002/07/owl#versionIRI> <http://ehu.eus/tro/0.1.0> .
+<http://ehu.eus/tro> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
+<http://ehu.eus/tro> <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en .
+<http://ehu.eus/tro> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"@eu .
+<http://ehu.eus/tro> <http://purl.org/dc/terms/created> "April 1st, 2022"@en .
+<http://ehu.eus/tro> <http://purl.org/dc/terms/description> "A vocabulary to represent relations that should be more transparent, usually between powerfull people or institutions"@en .
+<http://ehu.eus/tro> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/"@en .
+<http://ehu.eus/tro> <http://purl.org/dc/terms/title> "Transparent Relations Ontology"@en .
+<http://ehu.eus/tro> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tro"@en .
+<http://ehu.eus/tro> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/transparent-relations-ontology" .
+<http://ehu.eus/tro> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0"@en .
 # 
 # 
 # #################################################################
@@ -55,81 +55,81 @@
 # #################################################################
 # 
 # 
-# http://ehu.eus/transparentrelations#beneficiary_of
-<http://ehu.eus/transparentrelations#beneficiary_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://ehu.eus/transparentrelations#beneficiary_of> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
-<http://ehu.eus/transparentrelations#beneficiary_of> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
-<http://ehu.eus/transparentrelations#beneficiary_of> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:19:45Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# http://ehu.eus/tro/beneficiary_of
+<http://ehu.eus/tro/beneficiary_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ehu.eus/tro/beneficiary_of> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
+<http://ehu.eus/tro/beneficiary_of> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<http://ehu.eus/tro/beneficiary_of> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:19:45Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 # 
-# http://ehu.eus/transparentrelations#controls
-<http://ehu.eus/transparentrelations#controls> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://ehu.eus/transparentrelations#controls> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
-<http://ehu.eus/transparentrelations#controls> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
-<http://ehu.eus/transparentrelations#controls> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:33:14Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# http://ehu.eus/tro/controls
+<http://ehu.eus/tro/controls> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ehu.eus/tro/controls> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
+<http://ehu.eus/tro/controls> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<http://ehu.eus/tro/controls> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:33:14Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 # 
-# http://ehu.eus/transparentrelations#director_of
-<http://ehu.eus/transparentrelations#director_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://ehu.eus/transparentrelations#director_of> <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en .
-<http://ehu.eus/transparentrelations#director_of> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
-<http://ehu.eus/transparentrelations#director_of> <http://purl.org/dc/elements/1.1/date> "2022-02-21T09:02:19Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# http://ehu.eus/tro/director_of
+<http://ehu.eus/tro/director_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ehu.eus/tro/director_of> <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en .
+<http://ehu.eus/tro/director_of> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<http://ehu.eus/tro/director_of> <http://purl.org/dc/elements/1.1/date> "2022-02-21T09:02:19Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 # 
-# http://ehu.eus/transparentrelations#has_bank_account_in
-<http://ehu.eus/transparentrelations#has_bank_account_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://ehu.eus/transparentrelations#has_bank_account_in> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
-<http://ehu.eus/transparentrelations#has_bank_account_in> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
-<http://ehu.eus/transparentrelations#has_bank_account_in> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:25:46Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# http://ehu.eus/tro/has_bank_account_in
+<http://ehu.eus/tro/has_bank_account_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ehu.eus/tro/has_bank_account_in> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
+<http://ehu.eus/tro/has_bank_account_in> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<http://ehu.eus/tro/has_bank_account_in> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:25:46Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 # 
-# http://ehu.eus/transparentrelations#intermediary_of
-<http://ehu.eus/transparentrelations#intermediary_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://ehu.eus/transparentrelations#intermediary_of> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
-<http://ehu.eus/transparentrelations#intermediary_of> <http://purl.org/dc/elements/1.1/date> "2022-02-21T09:02:03Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# http://ehu.eus/tro/intermediary_of
+<http://ehu.eus/tro/intermediary_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ehu.eus/tro/intermediary_of> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<http://ehu.eus/tro/intermediary_of> <http://purl.org/dc/elements/1.1/date> "2022-02-21T09:02:03Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 # 
-# http://ehu.eus/transparentrelations#manages
-<http://ehu.eus/transparentrelations#manages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://ehu.eus/transparentrelations#manages> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
-<http://ehu.eus/transparentrelations#manages> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
-<http://ehu.eus/transparentrelations#manages> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:40:58Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# http://ehu.eus/tro/manages
+<http://ehu.eus/tro/manages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ehu.eus/tro/manages> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
+<http://ehu.eus/tro/manages> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<http://ehu.eus/tro/manages> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:40:58Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 # 
-# http://ehu.eus/transparentrelations#officer_of
-<http://ehu.eus/transparentrelations#officer_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://ehu.eus/transparentrelations#officer_of> <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en .
-<http://ehu.eus/transparentrelations#officer_of> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
-<http://ehu.eus/transparentrelations#officer_of> <http://purl.org/dc/elements/1.1/date> "2022-02-21T09:01:51Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# http://ehu.eus/tro/officer_of
+<http://ehu.eus/tro/officer_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ehu.eus/tro/officer_of> <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en .
+<http://ehu.eus/tro/officer_of> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<http://ehu.eus/tro/officer_of> <http://purl.org/dc/elements/1.1/date> "2022-02-21T09:01:51Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 # 
-# http://ehu.eus/transparentrelations#pays_to
-<http://ehu.eus/transparentrelations#pays_to> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://ehu.eus/transparentrelations#pays_to> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
-<http://ehu.eus/transparentrelations#pays_to> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
-<http://ehu.eus/transparentrelations#pays_to> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:24:12Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# http://ehu.eus/tro/pays_to
+<http://ehu.eus/tro/pays_to> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ehu.eus/tro/pays_to> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
+<http://ehu.eus/tro/pays_to> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<http://ehu.eus/tro/pays_to> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:24:12Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 # 
-# http://ehu.eus/transparentrelations#registered_in
-<http://ehu.eus/transparentrelations#registered_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://ehu.eus/transparentrelations#registered_in> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
-<http://ehu.eus/transparentrelations#registered_in> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
-<http://ehu.eus/transparentrelations#registered_in> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:30:10Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# http://ehu.eus/tro/provider_of
+<http://ehu.eus/tro/provider_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ehu.eus/tro/provider_of> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<http://ehu.eus/tro/provider_of> <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:23:05Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://ehu.eus/tro/provider_of> <http://www.w3.org/2000/01/rdf-schema#comment> "A company or and individual provides services or products to an institution"@en .
 # 
-# http://ehu.eus/transparentrelations#represents
-<http://ehu.eus/transparentrelations#represents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://ehu.eus/transparentrelations#represents> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
-<http://ehu.eus/transparentrelations#represents> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
-<http://ehu.eus/transparentrelations#represents> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:21:32Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# http://ehu.eus/tro/registered_in
+<http://ehu.eus/tro/registered_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ehu.eus/tro/registered_in> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
+<http://ehu.eus/tro/registered_in> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<http://ehu.eus/tro/registered_in> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:30:10Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 # 
-# http://ehu.eus/transparentrelations#shareholder_of
-<http://ehu.eus/transparentrelations#shareholder_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://ehu.eus/transparentrelations#shareholder_of> <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en .
-<http://ehu.eus/transparentrelations#shareholder_of> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
-<http://ehu.eus/transparentrelations#shareholder_of> <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:36:16Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# http://ehu.eus/tro/represents
+<http://ehu.eus/tro/represents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ehu.eus/tro/represents> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
+<http://ehu.eus/tro/represents> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<http://ehu.eus/tro/represents> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:21:32Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 # 
-# http://ehu.eus/transparentrelations#takes_place_in
-<http://ehu.eus/transparentrelations#takes_place_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://ehu.eus/transparentrelations#takes_place_in> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
-<http://ehu.eus/transparentrelations#takes_place_in> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:35:58Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# http://ehu.eus/tro/shareholder_of
+<http://ehu.eus/tro/shareholder_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ehu.eus/tro/shareholder_of> <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en .
+<http://ehu.eus/tro/shareholder_of> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<http://ehu.eus/tro/shareholder_of> <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:36:16Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 # 
-# http://ehu.eus/transparentrelations/provider_of
-<http://ehu.eus/transparentrelations/provider_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://ehu.eus/transparentrelations/provider_of> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
-<http://ehu.eus/transparentrelations/provider_of> <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:23:05Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://ehu.eus/transparentrelations/provider_of> <http://www.w3.org/2000/01/rdf-schema#comment> "A company or and individual provides services or products to an institution"@en .
+# http://ehu.eus/tro/takes_place_in
+<http://ehu.eus/tro/takes_place_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ehu.eus/tro/takes_place_in> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<http://ehu.eus/tro/takes_place_in> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:35:58Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 # 
 # https://schema.org/address
 <https://schema.org/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -167,48 +167,48 @@
 # #################################################################
 # 
 # 
-# http://ehu.eus/transparentrelations#Entity
-<http://ehu.eus/transparentrelations#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://ehu.eus/transparentrelations#Entity> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
-<http://ehu.eus/transparentrelations#Entity> <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:23:05Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://ehu.eus/transparentrelations#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "Entity"@en .
+# http://ehu.eus/tro/Entity
+<http://ehu.eus/tro/Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ehu.eus/tro/Entity> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<http://ehu.eus/tro/Entity> <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:23:05Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://ehu.eus/tro/Entity> <http://www.w3.org/2000/01/rdf-schema#label> "Entity"@en .
 # 
-# http://ehu.eus/transparentrelations#Evidence
-<http://ehu.eus/transparentrelations#Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://ehu.eus/transparentrelations#Evidence> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
-<http://ehu.eus/transparentrelations#Evidence> <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:19:58Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://ehu.eus/transparentrelations#Evidence> <http://www.w3.org/2000/01/rdf-schema#comment> "The evidence of a relation. Normally an evidence will be a source of news. This is not legal evidence"@en .
-<http://ehu.eus/transparentrelations#Evidence> <http://www.w3.org/2000/01/rdf-schema#label> "Evidence"@en .
+# http://ehu.eus/tro/Evidence
+<http://ehu.eus/tro/Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ehu.eus/tro/Evidence> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<http://ehu.eus/tro/Evidence> <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:19:58Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://ehu.eus/tro/Evidence> <http://www.w3.org/2000/01/rdf-schema#comment> "The evidence of a relation. Normally an evidence will be a source of news. This is not legal evidence"@en .
+<http://ehu.eus/tro/Evidence> <http://www.w3.org/2000/01/rdf-schema#label> "Evidence"@en .
 # 
-# http://ehu.eus/transparentrelations#Intermediary
-<http://ehu.eus/transparentrelations#Intermediary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://ehu.eus/transparentrelations#Intermediary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Person> .
-<http://ehu.eus/transparentrelations#Intermediary> <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en .
-<http://ehu.eus/transparentrelations#Intermediary> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
-<http://ehu.eus/transparentrelations#Intermediary> <http://purl.org/dc/elements/1.1/date> "2022-02-21T09:01:12Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://ehu.eus/transparentrelations#Intermediary> <http://www.w3.org/2000/01/rdf-schema#label> "Intermediary"@en .
+# http://ehu.eus/tro/Intermediary
+<http://ehu.eus/tro/Intermediary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ehu.eus/tro/Intermediary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Person> .
+<http://ehu.eus/tro/Intermediary> <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en .
+<http://ehu.eus/tro/Intermediary> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<http://ehu.eus/tro/Intermediary> <http://purl.org/dc/elements/1.1/date> "2022-02-21T09:01:12Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://ehu.eus/tro/Intermediary> <http://www.w3.org/2000/01/rdf-schema#label> "Intermediary"@en .
 # 
-# http://ehu.eus/transparentrelations#Officer
-<http://ehu.eus/transparentrelations#Officer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://ehu.eus/transparentrelations#Officer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Person> .
-<http://ehu.eus/transparentrelations#Officer> <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en .
-<http://ehu.eus/transparentrelations#Officer> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
-<http://ehu.eus/transparentrelations#Officer> <http://purl.org/dc/elements/1.1/date> "2022-02-21T09:00:30Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://ehu.eus/transparentrelations#Officer> <http://www.w3.org/2000/01/rdf-schema#label> "Officer"@en .
+# http://ehu.eus/tro/Officer
+<http://ehu.eus/tro/Officer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ehu.eus/tro/Officer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Person> .
+<http://ehu.eus/tro/Officer> <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en .
+<http://ehu.eus/tro/Officer> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<http://ehu.eus/tro/Officer> <http://purl.org/dc/elements/1.1/date> "2022-02-21T09:00:30Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://ehu.eus/tro/Officer> <http://www.w3.org/2000/01/rdf-schema#label> "Officer"@en .
 # 
 # https://schema.org/Corporation
 <https://schema.org/Corporation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://schema.org/Corporation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ehu.eus/transparentrelations#Entity> .
+<https://schema.org/Corporation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ehu.eus/tro/Entity> .
 <https://schema.org/Corporation> <http://www.w3.org/2000/01/rdf-schema#label> "Corporation"@en .
 # 
 # https://schema.org/GovernmentOrganization
 <https://schema.org/GovernmentOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://schema.org/GovernmentOrganization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ehu.eus/transparentrelations#Entity> .
+<https://schema.org/GovernmentOrganization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ehu.eus/tro/Entity> .
 <https://schema.org/GovernmentOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "GovernmentOrganization"@en .
 # 
 # https://schema.org/NewsArticle
 <https://schema.org/NewsArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://schema.org/NewsArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ehu.eus/transparentrelations#Evidence> .
+<https://schema.org/NewsArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ehu.eus/tro/Evidence> .
 <https://schema.org/NewsArticle> <http://www.w3.org/2000/01/rdf-schema#label> "NewsArticle"@en .
 # 
 # https://schema.org/Person
