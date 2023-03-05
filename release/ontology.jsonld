@@ -1,5 +1,5 @@
 [ {
-  "@id" : "http://ehu.eus/transparentrelations",
+  "@id" : "http://ehu.eus/tro",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "es",
@@ -12,9 +12,13 @@
     "@language" : "eu",
     "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
   } ],
-  "http://purl.org/dc/terms/created" : [ {
+  "http://purl.org/dc/terms/abstract" : [ {
     "@language" : "en",
-    "@value" : "April 1st, 2022"
+    "@value" : "Transparent Relations Ontology (TRO) offers a vocabulary to publish information about relations that should be more transparent, usually between powerful parties, to detect potential conflicts of interests: for example, governments and their providers, or politicians and their personal relationships. Research journalism and Open Data are two areas in which this sort of data is growing, and new methods and standards are needed to cope with the FAIR publication and consumption of such data."
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-04-01T00:00:01"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -23,6 +27,10 @@
   "http://purl.org/dc/terms/license" : [ {
     "@language" : "en",
     "@value" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@language" : "en",
+    "@value" : "2024-04-05T00:00:01"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
@@ -35,15 +43,20 @@
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
     "@value" : "https://w3id.org/transparent-relations-ontology"
   } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@value" : "0.1.0"
+  } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://ehu.eus/transparentrelations/0.1.0"
+    "@id" : "http://ehu.eus/tro/0.1.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "en",
-    "@value" : "0.1.0"
+    "@value" : "0.1.1"
+  } ],
+  "https://schema.org/schemaVersion" : [ {
+    "@value" : "http://ehu.eus/tro/0.1.1"
   } ]
 }, {
-  "@id" : "http://ehu.eus/transparentrelations#Entity",
+  "@id" : "http://ehu.eus/tro/Entity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
@@ -57,7 +70,7 @@
     "@value" : "Entity"
   } ]
 }, {
-  "@id" : "http://ehu.eus/transparentrelations#Evidence",
+  "@id" : "http://ehu.eus/tro/Evidence",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
@@ -75,7 +88,7 @@
     "@value" : "Evidence"
   } ]
 }, {
-  "@id" : "http://ehu.eus/transparentrelations#Intermediary",
+  "@id" : "http://ehu.eus/tro/Intermediary",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "en",
@@ -96,7 +109,7 @@
     "@id" : "https://schema.org/Person"
   } ]
 }, {
-  "@id" : "http://ehu.eus/transparentrelations#Officer",
+  "@id" : "http://ehu.eus/tro/Officer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "en",
@@ -117,7 +130,7 @@
     "@id" : "https://schema.org/Person"
   } ]
 }, {
-  "@id" : "http://ehu.eus/transparentrelations#beneficiary_of",
+  "@id" : "http://ehu.eus/tro/beneficiary_of",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "es",
@@ -131,7 +144,7 @@
     "@value" : "2022-02-21T14:19:45Z"
   } ]
 }, {
-  "@id" : "http://ehu.eus/transparentrelations#controls",
+  "@id" : "http://ehu.eus/tro/controls",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "es",
@@ -145,7 +158,7 @@
     "@value" : "2022-02-21T14:33:14Z"
   } ]
 }, {
-  "@id" : "http://ehu.eus/transparentrelations#director_of",
+  "@id" : "http://ehu.eus/tro/director_of",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "en",
@@ -159,7 +172,7 @@
     "@value" : "2022-02-21T09:02:19Z"
   } ]
 }, {
-  "@id" : "http://ehu.eus/transparentrelations#has_bank_account_in",
+  "@id" : "http://ehu.eus/tro/has_bank_account_in",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "es",
@@ -173,7 +186,7 @@
     "@value" : "2022-02-21T14:25:46Z"
   } ]
 }, {
-  "@id" : "http://ehu.eus/transparentrelations#intermediary_of",
+  "@id" : "http://ehu.eus/tro/intermediary_of",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
@@ -183,7 +196,7 @@
     "@value" : "2022-02-21T09:02:03Z"
   } ]
 }, {
-  "@id" : "http://ehu.eus/transparentrelations#manages",
+  "@id" : "http://ehu.eus/tro/manages",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "es",
@@ -197,7 +210,7 @@
     "@value" : "2022-02-21T14:40:58Z"
   } ]
 }, {
-  "@id" : "http://ehu.eus/transparentrelations#officer_of",
+  "@id" : "http://ehu.eus/tro/officer_of",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "en",
@@ -211,7 +224,7 @@
     "@value" : "2022-02-21T09:01:51Z"
   } ]
 }, {
-  "@id" : "http://ehu.eus/transparentrelations#pays_to",
+  "@id" : "http://ehu.eus/tro/pays_to",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "es",
@@ -225,59 +238,7 @@
     "@value" : "2022-02-21T14:24:12Z"
   } ]
 }, {
-  "@id" : "http://ehu.eus/transparentrelations#registered_in",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/elements/1.1/contributor" : [ {
-    "@language" : "es",
-    "@value" : "Jaime Gómez-Obregón (https://ladonacion.es/)"
-  } ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2022-02-21T14:30:10Z"
-  } ]
-}, {
-  "@id" : "http://ehu.eus/transparentrelations#represents",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/elements/1.1/contributor" : [ {
-    "@language" : "es",
-    "@value" : "Jaime Gómez-Obregón (https://ladonacion.es/)"
-  } ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2022-02-21T14:21:32Z"
-  } ]
-}, {
-  "@id" : "http://ehu.eus/transparentrelations#shareholder_of",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/elements/1.1/contributor" : [ {
-    "@language" : "en",
-    "@value" : "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"
-  } ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2022-02-15T11:36:16Z"
-  } ]
-}, {
-  "@id" : "http://ehu.eus/transparentrelations#takes_place_in",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2022-02-21T14:35:58Z"
-  } ]
-}, {
-  "@id" : "http://ehu.eus/transparentrelations/provider_of",
+  "@id" : "http://ehu.eus/tro/provider_of",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
@@ -291,6 +252,58 @@
     "@value" : "A company or and individual provides services or products to an institution"
   } ]
 }, {
+  "@id" : "http://ehu.eus/tro/registered_in",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@language" : "es",
+    "@value" : "Jaime Gómez-Obregón (https://ladonacion.es/)"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-02-21T14:30:10Z"
+  } ]
+}, {
+  "@id" : "http://ehu.eus/tro/represents",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@language" : "es",
+    "@value" : "Jaime Gómez-Obregón (https://ladonacion.es/)"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-02-21T14:21:32Z"
+  } ]
+}, {
+  "@id" : "http://ehu.eus/tro/shareholder_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@language" : "en",
+    "@value" : "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-02-15T11:36:16Z"
+  } ]
+}, {
+  "@id" : "http://ehu.eus/tro/takes_place_in",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-02-21T14:35:58Z"
+  } ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/contributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -300,6 +313,9 @@
   "@id" : "http://purl.org/dc/elements/1.1/date",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/created",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -307,6 +323,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/title",
@@ -325,7 +344,7 @@
     "@value" : "Corporation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://ehu.eus/transparentrelations#Entity"
+    "@id" : "http://ehu.eus/tro/Entity"
   } ]
 }, {
   "@id" : "https://schema.org/GovernmentOrganization",
@@ -335,7 +354,7 @@
     "@value" : "GovernmentOrganization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://ehu.eus/transparentrelations#Entity"
+    "@id" : "http://ehu.eus/tro/Entity"
   } ]
 }, {
   "@id" : "https://schema.org/NewsArticle",
@@ -345,7 +364,7 @@
     "@value" : "NewsArticle"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://ehu.eus/transparentrelations#Evidence"
+    "@id" : "http://ehu.eus/tro/Evidence"
   } ]
 }, {
   "@id" : "https://schema.org/Person",
@@ -375,6 +394,9 @@
 }, {
   "@id" : "https://schema.org/participant",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://schema.org/schemaVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://schema.org/spouse",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
