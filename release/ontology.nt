@@ -3,13 +3,17 @@
 <http://ehu.eus/tro> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
 <http://ehu.eus/tro> <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en .
 <http://ehu.eus/tro> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"@eu .
-<http://ehu.eus/tro> <http://purl.org/dc/terms/created> "April 1st, 2022"@en .
+<http://ehu.eus/tro> <http://purl.org/dc/terms/abstract> "Transparent Relations Ontology (TRO) offers a vocabulary to publish information about relations that should be more transparent, usually between powerful parties, to detect potential conflicts of interests: for example, governments and their providers, or politicians and their personal relationships. Research journalism and Open Data are two areas in which this sort of data is growing, and new methods and standards are needed to cope with the FAIR publication and consumption of such data."@en .
+<http://ehu.eus/tro> <http://purl.org/dc/terms/created> "2022-04-01T00:00:01"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://ehu.eus/tro> <http://purl.org/dc/terms/description> "A vocabulary to represent relations that should be more transparent, usually between powerfull people or institutions"@en .
 <http://ehu.eus/tro> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/"@en .
+<http://ehu.eus/tro> <http://purl.org/dc/terms/modified> "2024-04-05T00:00:01"@en .
 <http://ehu.eus/tro> <http://purl.org/dc/terms/title> "Transparent Relations Ontology"@en .
 <http://ehu.eus/tro> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tro"@en .
 <http://ehu.eus/tro> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/transparent-relations-ontology" .
-<http://ehu.eus/tro> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0"@en .
+<http://ehu.eus/tro> <http://www.w3.org/2002/07/owl#priorVersion> "0.1.0" .
+<http://ehu.eus/tro> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.1" .
+<http://ehu.eus/tro> <https://schema.org/schemaVersion> "http://ehu.eus/tro/0.1.1" .
 # 
 # 
 # #################################################################
@@ -28,6 +32,9 @@
 # http://purl.org/dc/elements/1.1/date
 <http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/created
 <http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -37,6 +44,9 @@
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -45,6 +55,9 @@
 # 
 # http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/schemaVersion
+<https://schema.org/schemaVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 

@@ -12,9 +12,13 @@
     "@language" : "eu",
     "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
   } ],
-  "http://purl.org/dc/terms/created" : [ {
+  "http://purl.org/dc/terms/abstract" : [ {
     "@language" : "en",
-    "@value" : "April 1st, 2022"
+    "@value" : "Transparent Relations Ontology (TRO) offers a vocabulary to publish information about relations that should be more transparent, usually between powerful parties, to detect potential conflicts of interests: for example, governments and their providers, or politicians and their personal relationships. Research journalism and Open Data are two areas in which this sort of data is growing, and new methods and standards are needed to cope with the FAIR publication and consumption of such data."
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-04-01T00:00:01"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -23,6 +27,10 @@
   "http://purl.org/dc/terms/license" : [ {
     "@language" : "en",
     "@value" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@language" : "en",
+    "@value" : "2024-04-05T00:00:01"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
@@ -35,12 +43,17 @@
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
     "@value" : "https://w3id.org/transparent-relations-ontology"
   } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@value" : "0.1.0"
+  } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://ehu.eus/tro/0.1.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "en",
-    "@value" : "0.1.0"
+    "@value" : "0.1.1"
+  } ],
+  "https://schema.org/schemaVersion" : [ {
+    "@value" : "http://ehu.eus/tro/0.1.1"
   } ]
 }, {
   "@id" : "http://ehu.eus/tro/Entity",
@@ -300,6 +313,9 @@
   "@id" : "http://purl.org/dc/elements/1.1/date",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/created",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -307,6 +323,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/title",
@@ -375,6 +394,9 @@
 }, {
   "@id" : "https://schema.org/participant",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://schema.org/schemaVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://schema.org/spouse",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]

@@ -8,19 +8,24 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="http://ehu.eus/tro">
         <owl:versionIRI rdf:resource="http://ehu.eus/tro/0.1.0"/>
         <dc:contributor xml:lang="es">Jaime Gómez-Obregón (https://ladonacion.es/)</dc:contributor>
         <dc:contributor xml:lang="en">Off-shore leaks DataBase (https://offshoreleaks.icij.org/)</dc:contributor>
         <dc:creator xml:lang="eu">Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
-        <terms:created xml:lang="en">April 1st, 2022</terms:created>
+        <terms:abstract xml:lang="en">Transparent Relations Ontology (TRO) offers a vocabulary to publish information about relations that should be more transparent, usually between powerful parties, to detect potential conflicts of interests: for example, governments and their providers, or politicians and their personal relationships. Research journalism and Open Data are two areas in which this sort of data is growing, and new methods and standards are needed to cope with the FAIR publication and consumption of such data.</terms:abstract>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-01T00:00:01</terms:created>
         <terms:description xml:lang="en">A vocabulary to represent relations that should be more transparent, usually between powerfull people or institutions</terms:description>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
+        <terms:modified xml:lang="en">2024-04-05T00:00:01</terms:modified>
         <terms:title xml:lang="en">Transparent Relations Ontology</terms:title>
         <vann:preferredNamespacePrefix xml:lang="en">tro</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/transparent-relations-ontology</vann:preferredNamespaceUri>
-        <owl:versionInfo xml:lang="en">0.1.0</owl:versionInfo>
+        <owl:priorVersion>0.1.0</owl:priorVersion>
+        <owl:versionInfo>0.1.1</owl:versionInfo>
+        <schema:schemaVersion>http://ehu.eus/tro/0.1.1</schema:schemaVersion>
     </owl:Ontology>
     
 
@@ -58,6 +63,13 @@
     
 
 
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
     <!-- http://purl.org/dc/terms/created -->
 
 
@@ -79,6 +91,13 @@
     
 
 
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
     <!-- http://purl.org/dc/terms/title -->
 
 
@@ -97,6 +116,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- https://schema.org/schemaVersion -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/schemaVersion"/>
     
 
 
