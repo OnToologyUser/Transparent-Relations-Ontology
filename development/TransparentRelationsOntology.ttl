@@ -205,6 +205,16 @@
 
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  https://schema.org/identifier
+<https://schema.org/identifier> rdf:type owl:DatatypeProperty ,
+                                         owl:FunctionalProperty ;
+                                rdfs:range xsd:string .
+
+
+#################################################################
 #    Classes
 #################################################################
 
@@ -243,7 +253,12 @@
 
 ###  https://schema.org/Corporation
 <https://schema.org/Corporation> rdf:type owl:Class ;
-                                 rdfs:subClassOf :Entity ;
+                                 rdfs:subClassOf :Entity ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <https://schema.org/identifier> ;
+                                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                   owl:onDataRange xsd:string
+                                                 ] ;
                                  rdfs:label "Corporation"@en .
 
 
