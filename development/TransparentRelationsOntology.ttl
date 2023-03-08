@@ -79,6 +79,30 @@
 #    Object Properties
 #################################################################
 
+###  http://ehu.eus/tro#has_role
+:has_role rdf:type owl:ObjectProperty ;
+          rdfs:domain <https://schema.org/Person> ;
+          rdfs:range :Entity ;
+          <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
+          <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:10:19Z"^^xsd:dateTime .
+
+
+###  http://ehu.eus/tro#in_entity
+:in_entity rdf:type owl:ObjectProperty ;
+           rdfs:domain :Role ;
+           rdfs:range :Entity ;
+           <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
+           <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:13:36Z"^^xsd:dateTime .
+
+
+###  http://ehu.eus/tro#with_evidence
+:with_evidence rdf:type owl:ObjectProperty ;
+               rdfs:domain :Role ;
+               rdfs:range :Evidence ;
+               <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
+               <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:27:00Z"^^xsd:dateTime .
+
+
 ###  http://ehu.eus/tro/beneficiary_of
 :beneficiary_of rdf:type owl:ObjectProperty ;
                 <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ;
@@ -205,8 +229,56 @@
 
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/2006/time#months
+<http://www.w3.org/2006/time#months> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/2006/time#years
+<http://www.w3.org/2006/time#years> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
 #    Classes
 #################################################################
+
+###  http://ehu.eus/tro#Associate
+:Associate rdf:type owl:Class ;
+           rdfs:subClassOf :Role ;
+           <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
+           <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:12:46Z"^^xsd:dateTime .
+
+
+###  http://ehu.eus/tro#Employee
+:Employee rdf:type owl:Class ;
+          rdfs:subClassOf :Role ;
+          <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
+          <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:13:05Z"^^xsd:dateTime .
+
+
+###  http://ehu.eus/tro#Owner
+:Owner rdf:type owl:Class ;
+       rdfs:subClassOf :Role ;
+       <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
+       <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:12:53Z"^^xsd:dateTime .
+
+
+###  http://ehu.eus/tro#Role
+:Role rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty <http://www.w3.org/2006/time#months> ;
+                        owl:allValuesFrom xsd:decimal
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty <http://www.w3.org/2006/time#years> ;
+                        owl:allValuesFrom xsd:decimal
+                      ] ;
+      <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
+      <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:06:06Z"^^xsd:dateTime ;
+      rdfs:comment "The role of a person in a en entity during a given time period, provided in months or years"@en .
+
 
 ###  http://ehu.eus/tro/Entity
 :Entity rdf:type owl:Class ;
@@ -221,24 +293,6 @@
           <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:19:58Z"^^xsd:dateTime ;
           rdfs:comment "The evidence of a relation. Normally an evidence will be a source of news. This is not legal evidence"@en ;
           rdfs:label "Evidence"@en .
-
-
-###  http://ehu.eus/tro/Intermediary
-:Intermediary rdf:type owl:Class ;
-              rdfs:subClassOf <https://schema.org/Person> ;
-              <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en ;
-              <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
-              <http://purl.org/dc/elements/1.1/date> "2022-02-21T09:01:12Z"^^xsd:dateTime ;
-              rdfs:label "Intermediary"@en .
-
-
-###  http://ehu.eus/tro/Officer
-:Officer rdf:type owl:Class ;
-         rdfs:subClassOf <https://schema.org/Person> ;
-         <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en ;
-         <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
-         <http://purl.org/dc/elements/1.1/date> "2022-02-21T09:00:30Z"^^xsd:dateTime ;
-         rdfs:label "Officer"@en .
 
 
 ###  https://schema.org/Corporation
