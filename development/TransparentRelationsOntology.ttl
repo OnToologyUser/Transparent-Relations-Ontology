@@ -79,28 +79,28 @@
 #    Object Properties
 #################################################################
 
-###  http://ehu.eus/tro/beneficiary_of
+###  http://ehu.eus/tro#beneficiary_of
 :beneficiary_of rdf:type owl:ObjectProperty ;
                 <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ;
                 <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
                 <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:19:45Z"^^xsd:dateTime .
 
 
-###  http://ehu.eus/tro/controls
+###  http://ehu.eus/tro#controls
 :controls rdf:type owl:ObjectProperty ;
           <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ;
           <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
           <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:33:14Z"^^xsd:dateTime .
 
 
-###  http://ehu.eus/tro/has_bank_account_in
+###  http://ehu.eus/tro#has_bank_account_in
 :has_bank_account_in rdf:type owl:ObjectProperty ;
                      <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ;
                      <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
                      <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:25:46Z"^^xsd:dateTime .
 
 
-###  http://ehu.eus/tro/has_role
+###  http://ehu.eus/tro#has_role
 :has_role rdf:type owl:ObjectProperty ;
           rdfs:domain <https://schema.org/Person> ;
           rdfs:range :Entity ;
@@ -108,7 +108,7 @@
           <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:10:19Z"^^xsd:dateTime .
 
 
-###  http://ehu.eus/tro/in_entity
+###  http://ehu.eus/tro#in_entity
 :in_entity rdf:type owl:ObjectProperty ;
            rdfs:domain :Role ;
            rdfs:range :Entity ;
@@ -116,55 +116,55 @@
            <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:13:36Z"^^xsd:dateTime .
 
 
-###  http://ehu.eus/tro/manages
+###  http://ehu.eus/tro#manages
 :manages rdf:type owl:ObjectProperty ;
          <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ;
          <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
          <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:40:58Z"^^xsd:dateTime .
 
 
-###  http://ehu.eus/tro/pays_to
+###  http://ehu.eus/tro#pays_to
 :pays_to rdf:type owl:ObjectProperty ;
          <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ;
          <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
          <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:24:12Z"^^xsd:dateTime .
 
 
-###  http://ehu.eus/tro/provider_of
+###  http://ehu.eus/tro#provider_of
 :provider_of rdf:type owl:ObjectProperty ;
              <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
              <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:23:05Z"^^xsd:dateTime ;
              rdfs:comment "A company or and individual provides services or products to an institution"@en .
 
 
-###  http://ehu.eus/tro/registered_in
+###  http://ehu.eus/tro#registered_in
 :registered_in rdf:type owl:ObjectProperty ;
                <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ;
                <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
                <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:30:10Z"^^xsd:dateTime .
 
 
-###  http://ehu.eus/tro/represents
+###  http://ehu.eus/tro#represents
 :represents rdf:type owl:ObjectProperty ;
             <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ;
             <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
             <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:21:32Z"^^xsd:dateTime .
 
 
-###  http://ehu.eus/tro/shareholder_of
+###  http://ehu.eus/tro#shareholder_of
 :shareholder_of rdf:type owl:ObjectProperty ;
                 <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en ;
                 <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
                 <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:36:16Z"^^xsd:dateTime .
 
 
-###  http://ehu.eus/tro/takes_place_in
+###  http://ehu.eus/tro#takes_place_in
 :takes_place_in rdf:type owl:ObjectProperty ;
                 <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
                 <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:35:58Z"^^xsd:dateTime .
 
 
-###  http://ehu.eus/tro/with_evidence
+###  http://ehu.eus/tro#with_evidence
 :with_evidence rdf:type owl:ObjectProperty ;
                rdfs:domain :Role ;
                rdfs:range :Evidence ;
@@ -286,28 +286,28 @@
            <http://purl.org/dc/elements/1.1/date> "2023-03-09T08:50:34Z"^^xsd:dateTime .
 
 
-###  http://ehu.eus/tro/Associate
+###  http://ehu.eus/tro#Associate
 :Associate rdf:type owl:Class ;
            rdfs:subClassOf :Role ;
            <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
            <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:12:46Z"^^xsd:dateTime .
 
 
-###  http://ehu.eus/tro/Employee
+###  http://ehu.eus/tro#Employee
 :Employee rdf:type owl:Class ;
           rdfs:subClassOf :Role ;
           <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
           <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:13:05Z"^^xsd:dateTime .
 
 
-###  http://ehu.eus/tro/Entity
+###  http://ehu.eus/tro#Entity
 :Entity rdf:type owl:Class ;
         <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
         <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:23:05Z"^^xsd:dateTime ;
         rdfs:label "Entity"@en .
 
 
-###  http://ehu.eus/tro/Evidence
+###  http://ehu.eus/tro#Evidence
 :Evidence rdf:type owl:Class ;
           <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
           <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:19:58Z"^^xsd:dateTime ;
@@ -315,14 +315,14 @@
           rdfs:label "Evidence"@en .
 
 
-###  http://ehu.eus/tro/Owner
+###  http://ehu.eus/tro#Owner
 :Owner rdf:type owl:Class ;
        rdfs:subClassOf :Role ;
        <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
        <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:12:53Z"^^xsd:dateTime .
 
 
-###  http://ehu.eus/tro/Role
+###  http://ehu.eus/tro#Role
 :Role rdf:type owl:Class ;
       rdfs:subClassOf [ rdf:type owl:Restriction ;
                         owl:onProperty :end_date ;
