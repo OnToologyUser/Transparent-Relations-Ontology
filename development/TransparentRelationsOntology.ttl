@@ -212,6 +212,7 @@
 
 ###  http://ehu.eus/tro#profile_url
 :profile_url rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :url ;
              rdfs:domain [ rdf:type owl:Class ;
                            owl:unionOf ( :Role
                                          <https://schema.org/Person>
@@ -228,6 +229,12 @@
             rdfs:range xsd:dateTime ;
             <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
             <http://purl.org/dc/elements/1.1/date> "2023-03-09T09:02:16Z"^^xsd:dateTime .
+
+
+###  http://ehu.eus/tro#url
+:url rdf:type owl:DatatypeProperty ;
+     <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
+     <http://purl.org/dc/elements/1.1/date> "2023-03-10T19:19:41Z"^^xsd:dateTime .
 
 
 ###  http://www.w3.org/2006/time#months
