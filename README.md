@@ -17,6 +17,7 @@ Related projects:
 * [La donación](https://ladonacion.es/).
 * [OffShore Leaks DataBase](https://offshoreleaks.icij.org/).
 * [TheyBuyForYou](https://github.com/TBFY).
+* [Public Procurement Ontology](http://contsem.unizar.es/def/sector-publico/pproc).
 
 ## Access
 
