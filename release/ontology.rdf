@@ -11,7 +11,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="http://ehu.eus/tro">
-        <owl:versionIRI rdf:resource="http://ehu.eus/tro/0.1.0"/>
+        <owl:versionIRI rdf:resource="http://ehu.eus/tro/0.1.1"/>
         <dc:contributor xml:lang="es">Jaime Gómez-Obregón (https://ladonacion.es/)</dc:contributor>
         <dc:contributor xml:lang="en">Off-shore leaks DataBase (https://offshoreleaks.icij.org/)</dc:contributor>
         <dc:creator xml:lang="eu">Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
@@ -138,10 +138,10 @@
     
 
 
-    <!-- http://ehu.eus/tro/beneficiary_of -->
+    <!-- http://ehu.eus/tro#beneficiary_of -->
 
 
-    <owl:ObjectProperty rdf:about="http://ehu.eus/tro/beneficiary_of">
+    <owl:ObjectProperty rdf:about="http://ehu.eus/tro#beneficiary_of">
         <dc:contributor xml:lang="es">Jaime Gómez-Obregón (https://ladonacion.es/)</dc:contributor>
         <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-21T14:19:45Z</dc:date>
@@ -149,10 +149,10 @@
     
 
 
-    <!-- http://ehu.eus/tro/controls -->
+    <!-- http://ehu.eus/tro#controls -->
 
 
-    <owl:ObjectProperty rdf:about="http://ehu.eus/tro/controls">
+    <owl:ObjectProperty rdf:about="http://ehu.eus/tro#controls">
         <dc:contributor xml:lang="es">Jaime Gómez-Obregón (https://ladonacion.es/)</dc:contributor>
         <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-21T14:33:14Z</dc:date>
@@ -160,10 +160,10 @@
     
 
 
-    <!-- http://ehu.eus/tro/director_of -->
+    <!-- http://ehu.eus/tro#director_of -->
 
 
-    <owl:ObjectProperty rdf:about="http://ehu.eus/tro/director_of">
+    <owl:ObjectProperty rdf:about="http://ehu.eus/tro#director_of">
         <dc:contributor xml:lang="en">Off-shore leaks DataBase (https://offshoreleaks.icij.org/)</dc:contributor>
         <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-21T09:02:19Z</dc:date>
@@ -171,10 +171,10 @@
     
 
 
-    <!-- http://ehu.eus/tro/has_bank_account_in -->
+    <!-- http://ehu.eus/tro#has_bank_account_in -->
 
 
-    <owl:ObjectProperty rdf:about="http://ehu.eus/tro/has_bank_account_in">
+    <owl:ObjectProperty rdf:about="http://ehu.eus/tro#has_bank_account_in">
         <dc:contributor xml:lang="es">Jaime Gómez-Obregón (https://ladonacion.es/)</dc:contributor>
         <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-21T14:25:46Z</dc:date>
@@ -182,20 +182,34 @@
     
 
 
-    <!-- http://ehu.eus/tro/intermediary_of -->
+    <!-- http://ehu.eus/tro#has_role -->
 
 
-    <owl:ObjectProperty rdf:about="http://ehu.eus/tro/intermediary_of">
+    <owl:ObjectProperty rdf:about="http://ehu.eus/tro#has_role">
+        <rdfs:domain rdf:resource="https://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://ehu.eus/tro#Role"/>
         <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-21T09:02:03Z</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-08T21:10:19Z</dc:date>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://ehu.eus/tro/manages -->
+    <!-- http://ehu.eus/tro#in_entity -->
 
 
-    <owl:ObjectProperty rdf:about="http://ehu.eus/tro/manages">
+    <owl:ObjectProperty rdf:about="http://ehu.eus/tro#in_entity">
+        <rdfs:domain rdf:resource="http://ehu.eus/tro#Role"/>
+        <rdfs:range rdf:resource="http://ehu.eus/tro#Entity"/>
+        <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-08T21:13:36Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ehu.eus/tro#manages -->
+
+
+    <owl:ObjectProperty rdf:about="http://ehu.eus/tro#manages">
         <dc:contributor xml:lang="es">Jaime Gómez-Obregón (https://ladonacion.es/)</dc:contributor>
         <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-21T14:40:58Z</dc:date>
@@ -203,10 +217,10 @@
     
 
 
-    <!-- http://ehu.eus/tro/officer_of -->
+    <!-- http://ehu.eus/tro#officer_of -->
 
 
-    <owl:ObjectProperty rdf:about="http://ehu.eus/tro/officer_of">
+    <owl:ObjectProperty rdf:about="http://ehu.eus/tro#officer_of">
         <dc:contributor xml:lang="en">Off-shore leaks DataBase (https://offshoreleaks.icij.org/)</dc:contributor>
         <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-21T09:01:51Z</dc:date>
@@ -214,10 +228,10 @@
     
 
 
-    <!-- http://ehu.eus/tro/pays_to -->
+    <!-- http://ehu.eus/tro#pays_to -->
 
 
-    <owl:ObjectProperty rdf:about="http://ehu.eus/tro/pays_to">
+    <owl:ObjectProperty rdf:about="http://ehu.eus/tro#pays_to">
         <dc:contributor xml:lang="es">Jaime Gómez-Obregón (https://ladonacion.es/)</dc:contributor>
         <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-21T14:24:12Z</dc:date>
@@ -225,10 +239,10 @@
     
 
 
-    <!-- http://ehu.eus/tro/provider_of -->
+    <!-- http://ehu.eus/tro#provider_of -->
 
 
-    <owl:ObjectProperty rdf:about="http://ehu.eus/tro/provider_of">
+    <owl:ObjectProperty rdf:about="http://ehu.eus/tro#provider_of">
         <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-15T11:23:05Z</dc:date>
         <rdfs:comment xml:lang="en">A company or and individual provides services or products to an institution</rdfs:comment>
@@ -236,10 +250,10 @@
     
 
 
-    <!-- http://ehu.eus/tro/registered_in -->
+    <!-- http://ehu.eus/tro#registered_in -->
 
 
-    <owl:ObjectProperty rdf:about="http://ehu.eus/tro/registered_in">
+    <owl:ObjectProperty rdf:about="http://ehu.eus/tro#registered_in">
         <dc:contributor xml:lang="es">Jaime Gómez-Obregón (https://ladonacion.es/)</dc:contributor>
         <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-21T14:30:10Z</dc:date>
@@ -247,10 +261,10 @@
     
 
 
-    <!-- http://ehu.eus/tro/represents -->
+    <!-- http://ehu.eus/tro#represents -->
 
 
-    <owl:ObjectProperty rdf:about="http://ehu.eus/tro/represents">
+    <owl:ObjectProperty rdf:about="http://ehu.eus/tro#represents">
         <dc:contributor xml:lang="es">Jaime Gómez-Obregón (https://ladonacion.es/)</dc:contributor>
         <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-21T14:21:32Z</dc:date>
@@ -258,10 +272,10 @@
     
 
 
-    <!-- http://ehu.eus/tro/shareholder_of -->
+    <!-- http://ehu.eus/tro#shareholder_of -->
 
 
-    <owl:ObjectProperty rdf:about="http://ehu.eus/tro/shareholder_of">
+    <owl:ObjectProperty rdf:about="http://ehu.eus/tro#shareholder_of">
         <dc:contributor xml:lang="en">Off-shore leaks DataBase (https://offshoreleaks.icij.org/)</dc:contributor>
         <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-15T11:36:16Z</dc:date>
@@ -269,12 +283,36 @@
     
 
 
-    <!-- http://ehu.eus/tro/takes_place_in -->
+    <!-- http://ehu.eus/tro#sibling -->
 
 
-    <owl:ObjectProperty rdf:about="http://ehu.eus/tro/takes_place_in">
+    <owl:ObjectProperty rdf:about="http://ehu.eus/tro#sibling">
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/knows"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-27T15:34:21Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ehu.eus/tro#takes_place_in -->
+
+
+    <owl:ObjectProperty rdf:about="http://ehu.eus/tro#takes_place_in">
         <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-21T14:35:58Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ehu.eus/tro#with_evidence -->
+
+
+    <owl:ObjectProperty rdf:about="http://ehu.eus/tro#with_evidence">
+        <rdfs:domain rdf:resource="http://ehu.eus/tro#Role"/>
+        <rdfs:range rdf:resource="http://ehu.eus/tro#Evidence"/>
+        <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-08T21:27:00Z</dc:date>
     </owl:ObjectProperty>
     
 
@@ -286,17 +324,13 @@
     
 
 
-    <!-- https://schema.org/author -->
-
-
-    <owl:ObjectProperty rdf:about="https://schema.org/author"/>
-    
-
-
     <!-- https://schema.org/knows -->
 
 
-    <owl:ObjectProperty rdf:about="https://schema.org/knows"/>
+    <owl:ObjectProperty rdf:about="https://schema.org/knows">
+        <rdfs:domain rdf:resource="https://schema.org/Person"/>
+        <rdfs:range rdf:resource="https://schema.org/Person"/>
+    </owl:ObjectProperty>
     
 
 
@@ -317,28 +351,135 @@
     <!-- https://schema.org/parent -->
 
 
-    <owl:ObjectProperty rdf:about="https://schema.org/parent"/>
-    
-
-
-    <!-- https://schema.org/participant -->
-
-
-    <owl:ObjectProperty rdf:about="https://schema.org/participant"/>
+    <owl:ObjectProperty rdf:about="https://schema.org/parent">
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/knows"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://schema.org/spouse -->
 
 
-    <owl:ObjectProperty rdf:about="https://schema.org/spouse"/>
+    <owl:ObjectProperty rdf:about="https://schema.org/spouse">
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/knows"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- https://schema.org/worksFor -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
 
-    <owl:ObjectProperty rdf:about="https://schema.org/worksFor"/>
+    
+
+
+    <!-- http://ehu.eus/tro#end_date -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ehu.eus/tro#end_date">
+        <rdfs:domain rdf:resource="http://ehu.eus/tro#Role"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-09T09:02:35Z</dc:date>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ehu.eus/tro#profile_url -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ehu.eus/tro#profile_url">
+        <rdfs:subPropertyOf rdf:resource="http://ehu.eus/tro#url"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ehu.eus/tro#Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-09T09:04:41Z</dc:date>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ehu.eus/tro#start_date -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ehu.eus/tro#start_date">
+        <rdfs:domain rdf:resource="http://ehu.eus/tro#Role"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-09T09:02:16Z</dc:date>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ehu.eus/tro#url -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ehu.eus/tro#url">
+        <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-10T19:19:41Z</dc:date>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#months -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#months"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#years -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#years"/>
+    
+
+
+    <!-- http://www.w3.org/ns/person#name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/person#name">
+        <rdfs:domain rdf:resource="https://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/email -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/email">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ehu.eus/tro#Entity"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/identifier">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -354,10 +495,55 @@
     
 
 
-    <!-- http://ehu.eus/tro/Entity -->
+    <!-- http://data.europa.eu/a4g/ontology#Contract -->
 
 
-    <owl:Class rdf:about="http://ehu.eus/tro/Entity">
+    <owl:Class rdf:about="http://data.europa.eu/a4g/ontology#Contract">
+        <rdfs:label xml:lang="en">Contract</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ehu.eus/tro#Associate -->
+
+
+    <owl:Class rdf:about="http://ehu.eus/tro#Associate">
+        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro#Role"/>
+        <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-08T21:12:46Z</dc:date>
+        <rdfs:label xml:lang="en">Associate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ehu.eus/tro#Director -->
+
+
+    <owl:Class rdf:about="http://ehu.eus/tro#Director">
+        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro#Role"/>
+        <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-09T08:50:19Z</dc:date>
+        <rdfs:label xml:lang="en">Director</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ehu.eus/tro#Employee -->
+
+
+    <owl:Class rdf:about="http://ehu.eus/tro#Employee">
+        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro#Role"/>
+        <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-08T21:13:05Z</dc:date>
+        <rdfs:label xml:lang="en">Employee</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ehu.eus/tro#Entity -->
+
+
+    <owl:Class rdf:about="http://ehu.eus/tro#Entity">
         <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-15T11:23:05Z</dc:date>
         <rdfs:label xml:lang="en">Entity</rdfs:label>
@@ -365,10 +551,16 @@
     
 
 
-    <!-- http://ehu.eus/tro/Evidence -->
+    <!-- http://ehu.eus/tro#Evidence -->
 
 
-    <owl:Class rdf:about="http://ehu.eus/tro/Evidence">
+    <owl:Class rdf:about="http://ehu.eus/tro#Evidence">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ehu.eus/tro#url"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-15T11:19:58Z</dc:date>
         <rdfs:comment xml:lang="en">The evidence of a relation. Normally an evidence will be a source of news. This is not legal evidence</rdfs:comment>
@@ -377,28 +569,138 @@
     
 
 
-    <!-- http://ehu.eus/tro/Intermediary -->
+    <!-- http://ehu.eus/tro#Manager -->
 
 
-    <owl:Class rdf:about="http://ehu.eus/tro/Intermediary">
-        <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
-        <dc:contributor xml:lang="en">Off-shore leaks DataBase (https://offshoreleaks.icij.org/)</dc:contributor>
+    <owl:Class rdf:about="http://ehu.eus/tro#Manager">
+        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro#Role"/>
         <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-21T09:01:12Z</dc:date>
-        <rdfs:label xml:lang="en">Intermediary</rdfs:label>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-09T10:33:21Z</dc:date>
+        <rdfs:label xml:lang="en">Manager</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://ehu.eus/tro/Officer -->
+    <!-- http://ehu.eus/tro#Member -->
 
 
-    <owl:Class rdf:about="http://ehu.eus/tro/Officer">
-        <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
-        <dc:contributor xml:lang="en">Off-shore leaks DataBase (https://offshoreleaks.icij.org/)</dc:contributor>
+    <owl:Class rdf:about="http://ehu.eus/tro#Member">
+        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro#Role"/>
         <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-21T09:00:30Z</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-27T15:32:50Z</dc:date>
+        <rdfs:label xml:lang="en">Member</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ehu.eus/tro#Officer -->
+
+
+    <owl:Class rdf:about="http://ehu.eus/tro#Officer">
+        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro#Role"/>
+        <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-09T08:51:05Z</dc:date>
         <rdfs:label xml:lang="en">Officer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ehu.eus/tro#OpenData -->
+
+
+    <owl:Class rdf:about="http://ehu.eus/tro#OpenData">
+        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro#Evidence"/>
+        <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-27T15:36:32Z</dc:date>
+        <rdfs:label xml:lang="en">Open data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ehu.eus/tro#Owner -->
+
+
+    <owl:Class rdf:about="http://ehu.eus/tro#Owner">
+        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro#Role"/>
+        <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-08T21:12:53Z</dc:date>
+        <rdfs:label xml:lang="en">Owner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ehu.eus/tro#President -->
+
+
+    <owl:Class rdf:about="http://ehu.eus/tro#President">
+        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro#Role"/>
+        <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-09T08:50:34Z</dc:date>
+        <rdfs:label xml:lang="en">President</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ehu.eus/tro#PublicProfile -->
+
+
+    <owl:Class rdf:about="http://ehu.eus/tro#PublicProfile">
+        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro#Evidence"/>
+        <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-10T19:19:00Z</dc:date>
+        <rdfs:label xml:lang="en">Public Profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ehu.eus/tro#Role -->
+
+
+    <owl:Class rdf:about="http://ehu.eus/tro#Role">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ehu.eus/tro#in_entity"/>
+                <owl:someValuesFrom rdf:resource="http://ehu.eus/tro#Entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ehu.eus/tro#end_date"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ehu.eus/tro#start_date"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#months"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#years"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-08T21:06:06Z</dc:date>
+        <rdfs:comment xml:lang="en">The role of a person in a en entity during a given time period, provided in months or years</rdfs:comment>
+        <rdfs:label xml:lang="en">Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://dbpedia.org/ontology/PoliticalParty -->
+
+
+    <owl:Class rdf:about="https://dbpedia.org/ontology/PoliticalParty">
+        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro#Entity"/>
+        <rdfs:label xml:lang="en">Political Party</rdfs:label>
     </owl:Class>
     
 
@@ -407,7 +709,14 @@
 
 
     <owl:Class rdf:about="https://schema.org/Corporation">
-        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro/Entity"/>
+        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro#Entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://schema.org/identifier"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Corporation</rdfs:label>
     </owl:Class>
     
@@ -417,8 +726,18 @@
 
 
     <owl:Class rdf:about="https://schema.org/GovernmentOrganization">
-        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro/Entity"/>
+        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro#Entity"/>
         <rdfs:label xml:lang="en">GovernmentOrganization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/NGO -->
+
+
+    <owl:Class rdf:about="https://schema.org/NGO">
+        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro#Entity"/>
+        <rdfs:label xml:lang="en">NGO</rdfs:label>
     </owl:Class>
     
 
@@ -427,7 +746,7 @@
 
 
     <owl:Class rdf:about="https://schema.org/NewsArticle">
-        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro/Evidence"/>
+        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro#Evidence"/>
         <rdfs:label xml:lang="en">NewsArticle</rdfs:label>
     </owl:Class>
     
@@ -437,7 +756,52 @@
 
 
     <owl:Class rdf:about="https://schema.org/Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ehu.eus/tro#has_role"/>
+                <owl:someValuesFrom rdf:resource="http://ehu.eus/tro#Role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ehu.eus/tro#profile_url"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://schema.org/email"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/person#name"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/SportsOrganization -->
+
+
+    <owl:Class rdf:about="https://schema.org/SportsOrganization">
+        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro#Entity"/>
+        <rdfs:label xml:lang="en">Sports Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/WorkersUnion -->
+
+
+    <owl:Class rdf:about="https://schema.org/WorkersUnion">
+        <rdfs:subClassOf rdf:resource="http://ehu.eus/tro#Entity"/>
+        <rdfs:label xml:lang="en">Workers Union</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

@@ -17,6 +17,8 @@ Related projects:
 * [La donación](https://ladonacion.es/).
 * [OffShore Leaks DataBase](https://offshoreleaks.icij.org/).
 * [TheyBuyForYou](https://github.com/TBFY).
+* [Public Procurement Ontology](http://contsem.unizar.es/def/sector-publico/pproc).
+* [eProcurement ontology](https://joinup.ec.europa.eu/collection/eprocurement/solution/eprocurement-ontology).
 
 ## Access
 
@@ -41,7 +43,7 @@ We loosely stick to the [GitFlow methodology](https://nvie.com/posts/a-successfu
   * Create the documentation (See "Documentation" section bellow).
   * Merge from `develop` to a new `release_*` branch and edit the `RELEASES.md` file with the major changes.
 * Merge `release_*` to `main` (With a pull request), `gh-pages` and `develop`.
-* If a major version bump has happened, create a new release and tag in GitHub pointing to the commit in `main` resulting from pulling `release_*`.
+* If a major version bump has happened, create both a release and a tag in GitHub pointing to the commit in `main` resulting from pulling `release_*`.
 
 We also try to follow the best practices described in [Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web](https://arxiv.org/abs/2003.13084).
 

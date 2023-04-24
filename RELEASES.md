@@ -1,5 +1,15 @@
 # RELEASES
 
+## RELEASE 0.1.2
+
+This is the first usable version of the vocabulary
+
+* Added roles (Associate)
+* Added new evidence
+* Added entities
+* Added data properties for person, role, and corporation
+* corrected ontology base URI
+
 ## RELEASE 0.1.1
 
 * Corrected ontology annotation properties
