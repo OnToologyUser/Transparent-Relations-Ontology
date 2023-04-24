@@ -39,6 +39,7 @@ We loosely stick to the [GitFlow methodology](https://nvie.com/posts/a-successfu
 
 * Work on a `feature_*` branch and when are you are done merge it to `develop`, preferably with a pull request.
 * To create a release after major changes:
+  * Change the `owl:priorVersion`, `owl:versionInfo` and `owl:schemaVersion` values to the next version.
   * Make sure all the tests pass.
   * Create the documentation (See "Documentation" section bellow).
   * Merge from `develop` to a new `release_*` branch and edit the `RELEASES.md` file with the major changes.

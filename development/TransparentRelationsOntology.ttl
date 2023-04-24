@@ -19,9 +19,9 @@
                       <http://purl.org/dc/terms/title> "Transparent Relations Ontology"@en ;
                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "tro"@en ;
                       <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/transparent-relations-ontology" ;
-                      owl:priorVersion "0.1.0" ;
-                      owl:versionInfo "0.1.1" ;
-                      <https://schema.org/schemaVersion> "http://ehu.eus/tro/0.1.1" .
+                      owl:priorVersion "0.1.1" ;
+                      owl:versionInfo "0.1.2" ;
+                      <https://schema.org/schemaVersion> "http://ehu.eus/tro/0.1.2" .
 
 #################################################################
 #    Annotation properties
