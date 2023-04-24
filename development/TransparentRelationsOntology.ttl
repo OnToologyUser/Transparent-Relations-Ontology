@@ -208,6 +208,10 @@
 #    Classes
 #################################################################
 
+###  http://data.europa.eu/a4g/ontology#Contract
+<http://data.europa.eu/a4g/ontology#Contract> rdf:type owl:Class .
+
+
 ###  http://ehu.eus/tro/Entity
 :Entity rdf:type owl:Class ;
         <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
