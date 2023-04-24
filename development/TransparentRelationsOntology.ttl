@@ -209,7 +209,8 @@
 #################################################################
 
 ###  http://data.europa.eu/a4g/ontology#Contract
-<http://data.europa.eu/a4g/ontology#Contract> rdf:type owl:Class .
+<http://data.europa.eu/a4g/ontology#Contract> rdf:type owl:Class ;
+                                              rdfs:label "Contract"@en .
 
 
 ###  http://ehu.eus/tro/Entity
