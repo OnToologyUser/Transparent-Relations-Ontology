@@ -315,6 +315,9 @@
            <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
            <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:12:46Z"^^xsd:dateTime .
 
+###  http://data.europa.eu/a4g/ontology#Contract
+<http://data.europa.eu/a4g/ontology#Contract> rdf:type owl:Class ;
+                                              rdfs:label "Contract"@en .
 
 ###  http://ehu.eus/tro#Director
 :Director rdf:type owl:Class ;
