@@ -79,6 +79,13 @@
 #    Object Properties
 #################################################################
 
+###  http://data.europa.eu/a4g/ontology#bindsContractor
+<http://data.europa.eu/a4g/ontology#bindsContractor> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <http://data.europa.eu/a4g/ontology#Contract> ;
+                                                     rdfs:range :Entity ;
+                                                     rdfs:label "Binds Contractor"@en .
+
+
 ###  http://ehu.eus/tro#beneficiary_of
 :beneficiary_of rdf:type owl:ObjectProperty ;
                 <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ;
