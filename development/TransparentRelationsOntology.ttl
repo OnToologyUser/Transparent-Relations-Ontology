@@ -14,11 +14,10 @@
                       <http://purl.org/dc/terms/abstract> "Transparent Relations Ontology (TRO) offers a vocabulary to publish information about relations that should be more transparent, usually between powerful parties, to detect potential conflicts of interests: for example, governments and their providers, or politicians and their personal relationships. Research journalism and Open Data are two areas in which this sort of data is growing, and new methods and standards are needed to cope with the FAIR publication and consumption of such data."@en ;
                       <http://purl.org/dc/terms/created> "2022-04-01T00:00:01"^^xsd:dateTime ;
                       <http://purl.org/dc/terms/description> "A vocabulary to represent relations that should be more transparent, usually between powerfull people or institutions"@en ;
-                      <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/"@en ;
-                      <http://purl.org/dc/terms/modified> "2024-04-05T00:00:01"@en ;
+                      <http://purl.org/dc/terms/license> "https://apache.org/licenses/LICENSE-2.0"^^xsd:anyURI ;
+                      <http://purl.org/dc/terms/modified> "2023-05-11T00:00:01"^^xsd:dateTime ;
                       <http://purl.org/dc/terms/title> "Transparent Relations Ontology"@en ;
                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "tro"@en ;
-                      <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/transparent-relations-ontology" ;
                       owl:priorVersion "0.1.1" ;
                       owl:versionInfo "0.1.2" ;
                       <https://schema.org/schemaVersion> "http://ehu.eus/tro/0.1.2" .
