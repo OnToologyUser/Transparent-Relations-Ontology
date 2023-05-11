@@ -305,6 +305,10 @@
 ###  http://data.europa.eu/a4g/ontology#Contract
 <http://data.europa.eu/a4g/ontology#Contract> rdf:type owl:Class ;
                                               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <http://data.europa.eu/a4g/ontology#bindsContractor> ;
+                                                                owl:someValuesFrom :Entity
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
                                                                 owl:onProperty :url ;
                                                                 owl:someValuesFrom xsd:anyURI
                                                               ] ;
