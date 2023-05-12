@@ -268,6 +268,10 @@
      <http://purl.org/dc/elements/1.1/date> "2023-03-10T19:19:41Z"^^xsd:dateTime .
 
 
+###  http://schema.org/identifier
+<http://schema.org/identifier> rdf:type owl:DatatypeProperty .
+
+
 ###  http://www.w3.org/2006/time#months
 <http://www.w3.org/2006/time#months> rdf:type owl:DatatypeProperty .
 
@@ -311,6 +315,10 @@
                                                               [ rdf:type owl:Restriction ;
                                                                 owl:onProperty :url ;
                                                                 owl:someValuesFrom xsd:anyURI
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <http://schema.org/identifier> ;
+                                                                owl:someValuesFrom xsd:string
                                                               ] ;
                                               rdfs:label "Contract"@en .
 
