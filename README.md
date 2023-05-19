@@ -37,12 +37,13 @@ The main [OWL](ontology) file in [Turtle](https://www.w3.org/TR/turtle/) lives a
 
 We loosely stick to the [GitFlow methodology](https://nvie.com/posts/a-successful-git-branching-model/), so basically:
 
-* Work on a `feature_*` branch and when are you are done merge it to `develop`, preferably with a pull request.
+* Work on a `feature_*` branch listing the changes in the `RELEASES.md` file under the section `## Changes (No release yet)`.
+* When are you are done merge `feature_*` into `develop`, preferably with a pull request.
 * To create a release after major changes:
-  * Change the `owl:priorVersion`, `owl:versionInfo` and `owl:schemaVersion` values to the next version.
-  * Make sure all the tests pass.
+  * Change the `owl:priorVersion` to the current version, `owl:versionInfo` and `owl:schemaVersion` values to the version that will be released.
+  * Make sure all [ROBOT tests pass](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions) (See "Quality tests" section bellow).
   * Create the documentation (See "Documentation" section bellow).
-  * Merge from `develop` to a new `release_*` branch and edit the `RELEASES.md` file with the major changes.
+  * Merge from `develop` to a new `release_*` branch and edit the `RELEASES.md` file changing `## Changes (No release yet)` to the release number (e.g. `## RELEASE 0.1.2`) and adding any new changes to the list that were made in the `develop` branch.
 * Merge `release_*` to `main` (With a pull request), `gh-pages` and `develop`.
 * If a major version bump has happened, create both a release and a tag in GitHub pointing to the commit in `main` resulting from pulling `release_*`.
 
