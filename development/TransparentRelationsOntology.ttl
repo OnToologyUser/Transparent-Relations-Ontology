@@ -78,6 +78,13 @@
 #    Object Properties
 #################################################################
 
+###  http://data.europa.eu/a4g/ontology#bindsContractor
+<http://data.europa.eu/a4g/ontology#bindsContractor> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <http://data.europa.eu/a4g/ontology#Contract> ;
+                                                     rdfs:range :Entity ;
+                                                     rdfs:label "Binds Contractor"@en .
+
+
 ###  http://ehu.eus/tro#beneficiary_of
 :beneficiary_of rdf:type owl:ObjectProperty ;
                 <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ;
@@ -193,6 +200,10 @@
                <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:27:00Z"^^xsd:dateTime .
 
 
+###  http://purl.org/goodrelations/v1#hasPriceSpecification
+<http://purl.org/goodrelations/v1#hasPriceSpecification> rdf:type owl:ObjectProperty .
+
+
 ###  https://schema.org/address
 <https://schema.org/address> rdf:type owl:ObjectProperty .
 
@@ -224,6 +235,15 @@
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://ehu.eus/tro#cpv_code
+:cpv_code rdf:type owl:DatatypeProperty ;
+          rdfs:domain <http://data.europa.eu/a4g/ontology#Contract> ;
+          rdfs:range xsd:string ;
+          <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
+          <http://purl.org/dc/elements/1.1/date> "2023-05-19T07:51:57Z"^^xsd:dateTime ;
+          rdfs:seeAlso "https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/common-procurement-vocabulary_en" .
+
 
 ###  http://ehu.eus/tro#end_date
 :end_date rdf:type owl:DatatypeProperty ;
@@ -258,6 +278,28 @@
 :url rdf:type owl:DatatypeProperty ;
      <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
      <http://purl.org/dc/elements/1.1/date> "2023-03-10T19:19:41Z"^^xsd:dateTime .
+
+
+###  http://purl.org/goodrelations/v1#hasCurrency
+<http://purl.org/goodrelations/v1#hasCurrency> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <http://purl.org/goodrelations/v1#PriceSpecification> ;
+                                               rdfs:range xsd:string .
+
+
+###  http://purl.org/goodrelations/v1#hasCurrencyValue
+<http://purl.org/goodrelations/v1#hasCurrencyValue> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://purl.org/goodrelations/v1#PriceSpecification> ;
+                                                    rdfs:range xsd:double .
+
+
+###  http://purl.org/goodrelations/v1#valueAddedTaxIncluded
+<http://purl.org/goodrelations/v1#valueAddedTaxIncluded> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <http://purl.org/goodrelations/v1#PriceSpecification> ;
+                                                         rdfs:range xsd:boolean .
+
+
+###  http://schema.org/identifier
+<http://schema.org/identifier> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.w3.org/2006/time#months
@@ -296,6 +338,34 @@
 
 ###  http://data.europa.eu/a4g/ontology#Contract
 <http://data.europa.eu/a4g/ontology#Contract> rdf:type owl:Class ;
+                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <http://data.europa.eu/a4g/ontology#bindsContractor> ;
+                                                                owl:someValuesFrom :Entity
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <http://purl.org/goodrelations/v1#hasPriceSpecification> ;
+                                                                owl:someValuesFrom <http://purl.org/goodrelations/v1#PriceSpecification>
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :url ;
+                                                                owl:someValuesFrom xsd:anyURI
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <http://schema.org/identifier> ;
+                                                                owl:someValuesFrom xsd:string
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :cpv_code ;
+                                                                owl:allValuesFrom xsd:string
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :end_date ;
+                                                                owl:allValuesFrom xsd:dateTime
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :start_date ;
+                                                                owl:allValuesFrom xsd:dateTime
+                                                              ] ;
                                               rdfs:label "Contract"@en .
 
 
@@ -356,6 +426,15 @@
         <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
         <http://purl.org/dc/elements/1.1/date> "2023-03-27T15:32:50Z"^^xsd:dateTime ;
         rdfs:label "Member"@en .
+
+
+###  http://ehu.eus/tro#Minor_contract
+:Minor_contract rdf:type owl:Class ;
+                rdfs:subClassOf <http://data.europa.eu/a4g/ontology#Contract> ;
+                <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
+                <http://purl.org/dc/elements/1.1/date> "2023-05-19T08:10:50Z"^^xsd:dateTime ;
+                rdfs:seeAlso "http://contsem.unizar.es/def/sector-publico/pproc#Minor" ,
+                             "https://www.boe.es/boe/dias/2019/03/07/pdfs/BOE-A-2019-3281.pdf" .
 
 
 ###  http://ehu.eus/tro#Officer
@@ -424,6 +503,18 @@
       <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:06:06Z"^^xsd:dateTime ;
       rdfs:comment "The role of a person in a en entity during a given time period, provided in months or years"@en ;
       rdfs:label "Role"@en .
+
+
+###  http://purl.org/goodrelations/v1#PriceSpecification
+<http://purl.org/goodrelations/v1#PriceSpecification> rdf:type owl:Class ;
+                                                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty <http://purl.org/goodrelations/v1#hasCurrency> ;
+                                                                        owl:someValuesFrom xsd:string
+                                                                      ] ,
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty <http://purl.org/goodrelations/v1#hasCurrencyValue> ;
+                                                                        owl:someValuesFrom xsd:double
+                                                                      ] .
 
 
 ###  https://dbpedia.org/ontology/PoliticalParty

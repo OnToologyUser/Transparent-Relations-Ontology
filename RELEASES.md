@@ -1,5 +1,9 @@
 # RELEASES
 
+## Changes (No release yet)
+
+* Added contract and associated properties from ePo
+
 ## RELEASE 0.1.2
 
 This is the first usable version of the vocabulary
