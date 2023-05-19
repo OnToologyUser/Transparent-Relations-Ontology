@@ -433,6 +433,9 @@
                 rdfs:subClassOf <http://data.europa.eu/a4g/ontology#Contract> ;
                 <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
                 <http://purl.org/dc/elements/1.1/date> "2023-05-19T08:10:50Z"^^xsd:dateTime ;
+                rdfs:label "Contrato menor"@es ,
+                           "Kontratu txikia"@eu ,
+                           "Minor contract"@en ;
                 rdfs:seeAlso "http://contsem.unizar.es/def/sector-publico/pproc#Minor" ,
                              "https://www.boe.es/boe/dias/2019/03/07/pdfs/BOE-A-2019-3281.pdf" .
 
@@ -514,7 +517,8 @@
                                                                       [ rdf:type owl:Restriction ;
                                                                         owl:onProperty <http://purl.org/goodrelations/v1#hasCurrencyValue> ;
                                                                         owl:someValuesFrom xsd:double
-                                                                      ] .
+                                                                      ] ;
+                                                      rdfs:label "Price specification"@en .
 
 
 ###  https://dbpedia.org/ontology/PoliticalParty
