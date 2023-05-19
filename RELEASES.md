@@ -2,7 +2,7 @@
 
 ## Changes (No release yet)
 
-* Added contract and associated properties from ePo.
+* Added contract and associated properties.
 
 ## RELEASE 0.1.2
 
