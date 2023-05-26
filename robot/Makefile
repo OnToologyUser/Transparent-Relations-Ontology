@@ -10,3 +10,7 @@ ROBOT := java -jar build/robot.jar
 report: build/robot.jar
 	$(ROBOT) report --input ../development/TransparentRelationsOntology.ttl --profile tro_report_profile --output report.html
 
+reason: build/robot.jar
+	$(ROBOT) reason --reasoner ELK --input ../development/TransparentRelationsOntology.ttl
+
+quality: reason report
