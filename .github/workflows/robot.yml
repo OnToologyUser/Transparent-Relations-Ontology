@@ -2,7 +2,7 @@ name: Makefile CI
 
 on:
   push:
-    branches: [ feature_robot_report ]
+    branches: [ develop ]
     paths:
       - 'development/**'
   pull_request:
