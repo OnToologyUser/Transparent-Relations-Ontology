@@ -2,7 +2,7 @@ name: Makefile CI
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ feature_robot_report ]
     paths:
       - 'development/**'
   pull_request:
@@ -12,12 +12,9 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
-      
-    - name: Verify
-      run: make verify --directory ./robot
+    - name: Report
+      run: make report --directory ./robot
       
