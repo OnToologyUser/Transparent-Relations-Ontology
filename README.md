@@ -51,6 +51,18 @@ We also try to follow the best practices described in [Best Practices for Implem
 
 ### Quality tests
 
+The quality tests are executed by [ROBOT](https://github.com/ontodev/robot) through [GitHub actions](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions):
+
+* GitHub Actions YAML file: `.github/workflows/robot.yml`.
+* ROBOT Makefile: `robot/Makefile`.
+
+Report profiles 
+
+Reasoning
+
+Running locally
+
+
 The quality tests are defined as [SPARQL](https://www.w3.org/TR/sparql11-query/) queries to be executed by [ROBOT](https://github.com/ontodev/robot) through [GitHub actions](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions):
 
 * GitHub Actions YAML file: `.github/workflows/robot.yml`.
