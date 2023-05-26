@@ -20,45 +20,63 @@ Related projects:
 * [Public Procurement Ontology](http://contsem.unizar.es/def/sector-publico/pproc).
 * [eProcurement ontology](https://joinup.ec.europa.eu/collection/eprocurement/solution/eprocurement-ontology).
 
-## Access
+## HTTP Access
 
 TRO provides a persistent URI namespace thanks to [W3ID](https://github.com/perma-id/w3id.org/tree/master/TRO):
 
 * Machines: `curl -sH "Accept: text/turtle" -L https://w3id.org/TRO`
 * Humans: https://w3id.org/TRO
 
-## Development
+## Best practices
 
-### Ontology files
+### Development
 
-The main [OWL](ontology) file in [Turtle](https://www.w3.org/TR/turtle/) lives at `development/TransparentRelationsOntology.ttl`. It is produced using [Protégé](https://protege.stanford.edu/).
-
-### Methods
-
-We loosely stick to the [GitFlow methodology](https://nvie.com/posts/a-successful-git-branching-model/), so basically:
+We loosely stick to [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/) and [Semantic Versioning](https://semver.org/) so basically:
 
 * Work on a `feature_*` branch listing the changes in the `RELEASES.md` file under the section `## Changes (No release yet)`.
 * When are you are done merge `feature_*` into `develop`, preferably with a pull request.
 * To create a release after major changes:
   * Change the `owl:priorVersion` to the current version, `owl:versionInfo` and `owl:schemaVersion` values to the version that will be released.
-  * Make sure all [ROBOT tests pass](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions) (See "Quality tests" section bellow).
+  * Make sure all [ROBOT tests pass](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions) (See "Ontology quality" section bellow).
   * Create the documentation (See "Documentation" section bellow).
   * Merge from `develop` to a new `release_*` branch and edit the `RELEASES.md` file changing `## Changes (No release yet)` to the release number (e.g. `## RELEASE 0.1.2`) and adding any new changes to the list that were made in the `develop` branch.
 * Merge `release_*` to `main` (With a pull request), `gh-pages` and `develop`.
 * If a major version bump has happened, create both a release and a tag in GitHub pointing to the commit in `main` resulting from pulling `release_*`.
 
-We also try to follow the best practices described in [Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web](https://arxiv.org/abs/2003.13084).
+### Ontology quality
 
-### Quality tests
+The main [OWL](ontology) file in [Turtle](https://www.w3.org/TR/turtle/) lives at `development/TransparentRelationsOntology.ttl`. It is produced using [Protégé](https://protege.stanford.edu/).
 
-The quality tests are executed by [ROBOT](https://github.com/ontodev/robot) through [GitHub actions](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions):
+We try to follow the best practices described in [Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web](https://arxiv.org/abs/2003.13084).
+
+The quality 
+
+
+
+
+tests are executed by [ROBOT](https://github.com/ontodev/robot). 
+
+`make report`
+
+
+http://robot.obolibrary.org/report_queries/
+
+
+
+
+
+
+through [GitHub actions](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions)
+
+
+
 
 * GitHub Actions YAML file: `.github/workflows/robot.yml`.
 * ROBOT Makefile: `robot/Makefile`.
 
 Report profiles 
 
-Reasoning
+
 
 Running locally
 
