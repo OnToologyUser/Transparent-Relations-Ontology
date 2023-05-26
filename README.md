@@ -45,47 +45,14 @@ We loosely stick to [GitFlow](https://nvie.com/posts/a-successful-git-branching-
 
 ### Ontology quality
 
-The main [OWL](ontology) file in [Turtle](https://www.w3.org/TR/turtle/) lives at `development/TransparentRelationsOntology.ttl`. It is produced using [Protégé](https://protege.stanford.edu/).
+The main [OWL](ontology) file in [Turtle](https://www.w3.org/TR/turtle/) lives at `development/TransparentRelationsOntology.ttl`, and it is produced using [Protégé](https://protege.stanford.edu/). We try to follow the best practices described in [Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web](https://arxiv.org/abs/2003.13084).
 
-We try to follow the best practices described in [Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web](https://arxiv.org/abs/2003.13084).
+The quality is checked by executing different [ROBOT](https://github.com/ontodev/robot) processes defined in a Makefile (`robot/Makefile`):
 
-The quality 
+* [Report](http://robot.obolibrary.org/report#report-level-error): this is based on [SPARQL](https://www.w3.org/TR/sparql11-query/) [queries](http://robot.obolibrary.org/report_queries/) that are collected in an specific profile(`robot/tro_report_profile`) with their respective log level (Error, Warn, Info). New queries can be defined as per [ROBOT instructions](http://robot.obolibrary.org/report#profiles). To execute locally, run `make report`.
+* [Reason](http://robot.obolibrary.org/reason).
 
-
-
-
-tests are executed by [ROBOT](https://github.com/ontodev/robot). 
-
-`make report`
-
-
-http://robot.obolibrary.org/report_queries/
-
-
-
-
-
-
-through [GitHub actions](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions)
-
-
-
-
-* GitHub Actions YAML file: `.github/workflows/robot.yml`.
-* ROBOT Makefile: `robot/Makefile`.
-
-Report profiles 
-
-
-
-Running locally
-
-
-The quality tests are defined as [SPARQL](https://www.w3.org/TR/sparql11-query/) queries to be executed by [ROBOT](https://github.com/ontodev/robot) through [GitHub actions](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions):
-
-* GitHub Actions YAML file: `.github/workflows/robot.yml`.
-* ROBOT Makefile: `robot/Makefile`.
-* SPARQL files should be defined in `robot/` with the `.rq` suffix and comments at the beggining stating the test's purpose. For example, `verify-label.rq` verifies that all the OWL classes have an `rdfs:label`: if there is one class without label the GitHub Actions pipeline will fail.
+The Makefile is executed in a [GitHub actions](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions) workflow as defined in the GitHub Actions YAML file: `.github/workflows/robot.yml`.
 
 ### Documentation
 
