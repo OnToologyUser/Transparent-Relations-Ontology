@@ -2,6 +2,7 @@
 
 ## Changes (No release yet)
 
+* Added GIST inspired simple upper ontology.
 * Added contract and associated properties.
 
 ## RELEASE 0.1.2
