@@ -22,12 +22,14 @@ Related projects:
 
 ## HTTP Access
 
-TRO provides a persistent URI namespace thanks to [W3ID](https://github.com/perma-id/w3id.org/tree/master/TRO):
+TRO has a persistent URI thanks to [W3ID](https://github.com/perma-id/w3id.org/tree/master/TRO):
 
 * Machines: `curl -sH "Accept: text/turtle" -L https://w3id.org/TRO`
 * Humans: https://w3id.org/TRO
 
 ## Best practices
+
+Feel free to contribute in any way, with pull requests, issues, etc. We try to follow the best practices from [Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web](https://arxiv.org/abs/2003.13084) and other resources as described in the guidelines bellow.
 
 ### Development
 
@@ -45,14 +47,14 @@ We loosely stick to [GitFlow](https://nvie.com/posts/a-successful-git-branching-
 
 ### Ontology quality
 
-The main [OWL](ontology) file in [Turtle](https://www.w3.org/TR/turtle/) lives at `development/TransparentRelationsOntology.ttl`, and it is produced using [Protégé](https://protege.stanford.edu/). We try to follow the best practices described in [Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web](https://arxiv.org/abs/2003.13084).
+The main [OWL](ontology) file in [Turtle](https://www.w3.org/TR/turtle/) lives at `development/TransparentRelationsOntology.ttl`, and it is produced using [Protégé](https://protege.stanford.edu/). 
 
-The quality is checked by executing different [ROBOT](https://github.com/ontodev/robot) processes:
+The quality is checked by executing different [ROBOT](https://github.com/ontodev/robot) processes that are defined in a Makefile (`robot/Makefile`):
 
-* [Report](http://robot.obolibrary.org/report#report-level-error): this is based on [SPARQL](https://www.w3.org/TR/sparql11-query/) [queries](http://robot.obolibrary.org/report_queries/) that are collected in an specific profile (`robot/tro_report_profile`) with their respective log level (Error, Warn, Info). New queries can be defined as per [ROBOT instructions](http://robot.obolibrary.org/report#profiles). To execute locally (Specially to see the html report generated), run `make report`.
+* [Report](http://robot.obolibrary.org/report#report-level-error): this is based on [SPARQL](https://www.w3.org/TR/sparql11-query/) [queries](http://robot.obolibrary.org/report_queries/) that are collected in an specific profile (`robot/tro_report_profile`) with their respective log level (Error, Warn, Info). New queries can be defined as per [ROBOT instructions](http://robot.obolibrary.org/report#profiles). To execute locally (Specially to see the HTML report generated), run `make report`.
 * [Reason](http://robot.obolibrary.org/reason) applies automatic inference to the ontology, which is used in this case to simply ensure the ontology is consistent. To execute locally, run `make reason`.
 
-These processes are defined in a Makefile (`robot/Makefile`) that is executed in a [GitHub actions](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions) workflow as defined in the GitHub Actions YAML file: `.github/workflows/robot.yml`.
+A [GitHub actions](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions) workflow checks the quality after every push or pull request to `develop` as defined in the GitHub Actions YAML file: `.github/workflows/robot.yml`.
 
 ### Documentation
 

@@ -2,6 +2,7 @@
 
 ## Changes (No release yet)
 
+* Added additional ROBOT tests: report and reasoning.
 * Added GIST inspired simple upper ontology.
 * Added contract and associated properties.
 
