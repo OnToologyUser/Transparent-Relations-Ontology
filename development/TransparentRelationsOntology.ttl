@@ -7,7 +7,7 @@
 @base <http://ehu.eus/tro> .
 
 <http://ehu.eus/tro> rdf:type owl:Ontology ;
-                      owl:versionIRI <http://ehu.eus/tro/0.1.1> ;
+                      owl:versionIRI <http://ehu.eus/tro/0.1.3> ;
                       <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ,
                                                                     "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en ;
                       <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"@eu ;
@@ -15,12 +15,12 @@
                       <http://purl.org/dc/terms/created> "2022-04-01T00:00:01"^^xsd:dateTime ;
                       <http://purl.org/dc/terms/description> "A vocabulary to represent relations that should be more transparent, usually between powerfull people or institutions"@en ;
                       <http://purl.org/dc/terms/license> "https://apache.org/licenses/LICENSE-2.0"^^xsd:anyURI ;
-                      <http://purl.org/dc/terms/modified> "2023-05-11T00:00:01"^^xsd:dateTime ;
+                      <http://purl.org/dc/terms/modified> "2023-06-06T00:00:01"^^xsd:dateTime ;
                       <http://purl.org/dc/terms/title> "Transparent Relations Ontology"@en ;
                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "tro"@en ;
-                      owl:priorVersion "0.1.1" ;
-                      owl:versionInfo "0.1.2" ;
-                      <https://schema.org/schemaVersion> "http://ehu.eus/tro/0.1.2" .
+                      owl:priorVersion "0.1.2" ;
+                      owl:versionInfo "0.1.3" ;
+                      <https://schema.org/schemaVersion> "http://ehu.eus/tro/0.1.3" .
 
 #################################################################
 #    Annotation properties
