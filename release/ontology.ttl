@@ -7,21 +7,20 @@
 @base <http://ehu.eus/tro#> .
 
 <http://ehu.eus/tro> rdf:type owl:Ontology ;
-                      owl:versionIRI <http://ehu.eus/tro/0.1.1> ;
+                      owl:versionIRI <http://ehu.eus/tro/0.1.3> ;
                       <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ,
                                                                     "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en ;
                       <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"@eu ;
                       <http://purl.org/dc/terms/abstract> "Transparent Relations Ontology (TRO) offers a vocabulary to publish information about relations that should be more transparent, usually between powerful parties, to detect potential conflicts of interests: for example, governments and their providers, or politicians and their personal relationships. Research journalism and Open Data are two areas in which this sort of data is growing, and new methods and standards are needed to cope with the FAIR publication and consumption of such data."@en ;
                       <http://purl.org/dc/terms/created> "2022-04-01T00:00:01"^^xsd:dateTime ;
                       <http://purl.org/dc/terms/description> "A vocabulary to represent relations that should be more transparent, usually between powerfull people or institutions"@en ;
-                      <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/"@en ;
-                      <http://purl.org/dc/terms/modified> "2024-04-05T00:00:01"@en ;
+                      <http://purl.org/dc/terms/license> "https://apache.org/licenses/LICENSE-2.0"^^xsd:anyURI ;
+                      <http://purl.org/dc/terms/modified> "2023-06-06T00:00:01"^^xsd:dateTime ;
                       <http://purl.org/dc/terms/title> "Transparent Relations Ontology"@en ;
                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "tro"@en ;
-                      <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/transparent-relations-ontology" ;
-                      owl:priorVersion "0.1.0" ;
-                      owl:versionInfo "0.1.1" ;
-                      <https://schema.org/schemaVersion> "http://ehu.eus/tro/0.1.1" .
+                      owl:priorVersion "0.1.2" ;
+                      owl:versionInfo "0.1.3" ;
+                      <https://schema.org/schemaVersion> "http://ehu.eus/tro/0.1.3" .
 
 #################################################################
 #    Annotation properties
@@ -79,32 +78,19 @@
 #    Object Properties
 #################################################################
 
-###  http://ehu.eus/tro#beneficiary_of
-:beneficiary_of rdf:type owl:ObjectProperty ;
-                <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ;
-                <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-                <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:19:45Z"^^xsd:dateTime .
-
-
-###  http://ehu.eus/tro#controls
-:controls rdf:type owl:ObjectProperty ;
-          <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ;
-          <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-          <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:33:14Z"^^xsd:dateTime .
-
-
-###  http://ehu.eus/tro#director_of
-:director_of rdf:type owl:ObjectProperty ;
-             <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en ;
-             <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-             <http://purl.org/dc/elements/1.1/date> "2022-02-21T09:02:19Z"^^xsd:dateTime .
+###  http://data.europa.eu/a4g/ontology#bindsContractor
+<http://data.europa.eu/a4g/ontology#bindsContractor> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <http://data.europa.eu/a4g/ontology#Contract> ;
+                                                     rdfs:range <https://ontologies.semanticarts.com/gist/Organization> ;
+                                                     rdfs:label "Binds Contractor"@en .
 
 
 ###  http://ehu.eus/tro#has_bank_account_in
 :has_bank_account_in rdf:type owl:ObjectProperty ;
                      <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ;
                      <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-                     <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:25:46Z"^^xsd:dateTime .
+                     <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:25:46Z"^^xsd:dateTime ;
+                     rdfs:label "Has bank account in"@en .
 
 
 ###  http://ehu.eus/tro#has_role
@@ -112,64 +98,49 @@
           rdfs:domain <https://schema.org/Person> ;
           rdfs:range :Role ;
           <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-          <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:10:19Z"^^xsd:dateTime .
+          <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:10:19Z"^^xsd:dateTime ;
+          rdfs:label "Has role"@en .
 
 
 ###  http://ehu.eus/tro#in_entity
 :in_entity rdf:type owl:ObjectProperty ;
            rdfs:domain :Role ;
-           rdfs:range :Entity ;
+           rdfs:range <https://ontologies.semanticarts.com/gist/Organization> ;
            <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-           <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:13:36Z"^^xsd:dateTime .
-
-
-###  http://ehu.eus/tro#manages
-:manages rdf:type owl:ObjectProperty ;
-         <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ;
-         <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-         <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:40:58Z"^^xsd:dateTime .
-
-
-###  http://ehu.eus/tro#officer_of
-:officer_of rdf:type owl:ObjectProperty ;
-            <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en ;
-            <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-            <http://purl.org/dc/elements/1.1/date> "2022-02-21T09:01:51Z"^^xsd:dateTime .
+           <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:13:36Z"^^xsd:dateTime ;
+           rdfs:label "In entity"@en .
 
 
 ###  http://ehu.eus/tro#pays_to
 :pays_to rdf:type owl:ObjectProperty ;
          <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ;
          <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-         <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:24:12Z"^^xsd:dateTime .
+         <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:24:12Z"^^xsd:dateTime ;
+         rdfs:label "Pays to"@en .
 
 
 ###  http://ehu.eus/tro#provider_of
 :provider_of rdf:type owl:ObjectProperty ;
              <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
              <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:23:05Z"^^xsd:dateTime ;
-             rdfs:comment "A company or and individual provides services or products to an institution"@en .
+             rdfs:comment "A company or and individual provides services or products to an institution"@en ;
+             rdfs:label "Provider of"@en .
 
 
 ###  http://ehu.eus/tro#registered_in
 :registered_in rdf:type owl:ObjectProperty ;
                <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ;
                <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-               <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:30:10Z"^^xsd:dateTime .
+               <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:30:10Z"^^xsd:dateTime ;
+               rdfs:label "Registered in"@en .
 
 
 ###  http://ehu.eus/tro#represents
 :represents rdf:type owl:ObjectProperty ;
             <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ;
             <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-            <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:21:32Z"^^xsd:dateTime .
-
-
-###  http://ehu.eus/tro#shareholder_of
-:shareholder_of rdf:type owl:ObjectProperty ;
-                <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en ;
-                <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-                <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:36:16Z"^^xsd:dateTime .
+            <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:21:32Z"^^xsd:dateTime ;
+            rdfs:label "Represents"@en .
 
 
 ###  http://ehu.eus/tro#sibling
@@ -177,13 +148,15 @@
          rdfs:subPropertyOf <https://schema.org/knows> ;
          rdf:type owl:SymmetricProperty ;
          <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-         <http://purl.org/dc/elements/1.1/date> "2023-03-27T15:34:21Z"^^xsd:dateTime .
+         <http://purl.org/dc/elements/1.1/date> "2023-03-27T15:34:21Z"^^xsd:dateTime ;
+         rdfs:label "Sibling"@en .
 
 
 ###  http://ehu.eus/tro#takes_place_in
 :takes_place_in rdf:type owl:ObjectProperty ;
                 <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-                <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:35:58Z"^^xsd:dateTime .
+                <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:35:58Z"^^xsd:dateTime ;
+                rdfs:label "Takes place in"@en .
 
 
 ###  http://ehu.eus/tro#with_evidence
@@ -191,47 +164,55 @@
                rdfs:domain :Role ;
                rdfs:range :Evidence ;
                <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-               <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:27:00Z"^^xsd:dateTime .
+               <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:27:00Z"^^xsd:dateTime ;
+               rdfs:label "With evidence"@en .
 
 
-###  https://schema.org/address
-<https://schema.org/address> rdf:type owl:ObjectProperty .
+###  http://purl.org/goodrelations/v1#hasPriceSpecification
+<http://purl.org/goodrelations/v1#hasPriceSpecification> rdf:type owl:ObjectProperty ;
+                                                         rdfs:label "Has price specification"@en .
 
 
 ###  https://schema.org/knows
 <https://schema.org/knows> rdf:type owl:ObjectProperty ;
                            rdfs:domain <https://schema.org/Person> ;
-                           rdfs:range <https://schema.org/Person> .
-
-
-###  https://schema.org/mentions
-<https://schema.org/mentions> rdf:type owl:ObjectProperty .
-
-
-###  https://schema.org/owns
-<https://schema.org/owns> rdf:type owl:ObjectProperty .
+                           rdfs:range <https://schema.org/Person> ;
+                           rdfs:label "Knows"@en .
 
 
 ###  https://schema.org/parent
 <https://schema.org/parent> rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf <https://schema.org/knows> .
+                            rdfs:subPropertyOf <https://schema.org/knows> ;
+                            rdfs:label "Parent"@en .
 
 
 ###  https://schema.org/spouse
 <https://schema.org/spouse> rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf <https://schema.org/knows> .
+                            rdfs:subPropertyOf <https://schema.org/knows> ;
+                            rdfs:label "Spouse"@en .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
+###  http://ehu.eus/tro#cpv_code
+:cpv_code rdf:type owl:DatatypeProperty ;
+          rdfs:domain <http://data.europa.eu/a4g/ontology#Contract> ;
+          rdfs:range xsd:string ;
+          <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
+          <http://purl.org/dc/elements/1.1/date> "2023-05-19T07:51:57Z"^^xsd:dateTime ;
+          rdfs:label "CPV code"@en ;
+          rdfs:seeAlso "https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/common-procurement-vocabulary_en" .
+
+
 ###  http://ehu.eus/tro#end_date
 :end_date rdf:type owl:DatatypeProperty ;
           rdfs:domain :Role ;
           rdfs:range xsd:dateTime ;
           <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-          <http://purl.org/dc/elements/1.1/date> "2023-03-09T09:02:35Z"^^xsd:dateTime .
+          <http://purl.org/dc/elements/1.1/date> "2023-03-09T09:02:35Z"^^xsd:dateTime ;
+          rdfs:label "End date"@en .
 
 
 ###  http://ehu.eus/tro#profile_url
@@ -244,7 +225,8 @@
                          ] ;
              rdfs:range xsd:anyURI ;
              <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-             <http://purl.org/dc/elements/1.1/date> "2023-03-09T09:04:41Z"^^xsd:dateTime .
+             <http://purl.org/dc/elements/1.1/date> "2023-03-09T09:04:41Z"^^xsd:dateTime ;
+             rdfs:label "Profile URL"@en .
 
 
 ###  http://ehu.eus/tro#start_date
@@ -252,43 +234,71 @@
             rdfs:domain :Role ;
             rdfs:range xsd:dateTime ;
             <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-            <http://purl.org/dc/elements/1.1/date> "2023-03-09T09:02:16Z"^^xsd:dateTime .
+            <http://purl.org/dc/elements/1.1/date> "2023-03-09T09:02:16Z"^^xsd:dateTime ;
+            rdfs:label "Start date"@en .
 
 
 ###  http://ehu.eus/tro#url
 :url rdf:type owl:DatatypeProperty ;
      <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-     <http://purl.org/dc/elements/1.1/date> "2023-03-10T19:19:41Z"^^xsd:dateTime .
+     <http://purl.org/dc/elements/1.1/date> "2023-03-10T19:19:41Z"^^xsd:dateTime ;
+     rdfs:label "URL"@en .
+
+
+###  http://purl.org/goodrelations/v1#hasCurrency
+<http://purl.org/goodrelations/v1#hasCurrency> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <http://purl.org/goodrelations/v1#PriceSpecification> ;
+                                               rdfs:range xsd:string ;
+                                               rdfs:label "Has currency"@en .
+
+
+###  http://purl.org/goodrelations/v1#hasCurrencyValue
+<http://purl.org/goodrelations/v1#hasCurrencyValue> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://purl.org/goodrelations/v1#PriceSpecification> ;
+                                                    rdfs:range xsd:double ;
+                                                    rdfs:label "Has currency value"@en .
+
+
+###  http://purl.org/goodrelations/v1#valueAddedTaxIncluded
+<http://purl.org/goodrelations/v1#valueAddedTaxIncluded> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <http://purl.org/goodrelations/v1#PriceSpecification> ;
+                                                         rdfs:range xsd:boolean ;
+                                                         rdfs:label "Value added tax included"@en .
 
 
 ###  http://www.w3.org/2006/time#months
-<http://www.w3.org/2006/time#months> rdf:type owl:DatatypeProperty .
+<http://www.w3.org/2006/time#months> rdf:type owl:DatatypeProperty ;
+                                     rdfs:label "Months"@en .
 
 
 ###  http://www.w3.org/2006/time#years
-<http://www.w3.org/2006/time#years> rdf:type owl:DatatypeProperty .
+<http://www.w3.org/2006/time#years> rdf:type owl:DatatypeProperty ;
+                                    rdfs:label "Years"@en .
 
 
 ###  http://www.w3.org/ns/person#name
 <http://www.w3.org/ns/person#name> rdf:type owl:DatatypeProperty ;
                                    rdfs:domain <https://schema.org/Person> ;
-                                   rdfs:range xsd:string .
+                                   rdfs:range xsd:string ;
+                                   rdfs:label "Name"@en .
 
 
 ###  https://schema.org/email
 <https://schema.org/email> rdf:type owl:DatatypeProperty ;
                            rdfs:domain [ rdf:type owl:Class ;
-                                         owl:unionOf ( :Entity
+                                         owl:unionOf ( <https://ontologies.semanticarts.com/gist/Organization>
                                                        <https://schema.org/Person>
                                                      )
                                        ] ;
-                           rdfs:range xsd:string .
+                           rdfs:range xsd:string ;
+                           rdfs:label "Email"@en .
 
 
 ###  https://schema.org/identifier
 <https://schema.org/identifier> rdf:type owl:DatatypeProperty ,
                                          owl:FunctionalProperty ;
-                                rdfs:range xsd:string .
+                                rdfs:range xsd:string ;
+                                rdfs:label "Identifier"@en .
 
 
 #################################################################
@@ -297,6 +307,35 @@
 
 ###  http://data.europa.eu/a4g/ontology#Contract
 <http://data.europa.eu/a4g/ontology#Contract> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://ontologies.semanticarts.com/gist/Commitment> ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <http://data.europa.eu/a4g/ontology#bindsContractor> ;
+                                                                owl:someValuesFrom <https://ontologies.semanticarts.com/gist/Organization>
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <http://purl.org/goodrelations/v1#hasPriceSpecification> ;
+                                                                owl:someValuesFrom <http://purl.org/goodrelations/v1#PriceSpecification>
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :url ;
+                                                                owl:someValuesFrom xsd:anyURI
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <https://schema.org/identifier> ;
+                                                                owl:someValuesFrom xsd:string
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :cpv_code ;
+                                                                owl:allValuesFrom xsd:string
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :end_date ;
+                                                                owl:allValuesFrom xsd:dateTime
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :start_date ;
+                                                                owl:allValuesFrom xsd:dateTime
+                                                              ] ;
                                               rdfs:label "Contract"@en .
 
 
@@ -322,13 +361,6 @@
           <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
           <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:13:05Z"^^xsd:dateTime ;
           rdfs:label "Employee"@en .
-
-
-###  http://ehu.eus/tro#Entity
-:Entity rdf:type owl:Class ;
-        <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-        <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:23:05Z"^^xsd:dateTime ;
-        rdfs:label "Entity"@en .
 
 
 ###  http://ehu.eus/tro#Evidence
@@ -357,6 +389,18 @@
         <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
         <http://purl.org/dc/elements/1.1/date> "2023-03-27T15:32:50Z"^^xsd:dateTime ;
         rdfs:label "Member"@en .
+
+
+###  http://ehu.eus/tro#Minor_contract
+:Minor_contract rdf:type owl:Class ;
+                rdfs:subClassOf <http://data.europa.eu/a4g/ontology#Contract> ;
+                <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
+                <http://purl.org/dc/elements/1.1/date> "2023-05-19T08:10:50Z"^^xsd:dateTime ;
+                rdfs:label "Contrato menor"@es ,
+                           "Kontratu txikia"@eu ,
+                           "Minor contract"@en ;
+                rdfs:seeAlso "http://contsem.unizar.es/def/sector-publico/pproc#Minor" ,
+                             "https://www.boe.es/boe/dias/2019/03/07/pdfs/BOE-A-2019-3281.pdf" .
 
 
 ###  http://ehu.eus/tro#Officer
@@ -401,9 +445,10 @@
 
 ###  http://ehu.eus/tro#Role
 :Role rdf:type owl:Class ;
-      rdfs:subClassOf [ rdf:type owl:Restriction ;
+      rdfs:subClassOf <https://ontologies.semanticarts.com/gist/Commitment> ,
+                      [ rdf:type owl:Restriction ;
                         owl:onProperty :in_entity ;
-                        owl:someValuesFrom :Entity
+                        owl:someValuesFrom <https://ontologies.semanticarts.com/gist/Organization>
                       ] ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :end_date ;
@@ -427,15 +472,41 @@
       rdfs:label "Role"@en .
 
 
+###  http://purl.org/goodrelations/v1#PriceSpecification
+<http://purl.org/goodrelations/v1#PriceSpecification> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://ontologies.semanticarts.com/gist/Commitment> ,
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty <http://purl.org/goodrelations/v1#hasCurrency> ;
+                                                                        owl:someValuesFrom xsd:string
+                                                                      ] ,
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty <http://purl.org/goodrelations/v1#hasCurrencyValue> ;
+                                                                        owl:someValuesFrom xsd:double
+                                                                      ] ;
+                                                      rdfs:label "Price specification"@en .
+
+
 ###  https://dbpedia.org/ontology/PoliticalParty
 <https://dbpedia.org/ontology/PoliticalParty> rdf:type owl:Class ;
-                                              rdfs:subClassOf :Entity ;
+                                              rdfs:subClassOf <https://ontologies.semanticarts.com/gist/Organization> ;
                                               rdfs:label "Political Party"@en .
+
+
+###  https://ontologies.semanticarts.com/gist/Commitment
+<https://ontologies.semanticarts.com/gist/Commitment> rdf:type owl:Class ;
+                                                      rdfs:label "Commitment"@en .
+
+
+###  https://ontologies.semanticarts.com/gist/Organization
+<https://ontologies.semanticarts.com/gist/Organization> rdf:type owl:Class ;
+                                                        <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
+                                                        <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:23:05Z"^^xsd:dateTime ;
+                                                        rdfs:label "Organization"@en .
 
 
 ###  https://schema.org/Corporation
 <https://schema.org/Corporation> rdf:type owl:Class ;
-                                 rdfs:subClassOf :Entity ,
+                                 rdfs:subClassOf <https://ontologies.semanticarts.com/gist/Organization> ,
                                                  [ rdf:type owl:Restriction ;
                                                    owl:onProperty <https://schema.org/identifier> ;
                                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -446,13 +517,13 @@
 
 ###  https://schema.org/GovernmentOrganization
 <https://schema.org/GovernmentOrganization> rdf:type owl:Class ;
-                                            rdfs:subClassOf :Entity ;
+                                            rdfs:subClassOf <https://ontologies.semanticarts.com/gist/Organization> ;
                                             rdfs:label "GovernmentOrganization"@en .
 
 
 ###  https://schema.org/NGO
 <https://schema.org/NGO> rdf:type owl:Class ;
-                         rdfs:subClassOf :Entity ;
+                         rdfs:subClassOf <https://ontologies.semanticarts.com/gist/Organization> ;
                          rdfs:label "NGO"@en .
 
 
@@ -486,14 +557,27 @@
 
 ###  https://schema.org/SportsOrganization
 <https://schema.org/SportsOrganization> rdf:type owl:Class ;
-                                        rdfs:subClassOf :Entity ;
+                                        rdfs:subClassOf <https://ontologies.semanticarts.com/gist/Organization> ;
                                         rdfs:label "Sports Organization"@en .
 
 
 ###  https://schema.org/WorkersUnion
 <https://schema.org/WorkersUnion> rdf:type owl:Class ;
-                                  rdfs:subClassOf :Entity ;
+                                  rdfs:subClassOf <https://ontologies.semanticarts.com/gist/Organization> ;
                                   rdfs:label "Workers Union"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Evidence
+                <https://ontologies.semanticarts.com/gist/Commitment>
+                <https://ontologies.semanticarts.com/gist/Organization>
+                <https://schema.org/Person>
+              )
+] .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

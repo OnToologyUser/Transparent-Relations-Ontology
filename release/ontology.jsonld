@@ -11,6 +11,33 @@
 }, {
   "@id" : "_:genid10",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://schema.org/identifier"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://ehu.eus/tro#cpv_code"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://ehu.eus/tro#end_date"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ],
@@ -18,7 +45,43 @@
     "@id" : "http://ehu.eus/tro#start_date"
   } ]
 }, {
-  "@id" : "_:genid11",
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://ehu.eus/tro#url"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://ehu.eus/tro#in_entity"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://ontologies.semanticarts.com/gist/Organization"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://ehu.eus/tro#end_date"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://ehu.eus/tro#start_date"
+  } ]
+}, {
+  "@id" : "_:genid18",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -27,7 +90,7 @@
     "@id" : "http://www.w3.org/2006/time#months"
   } ]
 }, {
-  "@id" : "_:genid12",
+  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -36,7 +99,25 @@
     "@id" : "http://www.w3.org/2006/time#years"
   } ]
 }, {
-  "@id" : "_:genid13",
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/goodrelations/v1#hasCurrency"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/goodrelations/v1#hasCurrencyValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -49,7 +130,7 @@
     "@id" : "https://schema.org/identifier"
   } ]
 }, {
-  "@id" : "_:genid14",
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://ehu.eus/tro#has_role"
@@ -58,7 +139,7 @@
     "@id" : "http://ehu.eus/tro#Role"
   } ]
 }, {
-  "@id" : "_:genid15",
+  "@id" : "_:genid24",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -67,7 +148,7 @@
     "@id" : "http://ehu.eus/tro#profile_url"
   } ]
 }, {
-  "@id" : "_:genid16",
+  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -76,7 +157,7 @@
     "@id" : "https://schema.org/email"
   } ]
 }, {
-  "@id" : "_:genid17",
+  "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -89,11 +170,25 @@
     "@id" : "http://www.w3.org/ns/person#name"
   } ]
 }, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://ehu.eus/tro#Evidence"
+    }, {
+      "@id" : "https://ontologies.semanticarts.com/gist/Commitment"
+    }, {
+      "@id" : "https://ontologies.semanticarts.com/gist/Organization"
+    }, {
+      "@id" : "https://schema.org/Person"
+    } ]
+  } ]
+}, {
   "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://ehu.eus/tro#Entity"
+      "@id" : "https://ontologies.semanticarts.com/gist/Organization"
     }, {
       "@id" : "https://schema.org/Person"
     } ]
@@ -102,28 +197,28 @@
   "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://ehu.eus/tro#url"
+    "@id" : "http://data.europa.eu/a4g/ontology#bindsContractor"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    "@id" : "https://ontologies.semanticarts.com/gist/Organization"
   } ]
 }, {
   "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://ehu.eus/tro#in_entity"
+    "@id" : "http://purl.org/goodrelations/v1#hasPriceSpecification"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://ehu.eus/tro#Entity"
+    "@id" : "http://purl.org/goodrelations/v1#PriceSpecification"
   } ]
 }, {
   "@id" : "_:genid9",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://ehu.eus/tro#end_date"
+    "@id" : "http://ehu.eus/tro#url"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
   } ]
 }, {
   "@id" : "http://data.europa.eu/a4g/ontology#Contract",
@@ -131,6 +226,36 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Contract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologies.semanticarts.com/gist/Commitment"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/a4g/ontology#bindsContractor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/a4g/ontology#Contract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Binds Contractor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologies.semanticarts.com/gist/Organization"
   } ]
 }, {
   "@id" : "http://ehu.eus/tro",
@@ -159,12 +284,12 @@
     "@value" : "A vocabulary to represent relations that should be more transparent, usually between powerfull people or institutions"
   } ],
   "http://purl.org/dc/terms/license" : [ {
-    "@language" : "en",
-    "@value" : "http://creativecommons.org/licenses/by/4.0/"
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://apache.org/licenses/LICENSE-2.0"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
-    "@language" : "en",
-    "@value" : "2024-04-05T00:00:01"
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2023-06-06T00:00:01"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
@@ -174,20 +299,17 @@
     "@language" : "en",
     "@value" : "tro"
   } ],
-  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@value" : "https://w3id.org/transparent-relations-ontology"
-  } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
-    "@value" : "0.1.0"
+    "@value" : "0.1.2"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://ehu.eus/tro/0.1.1"
+    "@id" : "http://ehu.eus/tro/0.1.3"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.1"
+    "@value" : "0.1.3"
   } ],
   "https://schema.org/schemaVersion" : [ {
-    "@value" : "http://ehu.eus/tro/0.1.1"
+    "@value" : "http://ehu.eus/tro/0.1.3"
   } ]
 }, {
   "@id" : "http://ehu.eus/tro#Associate",
@@ -241,20 +363,6 @@
     "@id" : "http://ehu.eus/tro#Role"
   } ]
 }, {
-  "@id" : "http://ehu.eus/tro#Entity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2022-02-15T11:23:05Z"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Entity"
-  } ]
-}, {
   "@id" : "http://ehu.eus/tro#Evidence",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
@@ -273,7 +381,7 @@
     "@value" : "Evidence"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid7"
+    "@id" : "_:genid14"
   } ]
 }, {
   "@id" : "http://ehu.eus/tro#Manager",
@@ -308,6 +416,34 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://ehu.eus/tro#Role"
+  } ]
+}, {
+  "@id" : "http://ehu.eus/tro#Minor_contract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2023-05-19T08:10:50Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Contrato menor"
+  }, {
+    "@language" : "eu",
+    "@value" : "Kontratu txikia"
+  }, {
+    "@language" : "en",
+    "@value" : "Minor contract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "http://contsem.unizar.es/def/sector-publico/pproc#Minor"
+  }, {
+    "@value" : "https://www.boe.es/boe/dias/2019/03/07/pdfs/BOE-A-2019-3281.pdf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://data.europa.eu/a4g/ontology#Contract"
   } ]
 }, {
   "@id" : "http://ehu.eus/tro#Officer",
@@ -413,57 +549,40 @@
     "@value" : "Role"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid8"
+    "@id" : "https://ontologies.semanticarts.com/gist/Commitment"
   }, {
-    "@id" : "_:genid9"
+    "@id" : "_:genid15"
   }, {
-    "@id" : "_:genid10"
+    "@id" : "_:genid16"
   }, {
-    "@id" : "_:genid11"
+    "@id" : "_:genid17"
   }, {
-    "@id" : "_:genid12"
+    "@id" : "_:genid18"
+  }, {
+    "@id" : "_:genid19"
   } ]
 }, {
-  "@id" : "http://ehu.eus/tro#beneficiary_of",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/elements/1.1/contributor" : [ {
-    "@language" : "es",
-    "@value" : "Jaime Gómez-Obregón (https://ladonacion.es/)"
-  } ],
+  "@id" : "http://ehu.eus/tro#cpv_code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
   } ],
   "http://purl.org/dc/elements/1.1/date" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2022-02-21T14:19:45Z"
-  } ]
-}, {
-  "@id" : "http://ehu.eus/tro#controls",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/elements/1.1/contributor" : [ {
-    "@language" : "es",
-    "@value" : "Jaime Gómez-Obregón (https://ladonacion.es/)"
+    "@value" : "2023-05-19T07:51:57Z"
   } ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/a4g/ontology#Contract"
   } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2022-02-21T14:33:14Z"
-  } ]
-}, {
-  "@id" : "http://ehu.eus/tro#director_of",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/elements/1.1/contributor" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"
+    "@value" : "CPV code"
   } ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2022-02-21T09:02:19Z"
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/common-procurement-vocabulary_en"
   } ]
 }, {
   "@id" : "http://ehu.eus/tro#end_date",
@@ -477,6 +596,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://ehu.eus/tro#Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "End date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
@@ -494,6 +617,10 @@
   "http://purl.org/dc/elements/1.1/date" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "@value" : "2022-02-21T14:25:46Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has bank account in"
   } ]
 }, {
   "@id" : "http://ehu.eus/tro#has_role",
@@ -507,6 +634,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://schema.org/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has role"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://ehu.eus/tro#Role"
@@ -524,36 +655,12 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://ehu.eus/tro#Role"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://ehu.eus/tro#Entity"
-  } ]
-}, {
-  "@id" : "http://ehu.eus/tro#manages",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/elements/1.1/contributor" : [ {
-    "@language" : "es",
-    "@value" : "Jaime Gómez-Obregón (https://ladonacion.es/)"
-  } ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2022-02-21T14:40:58Z"
-  } ]
-}, {
-  "@id" : "http://ehu.eus/tro#officer_of",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/elements/1.1/contributor" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"
+    "@value" : "In entity"
   } ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2022-02-21T09:01:51Z"
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologies.semanticarts.com/gist/Organization"
   } ]
 }, {
   "@id" : "http://ehu.eus/tro#pays_to",
@@ -568,6 +675,10 @@
   "http://purl.org/dc/elements/1.1/date" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "@value" : "2022-02-21T14:24:12Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pays to"
   } ]
 }, {
   "@id" : "http://ehu.eus/tro#profile_url",
@@ -581,6 +692,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Profile URL"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
@@ -601,6 +716,10 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A company or and individual provides services or products to an institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Provider of"
   } ]
 }, {
   "@id" : "http://ehu.eus/tro#registered_in",
@@ -615,6 +734,10 @@
   "http://purl.org/dc/elements/1.1/date" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "@value" : "2022-02-21T14:30:10Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Registered in"
   } ]
 }, {
   "@id" : "http://ehu.eus/tro#represents",
@@ -629,20 +752,10 @@
   "http://purl.org/dc/elements/1.1/date" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "@value" : "2022-02-21T14:21:32Z"
-  } ]
-}, {
-  "@id" : "http://ehu.eus/tro#shareholder_of",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/elements/1.1/contributor" : [ {
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"
-  } ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
-  } ],
-  "http://purl.org/dc/elements/1.1/date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2022-02-15T11:36:16Z"
+    "@value" : "Represents"
   } ]
 }, {
   "@id" : "http://ehu.eus/tro#sibling",
@@ -653,6 +766,10 @@
   "http://purl.org/dc/elements/1.1/date" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "@value" : "2023-03-27T15:34:21Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sibling"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://schema.org/knows"
@@ -670,6 +787,10 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://ehu.eus/tro#Role"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Start date"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
@@ -682,6 +803,10 @@
   "http://purl.org/dc/elements/1.1/date" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "@value" : "2022-02-21T14:35:58Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Takes place in"
   } ]
 }, {
   "@id" : "http://ehu.eus/tro#url",
@@ -692,6 +817,10 @@
   "http://purl.org/dc/elements/1.1/date" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "@value" : "2023-03-10T19:19:41Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "URL"
   } ]
 }, {
   "@id" : "http://ehu.eus/tro#with_evidence",
@@ -705,6 +834,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://ehu.eus/tro#Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "With evidence"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://ehu.eus/tro#Evidence"
@@ -737,6 +870,66 @@
   "@id" : "http://purl.org/dc/terms/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/goodrelations/v1#PriceSpecification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Price specification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologies.semanticarts.com/gist/Commitment"
+  }, {
+    "@id" : "_:genid20"
+  }, {
+    "@id" : "_:genid21"
+  } ]
+}, {
+  "@id" : "http://purl.org/goodrelations/v1#hasCurrency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/goodrelations/v1#PriceSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has currency"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://purl.org/goodrelations/v1#hasCurrencyValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/goodrelations/v1#PriceSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has currency value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://purl.org/goodrelations/v1#hasPriceSpecification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has price specification"
+  } ]
+}, {
+  "@id" : "http://purl.org/goodrelations/v1#valueAddedTaxIncluded",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/goodrelations/v1#PriceSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Value added tax included"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -744,15 +937,27 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2006/time#months",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Months"
+  } ]
 }, {
   "@id" : "http://www.w3.org/2006/time#years",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Years"
+  } ]
 }, {
   "@id" : "http://www.w3.org/ns/person#name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://schema.org/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -765,7 +970,28 @@
     "@value" : "Political Party"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://ehu.eus/tro#Entity"
+    "@id" : "https://ontologies.semanticarts.com/gist/Organization"
+  } ]
+}, {
+  "@id" : "https://ontologies.semanticarts.com/gist/Commitment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Commitment"
+  } ]
+}, {
+  "@id" : "https://ontologies.semanticarts.com/gist/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-02-15T11:23:05Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Organization"
   } ]
 }, {
   "@id" : "https://schema.org/Corporation",
@@ -775,9 +1001,9 @@
     "@value" : "Corporation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://ehu.eus/tro#Entity"
+    "@id" : "https://ontologies.semanticarts.com/gist/Organization"
   }, {
-    "@id" : "_:genid13"
+    "@id" : "_:genid22"
   } ]
 }, {
   "@id" : "https://schema.org/GovernmentOrganization",
@@ -787,7 +1013,7 @@
     "@value" : "GovernmentOrganization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://ehu.eus/tro#Entity"
+    "@id" : "https://ontologies.semanticarts.com/gist/Organization"
   } ]
 }, {
   "@id" : "https://schema.org/NGO",
@@ -797,7 +1023,7 @@
     "@value" : "NGO"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://ehu.eus/tro#Entity"
+    "@id" : "https://ontologies.semanticarts.com/gist/Organization"
   } ]
 }, {
   "@id" : "https://schema.org/NewsArticle",
@@ -817,13 +1043,13 @@
     "@value" : "Person"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid14"
+    "@id" : "_:genid23"
   }, {
-    "@id" : "_:genid15"
+    "@id" : "_:genid24"
   }, {
-    "@id" : "_:genid16"
+    "@id" : "_:genid25"
   }, {
-    "@id" : "_:genid17"
+    "@id" : "_:genid26"
   } ]
 }, {
   "@id" : "https://schema.org/SportsOrganization",
@@ -833,7 +1059,7 @@
     "@value" : "Sports Organization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://ehu.eus/tro#Entity"
+    "@id" : "https://ontologies.semanticarts.com/gist/Organization"
   } ]
 }, {
   "@id" : "https://schema.org/WorkersUnion",
@@ -843,16 +1069,17 @@
     "@value" : "Workers Union"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://ehu.eus/tro#Entity"
+    "@id" : "https://ontologies.semanticarts.com/gist/Organization"
   } ]
-}, {
-  "@id" : "https://schema.org/address",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://schema.org/email",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Email"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -860,6 +1087,10 @@
 }, {
   "@id" : "https://schema.org/identifier",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Identifier"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
@@ -869,18 +1100,20 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://schema.org/Person"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Knows"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://schema.org/Person"
   } ]
 }, {
-  "@id" : "https://schema.org/mentions",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://schema.org/owns",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
   "@id" : "https://schema.org/parent",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Parent"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://schema.org/knows"
   } ]
@@ -890,6 +1123,10 @@
 }, {
   "@id" : "https://schema.org/spouse",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Spouse"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://schema.org/knows"
   } ]
