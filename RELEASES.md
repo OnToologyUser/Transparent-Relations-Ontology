@@ -1,6 +1,6 @@
 # RELEASES
 
-## Changes (No release yet)
+## RELEASE 0.1.3
 
 * Added additional ROBOT tests: report and reasoning.
 * Added GIST inspired simple upper ontology.
