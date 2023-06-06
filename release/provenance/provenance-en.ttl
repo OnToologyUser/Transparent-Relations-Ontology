@@ -2,14 +2,14 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<http://ehu.eus/tro/0.1.1> a prov:Entity;
+<http://ehu.eus/tro/0.1.3> a prov:Entity;
 	 dc:title "Transparent Relations Ontology";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo :agent2;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:wasRevisionOf <0.1.0>;
-	 prov:wasGeneratedAt "2024-04-05T00:00:01";
+	 prov:wasRevisionOf <0.1.2>;
+	 prov:wasGeneratedAt "2023-06-06T00:00:01";
 .
 :agent0 a prov:Agent; foaf:name "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)".
 :agent1 a prov:Agent; foaf:name "Jaime Gómez-Obregón (https://ladonacion.es/)".

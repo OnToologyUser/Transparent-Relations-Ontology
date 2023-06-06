@@ -20,40 +20,41 @@ Related projects:
 * [Public Procurement Ontology](http://contsem.unizar.es/def/sector-publico/pproc).
 * [eProcurement ontology](https://joinup.ec.europa.eu/collection/eprocurement/solution/eprocurement-ontology).
 
-## Access
+## HTTP Access
 
-TRO provides a persistent URI namespace thanks to [W3ID](https://github.com/perma-id/w3id.org/tree/master/TRO):
+TRO has a persistent URI thanks to [W3ID](https://github.com/perma-id/w3id.org/tree/master/TRO):
 
 * Machines: `curl -sH "Accept: text/turtle" -L https://w3id.org/TRO`
 * Humans: https://w3id.org/TRO
 
-## Development
+## Best practices
 
-### Ontology files
+Feel free to contribute in any way, with pull requests, issues, etc. We try to follow the best practices from [Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web](https://arxiv.org/abs/2003.13084) and other resources as described in the guidelines bellow.
 
-The main [OWL](ontology) file in [Turtle](https://www.w3.org/TR/turtle/) lives at `development/TransparentRelationsOntology.ttl`. It is produced using [Protégé](https://protege.stanford.edu/).
+### Development
 
-### Methods
+We loosely stick to [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/) and [Semantic Versioning](https://semver.org/) so basically:
 
-We loosely stick to the [GitFlow methodology](https://nvie.com/posts/a-successful-git-branching-model/), so basically:
-
-* Work on a `feature_*` branch and when are you are done merge it to `develop`, preferably with a pull request.
+* Work on a `feature_*` branch listing the changes in the `RELEASES.md` file under the section `## Changes (No release yet)`.
+* When are you are done merge `feature_*` into `develop`, preferably with a pull request.
 * To create a release after major changes:
-  * Make sure all the tests pass.
+  * Change the `owl:priorVersion` to the current version; `owl:versionInfo`, `owl:versionIRI` and `owl:schemaVersion` values to the version that will be released.
+  * Make sure all [ROBOT tests pass](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions) (See "Ontology quality" section bellow).
   * Create the documentation (See "Documentation" section bellow).
-  * Merge from `develop` to a new `release_*` branch and edit the `RELEASES.md` file with the major changes.
+  * Merge from `develop` to a new `release_*` branch and edit the `RELEASES.md` file changing `## Changes (No release yet)` to the release number (e.g. `## RELEASE 0.1.2`) and adding any new changes to the list that were made in the `develop` branch.
 * Merge `release_*` to `main` (With a pull request), `gh-pages` and `develop`.
 * If a major version bump has happened, create both a release and a tag in GitHub pointing to the commit in `main` resulting from pulling `release_*`.
 
-We also try to follow the best practices described in [Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web](https://arxiv.org/abs/2003.13084).
+### Ontology quality
 
-### Quality tests
+The main [OWL](ontology) file in [Turtle](https://www.w3.org/TR/turtle/) lives at `development/TransparentRelationsOntology.ttl`, and it is produced using [Protégé](https://protege.stanford.edu/). 
 
-The quality tests are defined as [SPARQL](https://www.w3.org/TR/sparql11-query/) queries to be executed by [ROBOT](https://github.com/ontodev/robot) through [GitHub actions](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions):
+The quality is checked by executing different [ROBOT](https://github.com/ontodev/robot) processes that are defined in a Makefile (`robot/Makefile`):
 
-* GitHub Actions YAML file: `.github/workflows/robot.yml`.
-* ROBOT Makefile: `robot/Makefile`.
-* SPARQL files should be defined in `robot/` with the `.rq` suffix and comments at the beggining stating the test's purpose. For example, `verify-label.rq` verifies that all the OWL classes have an `rdfs:label`: if there is one class without label the GitHub Actions pipeline will fail.
+* [Report](http://robot.obolibrary.org/report#report-level-error): this is based on [SPARQL](https://www.w3.org/TR/sparql11-query/) [queries](http://robot.obolibrary.org/report_queries/) that are collected in an specific profile (`robot/tro_report_profile`) with their respective log level (Error, Warn, Info). New queries can be defined as per [ROBOT instructions](http://robot.obolibrary.org/report#profiles). To execute locally (Specially to see the HTML report generated), run `make report`.
+* [Reason](http://robot.obolibrary.org/reason) applies automatic inference to the ontology, which is used in this case to simply ensure the ontology is consistent. To execute locally, run `make reason`.
+
+A [GitHub actions](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions) workflow checks the quality after every push or pull request to `develop` as defined in the GitHub Actions YAML file: `.github/workflows/robot.yml`.
 
 ### Documentation
 

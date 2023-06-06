@@ -7,6 +7,10 @@ build/robot.jar: | build
 
 ROBOT := java -jar build/robot.jar
 
-verify: build/robot.jar
-	$(ROBOT) verify --input ../development/TransparentRelationsOntology.ttl --queries verify-label.rq --output-dir report
+report: build/robot.jar
+	$(ROBOT) report --input ../development/TransparentRelationsOntology.ttl --profile tro_report_profile --output report.html
 
+reason: build/robot.jar
+	$(ROBOT) reason --reasoner ELK --input ../development/TransparentRelationsOntology.ttl
+
+quality: reason report

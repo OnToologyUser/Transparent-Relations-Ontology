@@ -3,17 +3,20 @@ name: Makefile CI
 on:
   push:
     branches: [ develop ]
+    paths:
+      - 'development/**'
+      - 'robot/**'
   pull_request:
     branches: [ develop ]
+    paths:
+      - 'development/**'
+      - 'robot/**'
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
-      
-    - name: Verify
-      run: make verify --directory ./robot
+    - name: Report
+      run: make quality --directory ./robot
       
