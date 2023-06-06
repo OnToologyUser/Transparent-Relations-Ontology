@@ -1,5 +1,6 @@
 [![License](https://img.shields.io/badge/license-Apache2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ![ROBOT results](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions/workflows/robot.yml/badge.svg)
+[![DOI](https://zenodo.org/badge/476618172.svg)](https://zenodo.org/badge/latestdoi/476618172)
 
 # Transparent Relations Ontology
 
