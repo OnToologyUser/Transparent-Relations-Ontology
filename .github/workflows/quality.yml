@@ -1,8 +1,6 @@
-name: Makefile CI
-
 on:
   push:
-    branches: [ develop ]
+    branches: [ feature_oquare_metrics ]
     paths:
       - 'development/**'
       - 'robot/**'
@@ -13,7 +11,7 @@ on:
       - 'robot/**'
 
 jobs:
-  build:
+  robot:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
