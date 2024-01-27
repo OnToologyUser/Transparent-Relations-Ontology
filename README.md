@@ -37,25 +37,29 @@ Feel free to contribute in any way, with pull requests, issues, etc. We try to f
 We loosely stick to [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/) and [Semantic Versioning](https://semver.org/) so basically:
 
 * Work on a `feature_*` branch listing the changes in the `RELEASES.md` file under the section `## Changes (No release yet)`.
-* When are you are done merge `feature_*` into `develop`, preferably with a pull request.
+* When are you are done merge (No fast forward) `feature_*` into `develop`, preferably with a pull request.
 * To create a release after major changes:
   * Change the `owl:priorVersion` to the current version; `owl:versionInfo`, `owl:versionIRI` and `owl:schemaVersion` values to the version that will be released.
-  * Make sure all [ROBOT tests pass](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions) (See "Ontology quality" section bellow).
+  * Make sure all [Quality tests pass](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions) (See "Ontology quality" section bellow).
   * Create the documentation (See "Documentation" section bellow).
-  * Merge from `develop` to a new `release_*` branch and edit the `RELEASES.md` file changing `## Changes (No release yet)` to the release number (e.g. `## RELEASE 0.1.2`) and adding any new changes to the list that were made in the `develop` branch.
-* Merge `release_*` to `main` (With a pull request), `gh-pages` and `develop`.
+  * Merge (No fast forward) from `develop` to a new `release_*` branch and edit the `RELEASES.md` file changing `## Changes (No release yet)` to the release number (e.g. `## RELEASE 0.1.2`) and adding any new changes to the list that were made in the `develop` branch.
+* Merge (No fast forward) `release_*` to `main` (With a pull request), `gh-pages` and `develop`.
 * If a major version bump has happened, create both a release and a tag in GitHub pointing to the commit in `main` resulting from pulling `release_*`.
 
 ### Ontology quality
 
-The main [OWL](ontology) file in [Turtle](https://www.w3.org/TR/turtle/) lives at `development/TransparentRelationsOntology.ttl`, and it is produced using [Protégé](https://protege.stanford.edu/). 
+The main [OWL](ontology) file in [Turtle](https://www.w3.org/TR/turtle/) lives at `development/TransparentRelationsOntology.ttl`, and it is produced using [Protégé](https://protege.stanford.edu/).
 
-The quality is checked by executing different [ROBOT](https://github.com/ontodev/robot) processes that are defined in a Makefile (`robot/Makefile`):
+The quality is checked by executing different tests:
 
-* [Report](http://robot.obolibrary.org/report#report-level-error): this is based on [SPARQL](https://www.w3.org/TR/sparql11-query/) [queries](http://robot.obolibrary.org/report_queries/) that are collected in an specific profile (`robot/tro_report_profile`) with their respective log level (Error, Warn, Info). New queries can be defined as per [ROBOT instructions](http://robot.obolibrary.org/report#profiles). To execute locally (Specially to see the HTML report generated), run `make report`.
-* [Reason](http://robot.obolibrary.org/reason) applies automatic inference to the ontology, which is used in this case to simply ensure the ontology is consistent. To execute locally, run `make reason`.
+* [ROBOT](https://github.com/ontodev/robot) processes that are defined in a Makefile (`robot/Makefile`):
+  * [Report](http://robot.obolibrary.org/report#report-level-error): this is based on [SPARQL](https://www.w3.org/TR/sparql11-query/) [queries](http://robot.obolibrary.org/report_queries/) that are collected in an specific profile (`robot/tro_report_profile`) with their respective log level (Error, Warn, Info). New queries can be defined as per [ROBOT instructions](http://robot.obolibrary.org/report#profiles). To execute locally (Specially to see the HTML report generated), run `make report --directory ./robot`.
+  * [Reason](http://robot.obolibrary.org/reason) applies automatic inference to the ontology, which is used in this case to simply ensure the ontology is consistent. To execute locally, run `make reason --directory ./robot`.
+* [OQuaRE metrics report](https://github.com/tecnomod-um/oquare-metrics), based on the [OQuaRE framework](https://semantics.inf.um.es/oquare/), in `oquare/`.
 
-A [GitHub actions](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions) workflow checks the quality after every push or pull request to `develop` as defined in the GitHub Actions YAML file: `.github/workflows/robot.yml`.
+A [GitHub actions](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions) workflow checks the quality after every push or pull request to `develop` with changes in the `development/` directory as defined in the GitHub Actions YAML file: `.github/workflows/quality.yml` (If you want to skip quality checks, add `[skip actions]` to the commit message).
+
+**Important note**: every time OQuaRE is executed new files appear in GitHub, so pull to your local repo regularly.
 
 ### Documentation
 
