@@ -4,13 +4,10 @@ on:
     branches: [ feature_oquare_metrics ]
     paths:
       - 'development/**'
-      - 'robot/**'
   pull_request:
     branches: [ develop ]
     paths:
       - 'development/**'
-      - 'robot/**'
-
 jobs:
   robot:
     runs-on: ubuntu-latest
