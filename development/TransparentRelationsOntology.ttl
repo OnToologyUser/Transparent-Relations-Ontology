@@ -344,6 +344,7 @@
                                                                 owl:onProperty :start_date ;
                                                                 owl:allValuesFrom xsd:dateTime
                                                               ] ;
+                                              rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
                                               rdfs:label "Contract"@en .
 
 
@@ -352,6 +353,7 @@
            rdfs:subClassOf :Role ;
            <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
            <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:12:46Z"^^xsd:dateTime ;
+           rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
            rdfs:label "Associate"@en .
 
 
@@ -360,6 +362,7 @@
           rdfs:subClassOf :Role ;
           <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
           <http://purl.org/dc/elements/1.1/date> "2023-03-09T08:50:19Z"^^xsd:dateTime ;
+          rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
           rdfs:label "Director"@en .
 
 
@@ -368,6 +371,7 @@
           rdfs:subClassOf :Role ;
           <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
           <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:13:05Z"^^xsd:dateTime ;
+          rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
           rdfs:label "Employee"@en .
 
 
@@ -380,6 +384,7 @@
           <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
           <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:19:58Z"^^xsd:dateTime ;
           rdfs:comment "The evidence of a relation. Normally an evidence will be a source of news. This is not legal evidence"@en ;
+          rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
           rdfs:label "Evidence"@en .
 
 
@@ -388,6 +393,7 @@
          rdfs:subClassOf :Role ;
          <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
          <http://purl.org/dc/elements/1.1/date> "2023-03-09T10:33:21Z"^^xsd:dateTime ;
+         rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
          rdfs:label "Manager"@en .
 
 
@@ -396,6 +402,7 @@
         rdfs:subClassOf :Role ;
         <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
         <http://purl.org/dc/elements/1.1/date> "2023-03-27T15:32:50Z"^^xsd:dateTime ;
+        rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
         rdfs:label "Member"@en .
 
 
@@ -404,6 +411,7 @@
                 rdfs:subClassOf <http://data.europa.eu/a4g/ontology#Contract> ;
                 <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
                 <http://purl.org/dc/elements/1.1/date> "2023-05-19T08:10:50Z"^^xsd:dateTime ;
+                rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
                 rdfs:label "Contrato menor"@es ,
                            "Kontratu txikia"@eu ,
                            "Minor contract"@en ;
@@ -416,6 +424,7 @@
          rdfs:subClassOf :Role ;
          <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
          <http://purl.org/dc/elements/1.1/date> "2023-03-09T08:51:05Z"^^xsd:dateTime ;
+         rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
          rdfs:label "Officer"@en .
 
 
@@ -424,6 +433,7 @@
           rdfs:subClassOf :Evidence ;
           <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
           <http://purl.org/dc/elements/1.1/date> "2023-03-27T15:36:32Z"^^xsd:dateTime ;
+          rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
           rdfs:label "Open data"@en .
 
 
@@ -432,6 +442,7 @@
        rdfs:subClassOf :Role ;
        <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
        <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:12:53Z"^^xsd:dateTime ;
+       rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
        rdfs:label "Owner"@en .
 
 
@@ -440,6 +451,7 @@
            rdfs:subClassOf :Role ;
            <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
            <http://purl.org/dc/elements/1.1/date> "2023-03-09T08:50:34Z"^^xsd:dateTime ;
+           rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
            rdfs:label "President"@en .
 
 
@@ -448,6 +460,7 @@
                rdfs:subClassOf :Evidence ;
                <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
                <http://purl.org/dc/elements/1.1/date> "2023-03-10T19:19:00Z"^^xsd:dateTime ;
+               rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
                rdfs:label "Public Profile"@en .
 
 
@@ -477,6 +490,7 @@
       <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
       <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:06:06Z"^^xsd:dateTime ;
       rdfs:comment "The role of a person in a en entity during a given time period, provided in months or years"@en ;
+      rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
       rdfs:label "Role"@en .
 
 
@@ -485,14 +499,8 @@
                                           rdfs:subClassOf :Role ;
                                           <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
                                           <http://purl.org/dc/elements/1.1/date> "2024-01-27T10:23:30Z"^^xsd:dateTime ;
+                                          rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
                                           rdfs:label "Individual contractor"@en .
-
-
-###  http://ehu.eus/tro/TestNOComment
-<http://ehu.eus/tro/TestNOComment> rdf:type owl:Class ;
-                                   <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
-                                   <http://purl.org/dc/elements/1.1/date> "2024-01-28T18:07:18Z"^^xsd:dateTime ;
-                                   rdfs:label "is defined by orderr" .
 
 
 ###  http://purl.org/goodrelations/v1#PriceSpecification
@@ -506,17 +514,20 @@
                                                                         owl:onProperty <http://purl.org/goodrelations/v1#hasCurrencyValue> ;
                                                                         owl:someValuesFrom xsd:double
                                                                       ] ;
+                                                      rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
                                                       rdfs:label "Price specification"@en .
 
 
 ###  https://dbpedia.org/ontology/PoliticalParty
 <https://dbpedia.org/ontology/PoliticalParty> rdf:type owl:Class ;
                                               rdfs:subClassOf <https://ontologies.semanticarts.com/gist/Organization> ;
+                                              rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
                                               rdfs:label "Political Party"@en .
 
 
 ###  https://ontologies.semanticarts.com/gist/Commitment
 <https://ontologies.semanticarts.com/gist/Commitment> rdf:type owl:Class ;
+                                                      rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
                                                       rdfs:label "Commitment"@en .
 
 
@@ -524,6 +535,7 @@
 <https://ontologies.semanticarts.com/gist/Organization> rdf:type owl:Class ;
                                                         <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
                                                         <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:23:05Z"^^xsd:dateTime ;
+                                                        rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
                                                         rdfs:label "Organization"@en .
 
 
@@ -535,24 +547,28 @@
                                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                    owl:onDataRange xsd:string
                                                  ] ;
+                                 rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
                                  rdfs:label "Corporation"@en .
 
 
 ###  https://schema.org/GovernmentOrganization
 <https://schema.org/GovernmentOrganization> rdf:type owl:Class ;
                                             rdfs:subClassOf <https://ontologies.semanticarts.com/gist/Organization> ;
+                                            rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
                                             rdfs:label "GovernmentOrganization"@en .
 
 
 ###  https://schema.org/NGO
 <https://schema.org/NGO> rdf:type owl:Class ;
                          rdfs:subClassOf <https://ontologies.semanticarts.com/gist/Organization> ;
+                         rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
                          rdfs:label "NGO"@en .
 
 
 ###  https://schema.org/NewsArticle
 <https://schema.org/NewsArticle> rdf:type owl:Class ;
                                  rdfs:subClassOf :Evidence ;
+                                 rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
                                  rdfs:label "NewsArticle"@en .
 
 
@@ -575,18 +591,21 @@
                                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                               owl:onDataRange xsd:string
                                             ] ;
+                            rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
                             rdfs:label "Person"@en .
 
 
 ###  https://schema.org/SportsOrganization
 <https://schema.org/SportsOrganization> rdf:type owl:Class ;
                                         rdfs:subClassOf <https://ontologies.semanticarts.com/gist/Organization> ;
+                                        rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
                                         rdfs:label "Sports Organization"@en .
 
 
 ###  https://schema.org/WorkersUnion
 <https://schema.org/WorkersUnion> rdf:type owl:Class ;
                                   rdfs:subClassOf <https://ontologies.semanticarts.com/gist/Organization> ;
+                                  rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
                                   rdfs:label "Workers Union"@en .
 
 
