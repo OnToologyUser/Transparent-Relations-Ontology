@@ -1,5 +1,10 @@
 # RELEASES
 
+## Changes (No release yet)
+
+* Modified contract so that a person can be directly contracted.
+* Added OQuaRE report to quality workflow.
+
 ## RELEASE 0.1.3
 
 * Added additional ROBOT tests: report and reasoning.
