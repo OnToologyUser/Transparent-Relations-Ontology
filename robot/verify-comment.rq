@@ -5,4 +5,5 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT * WHERE {
 	?s a owl:Class .
 	FILTER NOT EXISTS {?s rdfs:comment ?comment}
+	FILTER (!isBlank(?owlClass))
 }
