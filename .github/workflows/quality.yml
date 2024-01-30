@@ -1,7 +1,7 @@
 name: Quality
 on:
   push:
-    branches: [ develop ]
+    branches: [ feature_LOV_metadata_quality ]
     paths:
       - 'development/**'
   pull_request:

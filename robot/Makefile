@@ -13,4 +13,7 @@ report: build/robot.jar
 reason: build/robot.jar
 	$(ROBOT) reason --reasoner ELK --input ../development/TransparentRelationsOntology.ttl
 
-quality: reason report
+verify: build/robot.jar
+	$(ROBOT) verify --input ../development/TransparentRelationsOntology.ttl --queries verify-isdefinedby.rq verify-comment.rq --output-dir report
+
+quality: report reason verify
