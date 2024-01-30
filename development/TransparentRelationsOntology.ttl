@@ -1,10 +1,10 @@
-@prefix : <http://ehu.eus/tro#> .
+@prefix : <https://w3id.org/TRO#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://ehu.eus/tro#> .
+@base <https://w3id.org/TRO#> .
 
 <https://w3id.org/TRO> rdf:type owl:Ontology ;
                         owl:versionIRI <https://w3id.org/TRO/0.1.3> ;
@@ -368,7 +368,8 @@
 ###  https://dbpedia.org/ontology/PoliticalParty
 <https://dbpedia.org/ontology/PoliticalParty> rdf:type owl:Class ;
                                               rdfs:subClassOf <https://ontologies.semanticarts.com/gist/Organization> ;
-                                              rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
+                                              rdfs:comment "organized group of individuals who share similar political beliefs, ideologies, and policy goals, and they work together to gain political power and influence within a government system"@en ;
+                                              rdfs:isDefinedBy "http://dbpedia.org/ontology/"^^xsd:anyURI ;
                                               rdfs:label "Political Party"@en .
 
 
@@ -394,28 +395,32 @@
                                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                    owl:onDataRange xsd:string
                                                  ] ;
-                                 rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
+                                 rdfs:comment "A business corporation"@en ;
+                                 rdfs:isDefinedBy "https://schema.org"^^xsd:anyURI ;
                                  rdfs:label "Corporation"@en .
 
 
 ###  https://schema.org/GovernmentOrganization
 <https://schema.org/GovernmentOrganization> rdf:type owl:Class ;
                                             rdfs:subClassOf <https://ontologies.semanticarts.com/gist/Organization> ;
-                                            rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
+                                            rdfs:comment "A governmental organization or agency"@en ;
+                                            rdfs:isDefinedBy "https://schema.org"^^xsd:anyURI ;
                                             rdfs:label "GovernmentOrganization"@en .
 
 
 ###  https://schema.org/NGO
 <https://schema.org/NGO> rdf:type owl:Class ;
                          rdfs:subClassOf <https://ontologies.semanticarts.com/gist/Organization> ;
-                         rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
+                         rdfs:comment "Non-governmental Organization"@en ;
+                         rdfs:isDefinedBy "https://schema.org"^^xsd:anyURI ;
                          rdfs:label "NGO"@en .
 
 
 ###  https://schema.org/NewsArticle
 <https://schema.org/NewsArticle> rdf:type owl:Class ;
                                  rdfs:subClassOf :Evidence ;
-                                 rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
+                                 rdfs:comment "A NewsArticle is an article whose content reports news, or provides background context and supporting materials for understanding the news"@en ;
+                                 rdfs:isDefinedBy "https://schema.org"^^xsd:anyURI ;
                                  rdfs:label "NewsArticle"@en .
 
 
@@ -446,14 +451,16 @@
 ###  https://schema.org/SportsOrganization
 <https://schema.org/SportsOrganization> rdf:type owl:Class ;
                                         rdfs:subClassOf <https://ontologies.semanticarts.com/gist/Organization> ;
-                                        rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
+                                        rdfs:comment "all sports organizations, including sports teams, governing bodies, and sports associations"@en ;
+                                        rdfs:isDefinedBy "https://schema.org"^^xsd:anyURI ;
                                         rdfs:label "Sports Organization"@en .
 
 
 ###  https://schema.org/WorkersUnion
 <https://schema.org/WorkersUnion> rdf:type owl:Class ;
                                   rdfs:subClassOf <https://ontologies.semanticarts.com/gist/Organization> ;
-                                  rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
+                                  rdfs:comment "A Workers Union (also known as a Labor Union, Labour Union, or Trade Union) is an organization that promotes the interests of its worker members by collectively bargaining with management, organizing, and political lobbying"@en ;
+                                  rdfs:isDefinedBy "https://schema.org"^^xsd:anyURI ;
                                   rdfs:label "Workers Union"@en .
 
 
@@ -505,6 +512,7 @@
          rdfs:subClassOf :Role ;
          <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
          <http://purl.org/dc/elements/1.1/date> "2023-03-09T10:33:21Z"^^xsd:dateTime ;
+         rdfs:comment "A person within an organization who is responsible for planning, coordinating, and overseeing various activities and resources to achieve specific goals and objectives"@en ;
          rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
          rdfs:label "Manager"@en .
 
@@ -514,6 +522,7 @@
         rdfs:subClassOf :Role ;
         <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
         <http://purl.org/dc/elements/1.1/date> "2023-03-27T15:32:50Z"^^xsd:dateTime ;
+        rdfs:comment "A person is a member of an organization"@en ;
         rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
         rdfs:label "Member"@en .
 
@@ -537,6 +546,7 @@
          rdfs:subClassOf :Role ;
          <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
          <http://purl.org/dc/elements/1.1/date> "2023-03-09T08:51:05Z"^^xsd:dateTime ;
+         rdfs:comment "An officer usually belongs to a publica organization"@en ;
          rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
          rdfs:label "Officer"@en .
 
@@ -546,6 +556,7 @@
           rdfs:subClassOf :Evidence ;
           <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
           <http://purl.org/dc/elements/1.1/date> "2023-03-27T15:36:32Z"^^xsd:dateTime ;
+          rdfs:comment "Data available at an Open Data portal, usually developed by a public administration"@en ;
           rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
           rdfs:label "Open data"@en .
 
@@ -555,6 +566,7 @@
        rdfs:subClassOf :Role ;
        <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
        <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:12:53Z"^^xsd:dateTime ;
+       rdfs:comment "The owner of a company"@en ;
        rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
        rdfs:label "Owner"@en .
 
@@ -564,6 +576,7 @@
            rdfs:subClassOf :Role ;
            <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
            <http://purl.org/dc/elements/1.1/date> "2023-03-09T08:50:34Z"^^xsd:dateTime ;
+           rdfs:comment "The president of an organization"@en ;
            rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
            rdfs:label "President"@en .
 
@@ -573,6 +586,7 @@
                rdfs:subClassOf :Evidence ;
                <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" ;
                <http://purl.org/dc/elements/1.1/date> "2023-03-10T19:19:00Z"^^xsd:dateTime ;
+               rdfs:comment "A public profile in the web (e.g. LinkedIn)"@en ;
                rdfs:isDefinedBy "https://w3id.org/TRO"^^xsd:anyURI ;
                rdfs:label "Public Profile"@en .
 
