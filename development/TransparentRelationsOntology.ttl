@@ -4,20 +4,25 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @base <https://w3id.org/TRO#> .
 
 <https://w3id.org/TRO> rdf:type owl:Ontology ;
+                        rdf:type voaf:Vocabulary ;
                         owl:versionIRI <https://w3id.org/TRO/0.1.3> ;
                         <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es ,
                                                                       "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en ;
                         <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"@eu ;
                         <http://purl.org/dc/terms/abstract> "Transparent Relations Ontology (TRO) offers a vocabulary to publish information about relations that should be more transparent, usually between powerful parties, to detect potential conflicts of interests: for example, governments and their providers, or politicians and their personal relationships. Research journalism and Open Data are two areas in which this sort of data is growing, and new methods and standards are needed to cope with the FAIR publication and consumption of such data."@en ;
                         <http://purl.org/dc/terms/created> "2022-04-01T00:00:01"^^xsd:dateTime ;
+                        <http://purl.org/dc/terms/issued> "2022-04-01T00:00:01"^^xsd:dateTime ;
                         <http://purl.org/dc/terms/description> "A vocabulary to represent relations that should be more transparent, usually between powerfull people or institutions"@en ;
                         <http://purl.org/dc/terms/license> "https://apache.org/licenses/LICENSE-2.0"^^xsd:anyURI ;
                         <http://purl.org/dc/terms/modified> "2023-06-06T00:00:01"^^xsd:dateTime ;
                         <http://purl.org/dc/terms/title> "Transparent Relations Ontology"@en ;
-                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "tro"@en ;
+                        vann:preferredNamespacePrefix "tro"@en ;
+                        vann:preferredNamespaceUri "https://w3id.org/TRO#"^^xsd:anyURI ;
                         owl:priorVersion "0.1.2" ;
                         owl:versionInfo "0.1.3" ;
                         <https://schema.org/schemaVersion> "https://w3id.org/TRO/0.1.3" .
