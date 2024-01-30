@@ -6,3 +6,18 @@ SELECT * WHERE {
 	FILTER NOT EXISTS {?s rdfs:comment ?comment}
 	FILTER (!isBlank(?s))
 }
+
+
+# This query should be defined a explained in http://robot.obolibrary.org/report#profiles
+# but it is not working 
+
+# PREFIX owl: <http://www.w3.org/2002/07/owl#>
+# PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# SELECT ?entity ?property ?value WHERE {
+# 	VALUES ?property {rdfs:comment}
+#     ?entity ?property ?value .
+# 	?entity a owl:Class .
+# 	FILTER NOT EXISTS {?s ?property ?value}
+# 	FILTER (!isBlank(?entity))
+# }

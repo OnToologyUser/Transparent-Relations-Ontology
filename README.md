@@ -1,5 +1,4 @@
 [![License](https://img.shields.io/badge/license-Apache2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-![ROBOT results](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions/workflows/robot.yml/badge.svg)
 [![DOI](https://zenodo.org/badge/476618172.svg)](https://zenodo.org/badge/latestdoi/476618172)
 
 # Transparent Relations Ontology
@@ -53,13 +52,12 @@ The main [OWL](ontology) file in [Turtle](https://www.w3.org/TR/turtle/) lives a
 The quality is checked by executing different tests:
 
 * [ROBOT](https://github.com/ontodev/robot) processes that are defined in a Makefile (`robot/Makefile`):
-  * [Report](http://robot.obolibrary.org/report#report-level-error): this is based on [SPARQL](https://www.w3.org/TR/sparql11-query/) [queries](http://robot.obolibrary.org/report_queries/) that are collected in an specific profile (`robot/tro_report_profile`) with their respective log level (Error, Warn, Info). New queries can be defined as per [ROBOT instructions](http://robot.obolibrary.org/report#profiles). To execute locally (Specially to see the HTML report generated), run `make report --directory ./robot`.
+  * [Report](http://robot.obolibrary.org/report#report-level-error): this is based on [SPARQL](https://www.w3.org/TR/sparql11-query/) [queries](http://robot.obolibrary.org/report_queries/) that are collected in an specific profile (`robot/tro_report_profile`) with their respective log level (Error, Warn, Info). To execute locally (Specially to see the HTML report generated), run `make report --directory ./robot`.
+  * [Verify](http://robot.obolibrary.org/verify) is used to define quality rules as SPARQL queries, see for example `robot/verify-comment.rq`. To execute locally run `make verify --directory ./robot` 
   * [Reason](http://robot.obolibrary.org/reason) applies automatic inference to the ontology, which is used in this case to simply ensure the ontology is consistent. To execute locally, run `make reason --directory ./robot`.
 * [OQuaRE metrics report](https://github.com/tecnomod-um/oquare-metrics), based on the [OQuaRE framework](https://semantics.inf.um.es/oquare/), in `oquare/`.
 
-A [GitHub actions](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions) workflow checks the quality after every push or pull request to `develop` with changes in the `development/` directory as defined in the GitHub Actions YAML file: `.github/workflows/quality.yml` (If you want to skip quality checks, add `[skip actions]` to the commit message).
-
-**Important note**: every time OQuaRE is executed new files appear in GitHub, so pull to your local repo regularly.
+A [GitHub actions](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions) workflow checks the quality after every push or pull request to `develop` with changes in the `development/` directory as defined in the GitHub Actions YAML file: `.github/workflows/quality.yml` (If you want to skip quality checks, add `[skip actions]` to the commit message). **Important note**: every time OQuaRE is executed new files appear in GitHub, so pull to your local repo regularly.
 
 ### Documentation
 
