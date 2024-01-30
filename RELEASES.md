@@ -2,8 +2,9 @@
 
 ## Changes (No release yet)
 
-* Added metadata necessary for LOV: rdfs:isDefinedBy, rdfs:comment
-* Changed URI from http://ehu.eus/tro to https://w3id.org/TRO
+* Added metadata necessary for LOV: rdfs:isDefinedBy, rdfs:comment, etc.
+* Changed URI from http://ehu.eus/tro to https://w3id.org/TRO.
+* Added new mechanism for publishing widoco pages, based on the workflow `static` instead of the branch `gh-pages`.
 * Modified contract so that a person can be directly contracted.
 * Added OQuaRE report to quality workflow.
 

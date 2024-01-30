@@ -44,7 +44,7 @@ We loosely stick to [GitFlow](https://nvie.com/posts/a-successful-git-branching-
   * Make sure all [Quality tests pass](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions) (See "Ontology quality" section bellow).
   * Create the documentation (See "Documentation" section bellow).
   * Merge (No fast forward) from `develop` to a new `release_*` branch and edit the `RELEASES.md` file changing `## Changes (No release yet)` to the release number (e.g. `## RELEASE 0.1.2`) and adding any new changes to the list that were made in the `develop` branch.
-* Merge (No fast forward) `release_*` to `main` (With a pull request), `gh-pages` and `develop`.
+* Merge (No fast forward) `release_*` to `main` (With a pull request) and `develop`.
 * If a major version bump has happened, create both a release and a tag in GitHub pointing to the commit in `main` resulting from pulling `release_*`.
 
 ### Ontology quality
