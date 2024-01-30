@@ -1,5 +1,7 @@
 [![License](https://img.shields.io/badge/license-Apache2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![DOI](https://zenodo.org/badge/476618172.svg)](https://zenodo.org/badge/latestdoi/476618172)
+![Quality](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions/workflows/quality.yml/badge.svg)
+![Widoco](https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/actions/workflows/static.yml/badge.svg)
 
 # Transparent Relations Ontology
 
