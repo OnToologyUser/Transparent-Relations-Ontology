@@ -1,0 +1,624 @@
+<https://w3id.org/TRO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/TRO> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/TRO/0.1.3> .
+<https://w3id.org/TRO> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
+<https://w3id.org/TRO> <http://purl.org/dc/elements/1.1/contributor> "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)"@en .
+<https://w3id.org/TRO> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"@eu .
+<https://w3id.org/TRO> <http://purl.org/dc/terms/abstract> "Transparent Relations Ontology (TRO) offers a vocabulary to publish information about relations that should be more transparent, usually between powerful parties, to detect potential conflicts of interests: for example, governments and their providers, or politicians and their personal relationships. Research journalism and Open Data are two areas in which this sort of data is growing, and new methods and standards are needed to cope with the FAIR publication and consumption of such data."@en .
+<https://w3id.org/TRO> <http://purl.org/dc/terms/created> "2022-04-01T00:00:01"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO> <http://purl.org/dc/terms/description> "A vocabulary to represent relations that should be more transparent, usually between powerfull people or institutions"@en .
+<https://w3id.org/TRO> <http://purl.org/dc/terms/issued> "2022-04-01T00:00:01"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO> <http://purl.org/dc/terms/license> "https://apache.org/licenses/LICENSE-2.0"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/TRO> <http://purl.org/dc/terms/modified> "2023-06-06T00:00:01"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO> <http://purl.org/dc/terms/title> "Transparent Relations Ontology"@en .
+<https://w3id.org/TRO> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tro"@en .
+<https://w3id.org/TRO> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/TRO#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/TRO> <http://www.w3.org/2002/07/owl#priorVersion> "0.1.2" .
+<https://w3id.org/TRO> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.3" .
+<https://w3id.org/TRO> <https://schema.org/schemaVersion> "https://w3id.org/TRO/0.1.3" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/schemaVersion
+<https://schema.org/schemaVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://data.europa.eu/a4g/ontology#bindsContractor
+<http://data.europa.eu/a4g/ontology#bindsContractor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/a4g/ontology#bindsContractor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/a4g/ontology#Contract> .
+<http://data.europa.eu/a4g/ontology#bindsContractor> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Person> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ontologies.semanticarts.com/gist/Organization> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/a4g/ontology#bindsContractor> <http://www.w3.org/2000/01/rdf-schema#label> "Binds Contractor"@en .
+# 
+# http://purl.org/goodrelations/v1#hasPriceSpecification
+<http://purl.org/goodrelations/v1#hasPriceSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/goodrelations/v1#hasPriceSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Has price specification"@en .
+# 
+# https://schema.org/knows
+<https://schema.org/knows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/knows> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Person> .
+<https://schema.org/knows> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Person> .
+<https://schema.org/knows> <http://www.w3.org/2000/01/rdf-schema#label> "Knows"@en .
+# 
+# https://schema.org/parent
+<https://schema.org/parent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/parent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/knows> .
+<https://schema.org/parent> <http://www.w3.org/2000/01/rdf-schema#label> "Parent"@en .
+# 
+# https://schema.org/spouse
+<https://schema.org/spouse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/spouse> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/knows> .
+<https://schema.org/spouse> <http://www.w3.org/2000/01/rdf-schema#label> "Spouse"@en .
+# 
+# https://w3id.org/TRO#has_bank_account_in
+<https://w3id.org/TRO#has_bank_account_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/TRO#has_bank_account_in> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
+<https://w3id.org/TRO#has_bank_account_in> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#has_bank_account_in> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:25:46Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#has_bank_account_in> <http://www.w3.org/2000/01/rdf-schema#label> "Has bank account in"@en .
+# 
+# https://w3id.org/TRO#has_role
+<https://w3id.org/TRO#has_role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/TRO#has_role> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Person> .
+<https://w3id.org/TRO#has_role> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/TRO#Role> .
+<https://w3id.org/TRO#has_role> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#has_role> <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:10:19Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#has_role> <http://www.w3.org/2000/01/rdf-schema#label> "Has role"@en .
+# 
+# https://w3id.org/TRO#in_entity
+<https://w3id.org/TRO#in_entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/TRO#in_entity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/TRO#Role> .
+<https://w3id.org/TRO#in_entity> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologies.semanticarts.com/gist/Organization> .
+<https://w3id.org/TRO#in_entity> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#in_entity> <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:13:36Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#in_entity> <http://www.w3.org/2000/01/rdf-schema#label> "In entity"@en .
+# 
+# https://w3id.org/TRO#pays_to
+<https://w3id.org/TRO#pays_to> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/TRO#pays_to> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
+<https://w3id.org/TRO#pays_to> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#pays_to> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:24:12Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#pays_to> <http://www.w3.org/2000/01/rdf-schema#label> "Pays to"@en .
+# 
+# https://w3id.org/TRO#provider_of
+<https://w3id.org/TRO#provider_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/TRO#provider_of> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#provider_of> <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:23:05Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#provider_of> <http://www.w3.org/2000/01/rdf-schema#comment> "A company or and individual provides services or products to an institution"@en .
+<https://w3id.org/TRO#provider_of> <http://www.w3.org/2000/01/rdf-schema#label> "Provider of"@en .
+# 
+# https://w3id.org/TRO#registered_in
+<https://w3id.org/TRO#registered_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/TRO#registered_in> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
+<https://w3id.org/TRO#registered_in> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#registered_in> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:30:10Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#registered_in> <http://www.w3.org/2000/01/rdf-schema#label> "Registered in"@en .
+# 
+# https://w3id.org/TRO#represents
+<https://w3id.org/TRO#represents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/TRO#represents> <http://purl.org/dc/elements/1.1/contributor> "Jaime Gómez-Obregón (https://ladonacion.es/)"@es .
+<https://w3id.org/TRO#represents> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#represents> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:21:32Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#represents> <http://www.w3.org/2000/01/rdf-schema#label> "Represents"@en .
+# 
+# https://w3id.org/TRO#sibling
+<https://w3id.org/TRO#sibling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/TRO#sibling> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/knows> .
+<https://w3id.org/TRO#sibling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://w3id.org/TRO#sibling> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#sibling> <http://purl.org/dc/elements/1.1/date> "2023-03-27T15:34:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#sibling> <http://www.w3.org/2000/01/rdf-schema#label> "Sibling"@en .
+# 
+# https://w3id.org/TRO#takes_place_in
+<https://w3id.org/TRO#takes_place_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/TRO#takes_place_in> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#takes_place_in> <http://purl.org/dc/elements/1.1/date> "2022-02-21T14:35:58Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#takes_place_in> <http://www.w3.org/2000/01/rdf-schema#label> "Takes place in"@en .
+# 
+# https://w3id.org/TRO#with_evidence
+<https://w3id.org/TRO#with_evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/TRO#with_evidence> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/TRO#Role> .
+<https://w3id.org/TRO#with_evidence> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/TRO#Evidence> .
+<https://w3id.org/TRO#with_evidence> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#with_evidence> <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:27:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#with_evidence> <http://www.w3.org/2000/01/rdf-schema#label> "With evidence"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/goodrelations/v1#hasCurrency
+<http://purl.org/goodrelations/v1#hasCurrency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/goodrelations/v1#hasCurrency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/goodrelations/v1#PriceSpecification> .
+<http://purl.org/goodrelations/v1#hasCurrency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/goodrelations/v1#hasCurrency> <http://www.w3.org/2000/01/rdf-schema#label> "Has currency"@en .
+# 
+# http://purl.org/goodrelations/v1#hasCurrencyValue
+<http://purl.org/goodrelations/v1#hasCurrencyValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/goodrelations/v1#hasCurrencyValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/goodrelations/v1#PriceSpecification> .
+<http://purl.org/goodrelations/v1#hasCurrencyValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://purl.org/goodrelations/v1#hasCurrencyValue> <http://www.w3.org/2000/01/rdf-schema#label> "Has currency value"@en .
+# 
+# http://purl.org/goodrelations/v1#valueAddedTaxIncluded
+<http://purl.org/goodrelations/v1#valueAddedTaxIncluded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/goodrelations/v1#valueAddedTaxIncluded> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/goodrelations/v1#PriceSpecification> .
+<http://purl.org/goodrelations/v1#valueAddedTaxIncluded> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.org/goodrelations/v1#valueAddedTaxIncluded> <http://www.w3.org/2000/01/rdf-schema#label> "Value added tax included"@en .
+# 
+# http://www.w3.org/2006/time#months
+<http://www.w3.org/2006/time#months> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2006/time#months> <http://www.w3.org/2000/01/rdf-schema#label> "Months"@en .
+# 
+# http://www.w3.org/2006/time#years
+<http://www.w3.org/2006/time#years> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2006/time#years> <http://www.w3.org/2000/01/rdf-schema#label> "Years"@en .
+# 
+# http://www.w3.org/ns/person#name
+<http://www.w3.org/ns/person#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/person#name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Person> .
+<http://www.w3.org/ns/person#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/person#name> <http://www.w3.org/2000/01/rdf-schema#label> "Name"@en .
+# 
+# https://schema.org/email
+<https://schema.org/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Person> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ontologies.semanticarts.com/gist/Organization> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#label> "Email"@en .
+# 
+# https://schema.org/identifier
+<https://schema.org/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier"@en .
+# 
+# https://w3id.org/TRO#cpv_code
+<https://w3id.org/TRO#cpv_code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/TRO#cpv_code> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/a4g/ontology#Contract> .
+<https://w3id.org/TRO#cpv_code> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/TRO#cpv_code> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#cpv_code> <http://purl.org/dc/elements/1.1/date> "2023-05-19T07:51:57Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#cpv_code> <http://www.w3.org/2000/01/rdf-schema#label> "CPV code"@en .
+<https://w3id.org/TRO#cpv_code> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/common-procurement-vocabulary_en" .
+# 
+# https://w3id.org/TRO#end_date
+<https://w3id.org/TRO#end_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/TRO#end_date> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/TRO#Role> .
+<https://w3id.org/TRO#end_date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#end_date> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#end_date> <http://purl.org/dc/elements/1.1/date> "2023-03-09T09:02:35Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#end_date> <http://www.w3.org/2000/01/rdf-schema#label> "End date"@en .
+# 
+# https://w3id.org/TRO#profile_url
+<https://w3id.org/TRO#profile_url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/TRO#profile_url> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/TRO#url> .
+<https://w3id.org/TRO#profile_url> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/TRO#Role> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Person> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/TRO#profile_url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/TRO#profile_url> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#profile_url> <http://purl.org/dc/elements/1.1/date> "2023-03-09T09:04:41Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#profile_url> <http://www.w3.org/2000/01/rdf-schema#label> "Profile URL"@en .
+# 
+# https://w3id.org/TRO#start_date
+<https://w3id.org/TRO#start_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/TRO#start_date> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/TRO#Role> .
+<https://w3id.org/TRO#start_date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#start_date> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#start_date> <http://purl.org/dc/elements/1.1/date> "2023-03-09T09:02:16Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#start_date> <http://www.w3.org/2000/01/rdf-schema#label> "Start date"@en .
+# 
+# https://w3id.org/TRO#url
+<https://w3id.org/TRO#url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/TRO#url> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#url> <http://purl.org/dc/elements/1.1/date> "2023-03-10T19:19:41Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#url> <http://www.w3.org/2000/01/rdf-schema#label> "URL"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://data.europa.eu/a4g/ontology#Contract
+<http://data.europa.eu/a4g/ontology#Contract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/a4g/ontology#Contract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologies.semanticarts.com/gist/Commitment> .
+<http://data.europa.eu/a4g/ontology#Contract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#unionOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Person> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ontologies.semanticarts.com/gist/Organization> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://data.europa.eu/a4g/ontology#bindsContractor> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://data.europa.eu/a4g/ontology#Contract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/goodrelations/v1#PriceSpecification> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/goodrelations/v1#hasPriceSpecification> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://data.europa.eu/a4g/ontology#Contract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://schema.org/identifier> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://data.europa.eu/a4g/ontology#Contract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#anyURI> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/TRO#url> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://data.europa.eu/a4g/ontology#Contract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/TRO#cpv_code> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://data.europa.eu/a4g/ontology#Contract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/TRO#end_date> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://data.europa.eu/a4g/ontology#Contract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/TRO#start_date> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://data.europa.eu/a4g/ontology#Contract> <http://www.w3.org/2000/01/rdf-schema#comment> "A voluntary, deliberate, and legally binding agreement between two or more competent parties. Additional information: This includes concession contracts. (WG approval 01/06/2018)"@en .
+<http://data.europa.eu/a4g/ontology#Contract> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://data.europa.eu/a4g/ontology"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://data.europa.eu/a4g/ontology#Contract> <http://www.w3.org/2000/01/rdf-schema#label> "Contract"@en .
+# 
+# http://purl.org/goodrelations/v1#PriceSpecification
+<http://purl.org/goodrelations/v1#PriceSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/goodrelations/v1#PriceSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologies.semanticarts.com/gist/Commitment> .
+<http://purl.org/goodrelations/v1#PriceSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/goodrelations/v1#hasCurrency> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/goodrelations/v1#PriceSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#double> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/goodrelations/v1#hasCurrencyValue> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/goodrelations/v1#PriceSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "The superclass of all price specifications"@en .
+<http://purl.org/goodrelations/v1#PriceSpecification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/goodrelations/v1"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/goodrelations/v1#PriceSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Price specification"@en .
+# 
+# https://dbpedia.org/ontology/PoliticalParty
+<https://dbpedia.org/ontology/PoliticalParty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/ontology/PoliticalParty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologies.semanticarts.com/gist/Organization> .
+<https://dbpedia.org/ontology/PoliticalParty> <http://www.w3.org/2000/01/rdf-schema#comment> "organized group of individuals who share similar political beliefs, ideologies, and policy goals, and they work together to gain political power and influence within a government system"@en .
+<https://dbpedia.org/ontology/PoliticalParty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://dbpedia.org/ontology/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://dbpedia.org/ontology/PoliticalParty> <http://www.w3.org/2000/01/rdf-schema#label> "Political Party"@en .
+# 
+# https://ontologies.semanticarts.com/gist/Commitment
+<https://ontologies.semanticarts.com/gist/Commitment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologies.semanticarts.com/gist/Commitment> <http://www.w3.org/2000/01/rdf-schema#comment> "An obligation (possibly unilateral)"@en .
+<https://ontologies.semanticarts.com/gist/Commitment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://ontologies.semanticarts.com/gist/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://ontologies.semanticarts.com/gist/Commitment> <http://www.w3.org/2000/01/rdf-schema#label> "Commitment"@en .
+# 
+# https://ontologies.semanticarts.com/gist/Organization
+<https://ontologies.semanticarts.com/gist/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologies.semanticarts.com/gist/Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic organization that can be formal or informal, legal or non-legal. It can have members, or not"@en .
+<https://ontologies.semanticarts.com/gist/Organization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://ontologies.semanticarts.com/gist/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://ontologies.semanticarts.com/gist/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
+# 
+# https://schema.org/Corporation
+<https://schema.org/Corporation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Corporation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologies.semanticarts.com/gist/Organization> .
+<https://schema.org/Corporation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid22 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://schema.org/identifier> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://schema.org/Corporation> <http://www.w3.org/2000/01/rdf-schema#comment> "A business corporation"@en .
+<https://schema.org/Corporation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://schema.org"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://schema.org/Corporation> <http://www.w3.org/2000/01/rdf-schema#label> "Corporation"@en .
+# 
+# https://schema.org/GovernmentOrganization
+<https://schema.org/GovernmentOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/GovernmentOrganization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologies.semanticarts.com/gist/Organization> .
+<https://schema.org/GovernmentOrganization> <http://www.w3.org/2000/01/rdf-schema#comment> "A governmental organization or agency"@en .
+<https://schema.org/GovernmentOrganization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://schema.org"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://schema.org/GovernmentOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "GovernmentOrganization"@en .
+# 
+# https://schema.org/NGO
+<https://schema.org/NGO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/NGO> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologies.semanticarts.com/gist/Organization> .
+<https://schema.org/NGO> <http://www.w3.org/2000/01/rdf-schema#comment> "Non-governmental Organization"@en .
+<https://schema.org/NGO> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://schema.org"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://schema.org/NGO> <http://www.w3.org/2000/01/rdf-schema#label> "NGO"@en .
+# 
+# https://schema.org/NewsArticle
+<https://schema.org/NewsArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/NewsArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/TRO#Evidence> .
+<https://schema.org/NewsArticle> <http://www.w3.org/2000/01/rdf-schema#comment> "A NewsArticle is an article whose content reports news, or provides background context and supporting materials for understanding the news"@en .
+<https://schema.org/NewsArticle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://schema.org"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://schema.org/NewsArticle> <http://www.w3.org/2000/01/rdf-schema#label> "NewsArticle"@en .
+# 
+# https://schema.org/Person
+<https://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/TRO#Role> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/TRO#has_role> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://schema.org/email> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/TRO#profile_url> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid26 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/person#name> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A person (alive, dead, undead, or fictional)."@en .
+<https://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://schema.org"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+# 
+# https://schema.org/SportsOrganization
+<https://schema.org/SportsOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/SportsOrganization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologies.semanticarts.com/gist/Organization> .
+<https://schema.org/SportsOrganization> <http://www.w3.org/2000/01/rdf-schema#comment> "all sports organizations, including sports teams, governing bodies, and sports associations"@en .
+<https://schema.org/SportsOrganization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://schema.org"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://schema.org/SportsOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "Sports Organization"@en .
+# 
+# https://schema.org/WorkersUnion
+<https://schema.org/WorkersUnion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/WorkersUnion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologies.semanticarts.com/gist/Organization> .
+<https://schema.org/WorkersUnion> <http://www.w3.org/2000/01/rdf-schema#comment> "A Workers Union (also known as a Labor Union, Labour Union, or Trade Union) is an organization that promotes the interests of its worker members by collectively bargaining with management, organizing, and political lobbying"@en .
+<https://schema.org/WorkersUnion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://schema.org"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://schema.org/WorkersUnion> <http://www.w3.org/2000/01/rdf-schema#label> "Workers Union"@en .
+# 
+# https://w3id.org/TRO#Associate
+<https://w3id.org/TRO#Associate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/TRO#Associate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/TRO#Role> .
+<https://w3id.org/TRO#Associate> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#Associate> <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:12:46Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#Associate> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who is connected to another organization in a relationship that is less close or committed than a partnership"@en .
+<https://w3id.org/TRO#Associate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/TRO"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/TRO#Associate> <http://www.w3.org/2000/01/rdf-schema#label> "Associate"@en .
+# 
+# https://w3id.org/TRO#Director
+<https://w3id.org/TRO#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/TRO#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/TRO#Role> .
+<https://w3id.org/TRO#Director> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#Director> <http://purl.org/dc/elements/1.1/date> "2023-03-09T08:50:19Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#Director> <http://www.w3.org/2000/01/rdf-schema#comment> "The director of an organization"@en .
+<https://w3id.org/TRO#Director> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/TRO"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/TRO#Director> <http://www.w3.org/2000/01/rdf-schema#label> "Director"@en .
+# 
+# https://w3id.org/TRO#Employee
+<https://w3id.org/TRO#Employee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/TRO#Employee> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/TRO#Role> .
+<https://w3id.org/TRO#Employee> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#Employee> <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:13:05Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#Employee> <http://www.w3.org/2000/01/rdf-schema#comment> "A person hired by an organization"@en .
+<https://w3id.org/TRO#Employee> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/TRO"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/TRO#Employee> <http://www.w3.org/2000/01/rdf-schema#label> "Employee"@en .
+# 
+# https://w3id.org/TRO#Evidence
+<https://w3id.org/TRO#Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/TRO#Evidence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#anyURI> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/TRO#url> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/TRO#Evidence> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#Evidence> <http://purl.org/dc/elements/1.1/date> "2022-02-15T11:19:58Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#Evidence> <http://www.w3.org/2000/01/rdf-schema#comment> "The evidence of a relation. Normally an evidence will be a source of news. This is not legal evidence"@en .
+<https://w3id.org/TRO#Evidence> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/TRO"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/TRO#Evidence> <http://www.w3.org/2000/01/rdf-schema#label> "Evidence"@en .
+# 
+# https://w3id.org/TRO#Manager
+<https://w3id.org/TRO#Manager> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/TRO#Manager> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/TRO#Role> .
+<https://w3id.org/TRO#Manager> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#Manager> <http://purl.org/dc/elements/1.1/date> "2023-03-09T10:33:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#Manager> <http://www.w3.org/2000/01/rdf-schema#comment> "A person within an organization who is responsible for planning, coordinating, and overseeing various activities and resources to achieve specific goals and objectives"@en .
+<https://w3id.org/TRO#Manager> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/TRO"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/TRO#Manager> <http://www.w3.org/2000/01/rdf-schema#label> "Manager"@en .
+# 
+# https://w3id.org/TRO#Member
+<https://w3id.org/TRO#Member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/TRO#Member> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/TRO#Role> .
+<https://w3id.org/TRO#Member> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#Member> <http://purl.org/dc/elements/1.1/date> "2023-03-27T15:32:50Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#Member> <http://www.w3.org/2000/01/rdf-schema#comment> "A person is a member of an organization"@en .
+<https://w3id.org/TRO#Member> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/TRO"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/TRO#Member> <http://www.w3.org/2000/01/rdf-schema#label> "Member"@en .
+# 
+# https://w3id.org/TRO#Minor_contract
+<https://w3id.org/TRO#Minor_contract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/TRO#Minor_contract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/a4g/ontology#Contract> .
+<https://w3id.org/TRO#Minor_contract> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#Minor_contract> <http://purl.org/dc/elements/1.1/date> "2023-05-19T08:10:50Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#Minor_contract> <http://www.w3.org/2000/01/rdf-schema#comment> "In some administrations minor contracts do not have to be justified"@en .
+<https://w3id.org/TRO#Minor_contract> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/TRO"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/TRO#Minor_contract> <http://www.w3.org/2000/01/rdf-schema#label> "Contrato menor"@es .
+<https://w3id.org/TRO#Minor_contract> <http://www.w3.org/2000/01/rdf-schema#label> "Kontratu txikia"@eu .
+<https://w3id.org/TRO#Minor_contract> <http://www.w3.org/2000/01/rdf-schema#label> "Minor contract"@en .
+<https://w3id.org/TRO#Minor_contract> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://contsem.unizar.es/def/sector-publico/pproc#Minor" .
+<https://w3id.org/TRO#Minor_contract> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.boe.es/boe/dias/2019/03/07/pdfs/BOE-A-2019-3281.pdf" .
+# 
+# https://w3id.org/TRO#Officer
+<https://w3id.org/TRO#Officer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/TRO#Officer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/TRO#Role> .
+<https://w3id.org/TRO#Officer> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#Officer> <http://purl.org/dc/elements/1.1/date> "2023-03-09T08:51:05Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#Officer> <http://www.w3.org/2000/01/rdf-schema#comment> "An officer usually belongs to a publica organization"@en .
+<https://w3id.org/TRO#Officer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/TRO"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/TRO#Officer> <http://www.w3.org/2000/01/rdf-schema#label> "Officer"@en .
+# 
+# https://w3id.org/TRO#OpenData
+<https://w3id.org/TRO#OpenData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/TRO#OpenData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/TRO#Evidence> .
+<https://w3id.org/TRO#OpenData> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#OpenData> <http://purl.org/dc/elements/1.1/date> "2023-03-27T15:36:32Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#OpenData> <http://www.w3.org/2000/01/rdf-schema#comment> "Data available at an Open Data portal, usually developed by a public administration"@en .
+<https://w3id.org/TRO#OpenData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/TRO"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/TRO#OpenData> <http://www.w3.org/2000/01/rdf-schema#label> "Open data"@en .
+# 
+# https://w3id.org/TRO#Owner
+<https://w3id.org/TRO#Owner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/TRO#Owner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/TRO#Role> .
+<https://w3id.org/TRO#Owner> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#Owner> <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:12:53Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#Owner> <http://www.w3.org/2000/01/rdf-schema#comment> "The owner of a company"@en .
+<https://w3id.org/TRO#Owner> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/TRO"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/TRO#Owner> <http://www.w3.org/2000/01/rdf-schema#label> "Owner"@en .
+# 
+# https://w3id.org/TRO#President
+<https://w3id.org/TRO#President> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/TRO#President> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/TRO#Role> .
+<https://w3id.org/TRO#President> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#President> <http://purl.org/dc/elements/1.1/date> "2023-03-09T08:50:34Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#President> <http://www.w3.org/2000/01/rdf-schema#comment> "The president of an organization"@en .
+<https://w3id.org/TRO#President> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/TRO"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/TRO#President> <http://www.w3.org/2000/01/rdf-schema#label> "President"@en .
+# 
+# https://w3id.org/TRO#PublicProfile
+<https://w3id.org/TRO#PublicProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/TRO#PublicProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/TRO#Evidence> .
+<https://w3id.org/TRO#PublicProfile> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#PublicProfile> <http://purl.org/dc/elements/1.1/date> "2023-03-10T19:19:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#PublicProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "A public profile in the web (e.g. LinkedIn)"@en .
+<https://w3id.org/TRO#PublicProfile> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/TRO"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/TRO#PublicProfile> <http://www.w3.org/2000/01/rdf-schema#label> "Public Profile"@en .
+# 
+# https://w3id.org/TRO#Role
+<https://w3id.org/TRO#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/TRO#Role> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologies.semanticarts.com/gist/Commitment> .
+<https://w3id.org/TRO#Role> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://ontologies.semanticarts.com/gist/Organization> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/TRO#in_entity> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/TRO#Role> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#months> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/TRO#Role> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#years> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/TRO#Role> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/TRO#end_date> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/TRO#Role> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/TRO#start_date> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/TRO#Role> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO#Role> <http://purl.org/dc/elements/1.1/date> "2023-03-08T21:06:06Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "The role of a person in a en entity during a given time period, provided in months or years"@en .
+<https://w3id.org/TRO#Role> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/TRO"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/TRO#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role"@en .
+# 
+# https://w3id.org/TRO/IndividualContractor
+<https://w3id.org/TRO/IndividualContractor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/TRO/IndividualContractor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/TRO#Role> .
+<https://w3id.org/TRO/IndividualContractor> <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)" .
+<https://w3id.org/TRO/IndividualContractor> <http://purl.org/dc/elements/1.1/date> "2024-01-27T10:23:30Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/TRO/IndividualContractor> <http://www.w3.org/2000/01/rdf-schema#comment> "A person that acts as a single contractor to other organizations, usually government organizations"@en .
+<https://w3id.org/TRO/IndividualContractor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/TRO"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/TRO/IndividualContractor> <http://www.w3.org/2000/01/rdf-schema#label> "Individual contractor"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid33 <http://www.w3.org/2002/07/owl#members> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/TRO#Evidence> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Person> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ontologies.semanticarts.com/gist/Organization> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ontologies.semanticarts.com/gist/Commitment> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

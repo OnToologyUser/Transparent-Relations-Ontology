@@ -1,0 +1,248 @@
+{
+  "@context" : {
+    "abstract" : {
+      "@id" : "http://purl.org/dc/terms/abstract"
+    },
+    "hasCurrencyValue" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasCurrencyValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "has_role" : {
+      "@id" : "https://w3id.org/TRO#has_role",
+      "@type" : "@id"
+    },
+    "Officer" : {
+      "@id" : "https://w3id.org/TRO#Officer"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Minor_contract" : {
+      "@id" : "https://w3id.org/TRO#Minor_contract"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "Commitment" : {
+      "@id" : "https://ontologies.semanticarts.com/gist/Commitment"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "url" : {
+      "@id" : "https://w3id.org/TRO#url"
+    },
+    "Associate" : {
+      "@id" : "https://w3id.org/TRO#Associate"
+    },
+    "end_date" : {
+      "@id" : "https://w3id.org/TRO#end_date",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Organization" : {
+      "@id" : "https://ontologies.semanticarts.com/gist/Organization"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "SportsOrganization" : {
+      "@id" : "https://schema.org/SportsOrganization"
+    },
+    "takes_place_in" : {
+      "@id" : "https://w3id.org/TRO#takes_place_in",
+      "@type" : "@id"
+    },
+    "has_bank_account_in" : {
+      "@id" : "https://w3id.org/TRO#has_bank_account_in",
+      "@type" : "@id"
+    },
+    "in_entity" : {
+      "@id" : "https://w3id.org/TRO#in_entity",
+      "@type" : "@id"
+    },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
+    "Director" : {
+      "@id" : "https://w3id.org/TRO#Director"
+    },
+    "OpenData" : {
+      "@id" : "https://w3id.org/TRO#OpenData"
+    },
+    "IndividualContractor" : {
+      "@id" : "https://w3id.org/TRO/IndividualContractor"
+    },
+    "bindsContractor" : {
+      "@id" : "http://data.europa.eu/a4g/ontology#bindsContractor",
+      "@type" : "@id"
+    },
+    "hasCurrency" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasCurrency",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Member" : {
+      "@id" : "https://w3id.org/TRO#Member"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "provider_of" : {
+      "@id" : "https://w3id.org/TRO#provider_of",
+      "@type" : "@id"
+    },
+    "parent" : {
+      "@id" : "https://schema.org/parent",
+      "@type" : "@id"
+    },
+    "months" : {
+      "@id" : "http://www.w3.org/2006/time#months"
+    },
+    "Contract" : {
+      "@id" : "http://data.europa.eu/a4g/ontology#Contract"
+    },
+    "sibling" : {
+      "@id" : "https://w3id.org/TRO#sibling",
+      "@type" : "@id"
+    },
+    "pays_to" : {
+      "@id" : "https://w3id.org/TRO#pays_to",
+      "@type" : "@id"
+    },
+    "Evidence" : {
+      "@id" : "https://w3id.org/TRO#Evidence"
+    },
+    "email" : {
+      "@id" : "https://schema.org/email",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "profile_url" : {
+      "@id" : "https://w3id.org/TRO#profile_url",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "Person" : {
+      "@id" : "https://schema.org/Person"
+    },
+    "with_evidence" : {
+      "@id" : "https://w3id.org/TRO#with_evidence",
+      "@type" : "@id"
+    },
+    "GovernmentOrganization" : {
+      "@id" : "https://schema.org/GovernmentOrganization"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "name" : {
+      "@id" : "http://www.w3.org/ns/person#name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Role" : {
+      "@id" : "https://w3id.org/TRO#Role"
+    },
+    "cpv_code" : {
+      "@id" : "https://w3id.org/TRO#cpv_code",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "PublicProfile" : {
+      "@id" : "https://w3id.org/TRO#PublicProfile"
+    },
+    "Corporation" : {
+      "@id" : "https://schema.org/Corporation"
+    },
+    "President" : {
+      "@id" : "https://w3id.org/TRO#President"
+    },
+    "identifier" : {
+      "@id" : "https://schema.org/identifier",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "valueAddedTaxIncluded" : {
+      "@id" : "http://purl.org/goodrelations/v1#valueAddedTaxIncluded",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "spouse" : {
+      "@id" : "https://schema.org/spouse",
+      "@type" : "@id"
+    },
+    "years" : {
+      "@id" : "http://www.w3.org/2006/time#years"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "knows" : {
+      "@id" : "https://schema.org/knows",
+      "@type" : "@id"
+    },
+    "represents" : {
+      "@id" : "https://w3id.org/TRO#represents",
+      "@type" : "@id"
+    },
+    "registered_in" : {
+      "@id" : "https://w3id.org/TRO#registered_in",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "PoliticalParty" : {
+      "@id" : "https://dbpedia.org/ontology/PoliticalParty"
+    },
+    "Employee" : {
+      "@id" : "https://w3id.org/TRO#Employee"
+    },
+    "Owner" : {
+      "@id" : "https://w3id.org/TRO#Owner"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "start_date" : {
+      "@id" : "https://w3id.org/TRO#start_date",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "WorkersUnion" : {
+      "@id" : "https://schema.org/WorkersUnion"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "schemaVersion" : {
+      "@id" : "https://schema.org/schemaVersion"
+    },
+    "PriceSpecification" : {
+      "@id" : "http://purl.org/goodrelations/v1#PriceSpecification"
+    },
+    "hasPriceSpecification" : {
+      "@id" : "http://purl.org/goodrelations/v1#hasPriceSpecification",
+      "@type" : "@id"
+    },
+    "Manager" : {
+      "@id" : "https://w3id.org/TRO#Manager"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "NewsArticle" : {
+      "@id" : "https://schema.org/NewsArticle"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "NGO" : {
+      "@id" : "https://schema.org/NGO"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    }
+  }
+}

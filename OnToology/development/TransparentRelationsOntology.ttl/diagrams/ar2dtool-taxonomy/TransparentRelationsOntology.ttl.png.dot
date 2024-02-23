@@ -1,0 +1,28 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; ":NGO" ":GovernmentOrganization" "https://ontologies.semanticarts.com/gist/Commitment" "base:Officer" "base:President" "base:Role" "https://w3id.org/TRO/IndividualContractor" ":WorkersUnion" "base:Manager" ":NewsArticle" "base:OpenData" "http://data.europa.eu/a4g/ontology#Contract" "base:PublicProfile" "base:Owner" "http://purl.org/goodrelations/v1#PriceSpecification" "base:Director" "https://ontologies.semanticarts.com/gist/Organization" "https://dbpedia.org/ontology/PoliticalParty" "base:Member" "base:Employee" "base:Associate" "base:Evidence" ":SportsOrganization" ":Corporation" "base:Minor_contract" ; /*classes style*/
+	":NGO" -> "https://ontologies.semanticarts.com/gist/Organization" [ label = "rdfs:subClassOf" ];
+	"http://purl.org/goodrelations/v1#PriceSpecification" -> "https://ontologies.semanticarts.com/gist/Commitment" [ label = "rdfs:subClassOf" ];
+	":NewsArticle" -> "base:Evidence" [ label = "rdfs:subClassOf" ];
+	"http://data.europa.eu/a4g/ontology#Contract" -> "https://ontologies.semanticarts.com/gist/Commitment" [ label = "rdfs:subClassOf" ];
+	":GovernmentOrganization" -> "https://ontologies.semanticarts.com/gist/Organization" [ label = "rdfs:subClassOf" ];
+	":SportsOrganization" -> "https://ontologies.semanticarts.com/gist/Organization" [ label = "rdfs:subClassOf" ];
+	":Corporation" -> "https://ontologies.semanticarts.com/gist/Organization" [ label = "rdfs:subClassOf" ];
+	"base:Employee" -> "base:Role" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/TRO/IndividualContractor" -> "base:Role" [ label = "rdfs:subClassOf" ];
+	"base:Role" -> "https://ontologies.semanticarts.com/gist/Commitment" [ label = "rdfs:subClassOf" ];
+	"base:President" -> "base:Role" [ label = "rdfs:subClassOf" ];
+	"base:Member" -> "base:Role" [ label = "rdfs:subClassOf" ];
+	"base:Manager" -> "base:Role" [ label = "rdfs:subClassOf" ];
+	"base:Owner" -> "base:Role" [ label = "rdfs:subClassOf" ];
+	"https://dbpedia.org/ontology/PoliticalParty" -> "https://ontologies.semanticarts.com/gist/Organization" [ label = "rdfs:subClassOf" ];
+	"base:Director" -> "base:Role" [ label = "rdfs:subClassOf" ];
+	":WorkersUnion" -> "https://ontologies.semanticarts.com/gist/Organization" [ label = "rdfs:subClassOf" ];
+	"base:PublicProfile" -> "base:Evidence" [ label = "rdfs:subClassOf" ];
+	"base:OpenData" -> "base:Evidence" [ label = "rdfs:subClassOf" ];
+	"base:Associate" -> "base:Role" [ label = "rdfs:subClassOf" ];
+	"base:Officer" -> "base:Role" [ label = "rdfs:subClassOf" ];
+	"base:Minor_contract" -> "http://data.europa.eu/a4g/ontology#Contract" [ label = "rdfs:subClassOf" ];
+
+}

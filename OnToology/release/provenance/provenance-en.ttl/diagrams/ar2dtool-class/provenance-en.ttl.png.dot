@@ -1,0 +1,11 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"https://w3id.org/TRO/0.1.3" -> "file:///home/ahmad/OnToology/0.1.2" [ label = "prov:wasRevisionOf" ];
+	"https://w3id.org/TRO/0.1.3" -> "http://www.essepuntato.it/lode/" [ label = "prov:wasAttributedTo" ];
+	"https://w3id.org/TRO/0.1.3" -> "https://github.com/dgarijo/Widoco/" [ label = "prov:wasAttributedTo" ];
+	"https://w3id.org/TRO/0.1.3" -> "base:agent2" [ label = "prov:wasAttributedTo" ];
+	"https://w3id.org/TRO/0.1.3" -> "base:agent1" [ label = "prov:wasAttributedTo" ];
+	"https://w3id.org/TRO/0.1.3" -> "base:agent0" [ label = "prov:wasAttributedTo" ];
+
+}

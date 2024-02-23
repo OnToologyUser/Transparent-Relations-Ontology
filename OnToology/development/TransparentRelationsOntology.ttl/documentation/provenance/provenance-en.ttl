@@ -1,0 +1,16 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<https://w3id.org/TRO/0.1.3> a prov:Entity;
+	 dc:title "Transparent Relations Ontology";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasRevisionOf <0.1.2>;
+	 prov:wasGeneratedAt "2022-04-01T00:00:01";
+.
+:agent0 a prov:Agent; foaf:name "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)".
+:agent1 a prov:Agent; foaf:name "Jaime Gómez-Obregón (https://ladonacion.es/)".
+:agent2 a prov:Agent; foaf:name "Off-shore leaks DataBase (https://offshoreleaks.icij.org/)".
